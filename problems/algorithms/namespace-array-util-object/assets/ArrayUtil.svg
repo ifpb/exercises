@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="122px" preserveAspectRatio="none" style="width:326px;height:122px;" version="1.1" viewBox="0 0 326 122" width="326px" zoomAndPan="magnify"><defs><filter height="300%" id="f1g8iksnmu6168" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class \Util\ArrayUtil--><rect fill="#F8F8F8" filter="url(#f1g8iksnmu6168)" height="103.9922" id="\Util\ArrayUtil" style="stroke: #383838; stroke-width: 1.5;" width="309" x="6" y="8"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="80" x="120.5" y="24.1387">\Util\ArrayUtil</text><line style="stroke: #383838; stroke-width: 1.5;" x1="7" x2="314" y1="31.9688" y2="31.9688"/><line style="stroke: #383838; stroke-width: 1.5;" x1="7" x2="314" y1="39.9688" y2="39.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="171" x="12" y="54.1792">+min(array: Array&lt;int&gt;): float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="174" x="12" y="66.9839">+max(array: Array&lt;int&gt;): float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="279" x="12" y="79.7886">+range(length:int, last: int, step: int): Array&lt;int&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="297" x="12" y="92.5933">+zip(arrays: Array&lt;Array&lt;int&gt;&gt;)Array&lt;Array&lt;int&gt;&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="211" x="12" y="105.3979">+uniq(array: Array&lt;int&gt;): Array&lt;int&gt;</text><!--
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome true
+hide circle
+
+class \Util\ArrayUtil {
+  {static} +min(array: Array<int>): float
+  {static} +max(array: Array<int>): float
+  {static} +range(length:int, last: int, step: int): Array<int>
+  {static} +zip(arrays: Array<Array<int>>)Array<Array<int>>
+  {static} +uniq(array: Array<int>): Array<int>
+}
+@enduml
+
+PlantUML version 1.2019.05beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.7.0_25-b15
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

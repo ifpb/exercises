@@ -1,0 +1,14 @@
+@startuml
+' scale max 200 width
+skinparam classAttributeIconSize 0
+skinparam monochrome true
+hide circle
+
+class \Util\ArrayUtil {
+  {static} +min(array: Array<int>): float
+  {static} +max(array: Array<int>): float
+  {static} +range(length:int, last: int, step: int): Array<int>
+  {static} +zip(arrays: Array<Array<int>>)Array<Array<int>>
+  {static} +uniq(array: Array<int>): Array<int>
+}
+@enduml

@@ -2,7 +2,7 @@
 size = 10
 sum = 0
 
-(1..(size)).map {|number|
+(1..(size)).each {|number|
   sum += 1.0 / number
 }
 

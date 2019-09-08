@@ -1,15 +1,15 @@
 # [Area of Circle](code.zip)
 
-`{{ page.path | replace:'code.md','' }}code/area_of_circle.rb`:
+`{{ page.path | replace:'code.md','' }}code/src/area_of_circle.rb`:
 
 ```rb
-{% include_relative code/area_of_circle.rb %}
+{% include_relative code/src/area_of_circle.rb %}
 ```
 
-`{{ page.path | replace:'code.md','' }}code/area_of_circle.print.rb`:
+`{{ page.path | replace:'code.md','' }}code/print/area_of_circle.print.rb`:
 
 ```rb
-{% include_relative code/area_of_circle.print.rb %}
+{% include_relative code/print/area_of_circle.print.rb %}
 ```
 
-> [Response](response/area_of_circle.rb)
+> [Response](response/src/area_of_circle.rb)

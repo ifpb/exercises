@@ -2,10 +2,10 @@
 
 **Code**
 
-`{{ page.path | replace:'code.md','' }}code/Hello.cpp`:
+`{{ page.path | replace:'code.md','' }}code/hello.cpp`:
 
 ```cpp
-{% include_relative code/Hello.cpp %}
+{% include_relative code/hello.cpp %}
 ```
 
-> Response: [response/Hello.cpp](response/Hello.cpp)
+> Response: [response/hello.cpp](response/hello.cpp)

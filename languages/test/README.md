@@ -1,5 +1,8 @@
 # Executando Testes
 
+- [PHP](#php)
+- [Ruby](#ruby)
+
 ## PHP
 
 ### kahlan
@@ -14,4 +17,20 @@ Em seguida, execute o comando `kahlan` no container docker especificando os test
 
 ```
 $ docker run -it --rm -w /app -v "$PWD":/app/src php:kahlan kahlan --spec=pasta/teste
+```
+
+## Ruby
+
+### rspec
+
+Para executar os testes no [rspec](https://rspec.info) via docker, crie a imagem `ruby:rspec` usando este [Dockerfile](docker-ruby-rspec/Dockerfile):
+
+```
+$ docker build -t ruby:rspec .
+```
+
+Em seguida, execute o comando `rspec` no container docker especificando os testes:
+
+```
+$ docker run -it --rm -w /app -v "$PWD":/app ruby:rspec rspec pasta/teste
 ```

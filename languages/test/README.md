@@ -1,9 +1,25 @@
 # Executando Testes
 
+- [Javascript](#javascript)
 - [PHP](#php)
+- [Python](#python)
 - [Ruby](#ruby)
 
+## Javascript
+
+---
+
+### jest
+
+Para executar os testes no [jest](https://jestjs.io) utilize o seguinte comando:
+
+```
+$ jest pasta/arquivo.test.js
+```
+
 ## PHP
+
+---
 
 ### kahlan
 
@@ -19,7 +35,21 @@ Em seguida, execute o comando `kahlan` no container docker especificando os test
 $ docker run -it --rm -w /app -v "$PWD":/app/src php:kahlan kahlan --spec=pasta/teste
 ```
 
+## Python
+
+---
+
+### unittest
+
+Para executar os testes no [unittest](https://docs.python.org/2.7/library/unittest.html) utilize o seguinte comando:
+
+```
+$ python pasta/arquivo.test.py
+```
+
 ## Ruby
+
+---
 
 ### rspec
 

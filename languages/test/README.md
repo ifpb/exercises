@@ -7,7 +7,7 @@
 
 ### kahlan
 
-Para executar os testes no [kahlan](https://github.com/kahlan/kahlan) via docker, crie a imagem `php:kahlan` usando este [Dockerfile](docker-php-kahlan/Dockerfile):
+Para executar os testes no [kahlan](https://github.com/kahlan/kahlan) via docker, crie a imagem `php:kahlan` usando este [Dockerfile](php/docker-php-kahlan/Dockerfile):
 
 ```
 $ docker build -t php:kahlan .
@@ -23,7 +23,7 @@ $ docker run -it --rm -w /app -v "$PWD":/app/src php:kahlan kahlan --spec=pasta/
 
 ### rspec
 
-Para executar os testes no [rspec](https://rspec.info) via docker, crie a imagem `ruby:rspec` usando este [Dockerfile](docker-ruby-rspec/Dockerfile):
+Para executar os testes no [rspec](https://rspec.info) via docker, crie a imagem `ruby:rspec` usando este [Dockerfile](ruby/docker-ruby-rspec/Dockerfile):
 
 ```
 $ docker build -t ruby:rspec .

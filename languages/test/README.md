@@ -17,6 +17,18 @@ Para executar os testes no [jest](https://jestjs.io) utilize o seguinte comando:
 $ jest pasta/arquivo.test.js
 ```
 
+Outro opção de execução é via docker por meio deste [Dockerfile](js/docker-js-jest/Dockerfile) que pode ser utilizado por esta imagem:
+
+```
+$ docker build -t node:jest .
+```
+
+Em seguida, execute o comando `jest` no container docker especificando os testes:
+
+```
+$ docker run -it --rm -w /app -v "$PWD":/app/src node:jest jest pasta/arquivo.test.js
+```
+
 ## PHP
 
 ---
@@ -45,6 +57,12 @@ Para executar os testes no [unittest](https://docs.python.org/2.7/library/unitte
 
 ```
 $ python pasta/arquivo.test.py
+```
+
+Outro opção de execução é via docker por meio da imagem [python/alpine](https://hub.docker.com/_/python). Então, para executar o comando `unittest` no container docker especificando os testes:
+
+```
+$ docker run -it --rm -w /app -v "$PWD":/app python:alpine python pasta/arquivo.test.py
 ```
 
 ## Ruby

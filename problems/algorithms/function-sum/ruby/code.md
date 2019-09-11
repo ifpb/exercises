@@ -6,7 +6,7 @@
 {% include_relative code/src/sum.rb %}
 ```
 
-`{{ page.path | replace:'code.md','' }}code/src/sum.print.rb`:
+`{{ page.path | replace:'code.md','' }}code/print/sum.print.rb`:
 
 ```rb
 {% include_relative code/print/sum.print.rb %}

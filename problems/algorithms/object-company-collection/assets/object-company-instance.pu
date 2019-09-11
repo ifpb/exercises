@@ -1,0 +1,40 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome true
+skinparam packageStyle rectangle
+hide circle
+
+package "Object" {
+  class Company {
+    name: String
+    founded: Number
+    industry: String
+    kind: String
+  }
+}
+
+package "Instances" {
+  object amazon
+  amazon : name = "Amazon"
+  amazon : founded = 1994
+  amazon : industry = "E-Commerce, Cloud"
+  amazon : kind = "Internet company"
+
+  object alphabet
+  alphabet : name = "Alphabet Inc."
+  alphabet : founded = 2015
+  alphabet : industry = "Search, Cloud, Advertising"
+  alphabet : kind = "Internet company"
+
+  object facebook
+  facebook : name = "Facebook"
+  facebook : founded = 2004
+  facebook : industry = "Social"
+  facebook : kind = "Internet company"
+}
+
+Company .. amazon
+Company .. alphabet
+Company .. facebook
+
+@enduml

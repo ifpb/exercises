@@ -16,7 +16,7 @@ class Item {
     product: Product
     total(): Number
 }
-Order -- Item
+Order *-- Item
 
 class Product {
     id: Number

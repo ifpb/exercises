@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="314px" preserveAspectRatio="none" style="width:357px;height:314px;" version="1.1" viewBox="0 0 357 314" width="357px" zoomAndPan="magnify"><defs><filter height="300%" id="f164vj6myzaphz" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class Company--><rect fill="#F8F8F8" filter="url(#f164vj6myzaphz)" height="117.8633" id="Company" style="stroke: #383838; stroke-width: 1.5;" width="340" x="6" y="186"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="54" x="149" y="202.6016">Company</text><line style="stroke: #383838; stroke-width: 1.5;" x1="7" x2="345" y1="210.1328" y2="210.1328"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="67" x="12" y="224.7676">name: String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="12" y="237.7227">founded: Number</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="83" x="12" y="250.6777">industry: String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="61" x="12" y="263.6328">kind: String</text><line style="stroke: #383838; stroke-width: 1.5;" x1="7" x2="345" y1="269.9531" y2="269.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="328" x="12" y="284.5879">constructor(name: String, founded: Number, industry: String)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="12" y="297.543">show(): String</text><!--class Companies--><rect fill="#F8F8F8" filter="url(#f164vj6myzaphz)" height="117.8633" id="Companies" style="stroke: #383838; stroke-width: 1.5;" width="276" x="38" y="8"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="64" x="144" y="24.6016">Companies</text><line style="stroke: #383838; stroke-width: 1.5;" x1="39" x2="313" y1="32.1328" y2="32.1328"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="163" x="44" y="46.7676">companies: Array&lt;Company&gt;</text><line style="stroke: #383838; stroke-width: 1.5;" x1="39" x2="313" y1="53.0879" y2="53.0879"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72" x="44" y="67.7227">constructor()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="182" x="44" y="80.6777">add(company: Company): Boolean</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="257" x="44" y="93.6328">foundedAfter(year: Number): Array&lt;Company&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="264" x="44" y="106.5879">foundedBefore(year: Number): Array&lt;Company&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="44" y="119.543">show(): String</text><!--link Companies to Company--><path d="M176,126.2714 C176,145.4868 176,166.7909 176,185.9874 " fill="none" id="Companies-Company" style="stroke: #383838; stroke-width: 1.0;"/><!--
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome true
+hide circle
+
+class Company {
+  name: String
+  founded: Number
+  industry: String
+  kind: String
+  constructor(name: String, founded: Number, industry: String)
+  show(): String
+}
+
+class Companies {
+  companies: Array<Company>
+  constructor()
+  add(company: Company): Boolean
+  foundedAfter(year: Number): Array<Company>
+  foundedBefore(year: Number): Array<Company>
+  show(): String
+}
+
+Companies - - Company
+@enduml
+
+PlantUML version 1.2017.20(Mon Dec 11 13:57:05 BRT 2017)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_101-b13
+Operating System: Mac OS X
+OS Version: 10.13.4
+Default Encoding: US-ASCII
+Language: en
+Country: US
+--></g></svg>

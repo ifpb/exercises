@@ -1,0 +1,12 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome true
+hide circle
+
+class Company {
+  name: String
+  founded: Number
+  industry: String
+  kind: String
+}
+@enduml

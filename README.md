@@ -5,5 +5,5 @@
   - [Execução de teste](languages/test/)
 - Desafios
   - [Algoritmos](problems/algorithms/)
-  - [Web (Frontend)](problems/back-end/)
-  - [Web (Backend)](problems/front-end/)
+  - [Web (Frontend)](problems/front-end/)
+  - [Web (Backend)](problems/back-end/)

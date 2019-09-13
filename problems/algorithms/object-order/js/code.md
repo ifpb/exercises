@@ -1,9 +1,18 @@
-# [Order](code.zip)
+### Products with Quantity
 
-`{{ page.path | replace:'code.md','' }}code/order.print.mjs`:
+`{{ page.path | replace:'code.md','' }}code/products-qtd.mjs`:
 
 ```js
-{% include_relative code/order.print.mjs %}
+{% include_relative code/products-qtd.js %}
 ```
 
-> Response: [order.js](response/order.js), [product.js](response/product.js)
+`{{ page.path | replace:'code.md','' }}code/products-qtd.print.mjs`:
+
+```js
+{% include_relative code/products-qtd.print.mjs %}
+```
+
+> [Response](response/products-qtd.js)
+
+> Tips:<br>
+> Use `map`, `filter` or `reduce`

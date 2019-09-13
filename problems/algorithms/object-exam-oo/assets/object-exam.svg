@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="214px" preserveAspectRatio="none" style="width:206px;height:214px;" version="1.1" viewBox="0 0 206 214" width="206px" zoomAndPan="magnify"><defs><filter height="300%" id="fhg9tt0oqph2t" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class Exam--><rect fill="#F8F8F8" filter="url(#fhg9tt0oqph2t)" height="195.5938" id="Exam" style="stroke: #383838; stroke-width: 1.5;" width="189" x="6" y="8"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="32" x="84.5" y="24.6016">Exam</text><line style="stroke: #383838; stroke-width: 1.5;" x1="7" x2="194" y1="32.1328" y2="32.1328"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="109" x="12" y="46.7676">-weight: Array&lt;int&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="130" x="12" y="59.7227">-answer: Array&lt;string&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="174" x="12" y="72.6777">-answers: Array&lt;string, string&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="121" x="12" y="85.6328">-grades: Array&lt;float&gt;</text><line style="stroke: #383838; stroke-width: 1.5;" x1="7" x2="194" y1="91.9531" y2="91.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="160" x="12" y="106.5879">+__construct(answer, weight)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="158" x="12" y="119.543">+add(student, answer): voind</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="119" x="12" y="132.498">+grade(student): float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="12" y="145.4531">+avg(): float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="174" x="12" y="158.4082">+min([count: float]): Array&lt;int&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="177" x="12" y="171.3633">+max([count: float]): Array&lt;int&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="153" x="12" y="184.3184">+lt([limit: float]): Array&lt;int&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="157" x="12" y="197.2734">+gt([limit: float]): Array&lt;int&gt;</text><!--
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome true
+hide circle
+
+class Exam {
+  -weight: Array<int>
+  -answer: Array<string>
+  -answers: Array<string, string>
+  -grades: Array<float>
+  +__construct(answer, weight)
+  +add(student, answer): voind
+  +grade(student): float
+  +avg(): float
+  +min([count: float]): Array<int>
+  +max([count: float]): Array<int>
+  +lt([limit: float]): Array<int>
+  +gt([limit: float]): Array<int>
+}
+@enduml
+
+PlantUML version 1.2019.03(Sun Mar 10 08:04:44 BRT 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_101-b13
+Operating System: Mac OS X
+OS Version: 10.14.4
+Default Encoding: US-ASCII
+Language: en
+Country: US
+--></g></svg>

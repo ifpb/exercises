@@ -1,0 +1,25 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome true
+hide circle
+
+class Character {
+  -comic: string
+  -hero: string
+  -name: string
+  -height: float
+  -weight: float
+  +__construct(comic: string, hero: string, name: string, height: float, weight: float)
+  +__get(name: string): mixed
+  +__set($name: string, $value: mixed): void
+}
+
+class Comic {
+  {static} -$characters: Array<Character>
+  {static} +add(character: Character): void
+  {static} +names($comic: string): Array<String>
+  {static} +weights($comic: string): float
+}
+
+Comic o-- Character
+@enduml

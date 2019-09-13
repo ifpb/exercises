@@ -1,4 +1,4 @@
-import { total } from './products.js';
+import { total } from './products.js.js';
 
 const produtos = [
   {

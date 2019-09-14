@@ -1,5 +1,5 @@
-class Factorial
-  def Factorial.compute(number)
+
+  def factorial(number)
     sum = number
     i = number-1
     if number == 1
@@ -12,4 +12,3 @@ class Factorial
     end 
     return sum
   end
-end

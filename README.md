@@ -46,6 +46,7 @@
 | [Geração do CPF](problems/algorithms/string-generating-cpf/)                    | `string-generating-cpf`        | [code](https://github.com/ifpb/exercises/tree/master/problems/algorithms/string-generating-cpf/js/)        |                                                                                                            |                                                                                                |                                                                                              |
 | [Conversor de MD para Table](problems/algorithms/string-table-convert-md2html/) | `string-table-convert-md2html` | [code](https://github.com/ifpb/exercises/tree/master/problems/algorithms/string-table-convert-md2html/js/) |                                                                                                            |                                                                                                |                                                                                              |
 
+
 <!--
 array-identity-matrix
 
@@ -61,7 +62,10 @@ object-cep
 object-comics
 object-company
 object-exam
+-->
+| [Objeto (Exam-oo)](problems/algorithms/object-exam-oo/) | `object-exam-oo` | [code](https://github.com/ifpb/exercises/tree/master/problems/algorithms/object-exam-oo/js/) |                                                                                                            |                                                                                                |  [code](https://github.com/ifpb/exercises/tree/master/problems/algorithms/object-exam-oo/ruby/)                                                                                            |
 
+<!--
 object-exam-oo
 object-order
 object-order-category

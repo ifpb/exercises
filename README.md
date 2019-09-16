@@ -61,9 +61,7 @@ object-cep
 object-comics
 object-company
 object-exam
--->
-| [Objeto (Exam-oo)](problems/algorithms/object-exam-oo/) | `object-exam-oo` | [code](https://github.com/ifpb/exercises/tree/master/problems/algorithms/object-exam-oo/js/) |                                                                                                            |                                                                                                |  [code](https://github.com/ifpb/exercises/tree/master/problems/algorithms/object-exam-oo/ruby/)                                                                                            |
-<!--
+
 object-exam-oo
 object-order
 object-order-category

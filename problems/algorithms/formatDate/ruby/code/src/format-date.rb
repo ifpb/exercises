@@ -1,5 +1,5 @@
 class FormatDate
-    def FormatDate.toString(date)
+    def FormatDate.to_string(date)
         # To Do
     end
 

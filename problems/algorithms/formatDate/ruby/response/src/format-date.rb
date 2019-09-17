@@ -2,7 +2,7 @@ class FormatDate
     @@months = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", 
         "setembro", "outubro", "novembro", "dezembro"]
 
-    def FormatDate.toString(date)
+    def FormatDate.to_string(date)
         unless date.include?('/')
             return "Invalid data input"
         end

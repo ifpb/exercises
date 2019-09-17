@@ -17,19 +17,11 @@ In sit amet pellentesque turpis. Aenean porta ornare dignissim. Fusce consectetu
     .slice(0, number)
     .join(' ');
   end
-
-
-  # result = StringLoremIpsumGenerator.compute(8)
-  # puts result
-
+  
   def StringLoremIpsumGenerator.paragraph(number) 
     return @@lorem
       .split("\n")
       .slice(0, number)
       .join("\n");
     end
-
 end
-
-# result = StringLoremIpsumGenerator.paragraph(2)
-# puts result

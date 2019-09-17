@@ -1,7 +1,6 @@
 <?php
 
 $name = 'Alice';
-// TODO 
 
-// Output:
-//  Hello Alice
+// TODO Output:
+//  Hello, Alice!

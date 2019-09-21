@@ -1,0 +1,25 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome true
+hide circle
+
+class Company {
+  name: String
+  founded: Number
+  industry: String
+  kind: String
+  constructor(name: String, founded: Number, industry: String)
+  show(): String
+}
+
+class Companies {
+  companies: Array<Company>
+  constructor()
+  add(company: Company): Boolean
+  foundedAfter(year: Number): Array<Company>
+  foundedBefore(year: Number): Array<Company>
+  show(): String
+}
+
+Companies -- Company
+@enduml

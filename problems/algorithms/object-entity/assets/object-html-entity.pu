@@ -1,0 +1,13 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome true
+hide circle
+
+class Entity {
+  char: String
+  entity: String
+  decimal: String
+  hexa: String
+  description: String
+}
+@enduml

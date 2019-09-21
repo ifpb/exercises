@@ -14,4 +14,4 @@ produtos = [
 
 # counting total cart 
 puts Product.total(produtos)
-puts 1650.0
+puts 2

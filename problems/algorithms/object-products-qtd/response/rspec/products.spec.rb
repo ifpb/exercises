@@ -15,7 +15,7 @@ describe Product do
   describe ".total" do
     context "counting total cart " do
       it "return 1650.0" do
-        expect(Product.total(produtos)).to eql(1650.0)
+        expect(Product.total(produtos)).to eql(2)
       end
     end
   end

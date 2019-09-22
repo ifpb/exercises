@@ -1,4 +1,4 @@
-require_relative "../src/object-company"
+require_relative "../src/object_company"
 
 companies = [
   {

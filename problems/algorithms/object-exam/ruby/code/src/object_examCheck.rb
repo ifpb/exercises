@@ -1,0 +1,3 @@
+class ExamCheck
+  #TODO
+end

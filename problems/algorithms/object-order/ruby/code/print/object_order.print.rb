@@ -1,3 +1,5 @@
+require_relative "../src/object_order"
+
 const produtos = [
   {
     nome: 'Bicicleta',

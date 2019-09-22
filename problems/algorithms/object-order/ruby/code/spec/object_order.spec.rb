@@ -1,4 +1,4 @@
-require_relative "../src/object-order"
+require_relative "../src/object_order"
 require 'json'
 produtos = [
   {

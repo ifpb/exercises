@@ -1,4 +1,4 @@
-require_relative "../src/object-comics"
+require_relative "../src/object_comics"
 characters = [
   {
     comics: 'Marvel',

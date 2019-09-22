@@ -44,5 +44,16 @@ characters = [
     realName: 'Bruce Wayne',
     weight: 95,
   },
-  // TODO bad guys, villain
-];
+]
+
+puts Comics.namesByComics(characters, 'DC')
+puts "['batman', 'Superman']"
+
+puts Comics.topWeightsByName(characters, 'Marvel')
+puts "['Hulk', 'Spider-Man']"
+
+puts Comics.topWeights(characters)
+puts "['Hulk', 'Superman', 'batman', 'Spider-Man']"
+
+puts Comics.avgWeights(characters, 'DC')
+puts 101

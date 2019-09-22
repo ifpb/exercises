@@ -54,4 +54,28 @@ describe Comics do
       end
     end
   end
+
+    describe ".topWeightsByName" do
+      context "Sorting top weight by Marvel Comics" do
+        it "return ['Hulk', 'Spider-Man']" do
+          expect(Comics.topWeightsByName(characters, 'Marvel')).to eql(['Hulk', 'Spider-Man'])
+        end
+      end
+    end
+
+    describe ".topWeights" do
+      context "Sorting top weight by Marvel Comics" do
+        it "return ['Hulk', 'Superman', 'batman', 'Spider-Man']" do
+          expect(Comics.topWeights(characters)).to eql(['Hulk', 'Superman', 'batman', 'Spider-Man'])
+        end
+      end
+    end
+
+    describe ".avgWeights" do
+      context "Weighting by DC Comics" do
+        it "return 101" do
+          expect(Comics.avgWeights(characters, 'DC')).to eql(101)
+        end
+      end
+    end
 end

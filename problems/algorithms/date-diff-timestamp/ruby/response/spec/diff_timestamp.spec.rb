@@ -1,4 +1,4 @@
-require_relative "../src/diff-timestamp"
+require_relative "../src/diff_timestamp"
 
 describe DateDiff do
     describe ".compute" do

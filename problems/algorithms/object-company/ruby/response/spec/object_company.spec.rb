@@ -31,4 +31,11 @@ describe Company do
       end
     end
   end
+  describe ".formatData" do
+    context "Adding a formatter to name and year of foundation" do
+      it "return all companies name and your foundation age" do
+        expect(Company.formatData(companies)).to eql(["Amazon.........1994", "Alphabet Inc...2015", "Facebook.......2004"])
+      end
+    end
+  end
 end

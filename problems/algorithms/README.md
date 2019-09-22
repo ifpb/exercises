@@ -65,6 +65,7 @@
 | [Sequẽncia Espelho](mirror-sequence/)     | `mirror-sequence`  |                                                                                            |                                                                                             |   |                                                                                                            |                                                                                                            | [code](https://github.com/marlonfernando16/exercises/tree/master/problems/algorithms/mirror-sequence/ruby/)                       
 
 
+| [Par de Meias](sock-merchant/)     | `sock-merchant`  |                                                                                            |                                                                                             |   |                                                                                                            |                                                                                                            | [code](https://github.com/marlonfernando16/exercises/tree/master/problems/algorithms/sock-merchant/ruby/)
 <!--
 Array
 array-identity-matrix

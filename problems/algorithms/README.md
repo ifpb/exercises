@@ -66,8 +66,6 @@
 
 | [Par de Meias](sock-merchant/)     | `sock-merchant`  |                                                                                            |                                                                                             |   |                                                                                                            |                                                                                                            | [code](https://github.com/marlonfernando16/exercises/tree/master/problems/algorithms/sock-merchant/ruby/)                                                                                                         |
 | [Par de Meis](string-lorem-ipsum-generator/)     | `string-lorem-ipsum-generator`  |                                                                                            |                                                                                             | [code](https://github.com/ifpb/exercises/tree/master/problems/algorithms/string-lorem-ipsum-generator/js/)  |                                                                                                            |                                                                                                            | [code](https://github.com/marlonfernando16/exercises/tree/master/problems/algorithms/string-lorem-ipsum-generator/ruby)                                                                                                         |
-
-
 <!--
 Array
 array-identity-matrix

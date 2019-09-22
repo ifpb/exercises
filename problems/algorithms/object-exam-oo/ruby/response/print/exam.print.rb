@@ -24,24 +24,24 @@ p 8
 # calculating exam values
 
 examStats = ExamStats.new([
-    { student: 'Fulano', grade: 10 },
-    { student: 'Sicrano', grade: 5 },
-    { student: 'Beltrano', grade: 7 },
-  ])
-  
-  p examStats.avg()
-  p 7.333333333333333
-  
-  p examStats.min()
-  p [5]
-  p examStats.min(2)
-  p [5, 7]
-  
-  p examStats.max()
-  p [10]
-  
-  p examStats.lt(6)
-  p [5]
-  
-  p examStats.gt(6)
-  p [7, 10]
+  { student: 'Fulano', grade: 10 },
+  { student: 'Sicrano', grade: 5 },
+  { student: 'Beltrano', grade: 7 },
+])
+
+p examStats.avg()
+p 7.333333333333333
+
+p examStats.min()
+p [5]
+p examStats.min(2)
+p [5, 7]
+
+p examStats.max()
+p [10]
+
+p examStats.lt(6)
+p [5]
+
+p examStats.gt(6)
+p [7, 10]

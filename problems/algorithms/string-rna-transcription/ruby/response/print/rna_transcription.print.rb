@@ -3,22 +3,22 @@ require_relative "../src/rna_transcription"
 # RNA
 
 # transcribing cytosine to guanine
-p toRna('C');
+p DNA.to_rna('C');
 p 'G';
 
 # transcribing guanine to cytosine
-p toRna('G');
+p DNA.to_rna('G');
 p 'C';
 
 # transcribing adenine to uracil
-p toRna('A');
+p DNA.to_rna('A');
 p 'U';
 
 # transcribing thymine to adenine
-p toRna('T');
+p DNA.to_rna('T');
 p 'A';
 
 # transcribing all dna nucleotides to their rna complements
-p toRna('ACGTGGTCTTAA');
+p DNA.to_rna('ACGTGGTCTTAA');
 p 'UGCACCAGAAUU';
  

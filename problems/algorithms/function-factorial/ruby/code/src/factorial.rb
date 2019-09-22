@@ -10,5 +10,5 @@
       i = i-1
       break if i <= 1
     end 
-    return sum
+    sum
   end

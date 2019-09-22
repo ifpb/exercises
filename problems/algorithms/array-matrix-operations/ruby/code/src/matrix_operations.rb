@@ -1,8 +1,10 @@
-def addingMatrix(a, b)
-  #TODO
-end
+class Matrix
+  def add(a, b)
+    #TODO
+  end
 
-def multiplyingMatrix(a, b)
-  #TODO
+  def multiply(a, b)
+    #TODO
+  end
 end
 

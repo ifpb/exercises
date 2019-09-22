@@ -1,5 +1,5 @@
-require_relative "../src/object-examCheck"
-require_relative "../src/object-examStats"
+require_relative "../src/object_examCheck"
+require_relative "../src/object_examStats"
 
 describe ExamCheck do
   describe ".grade" do

@@ -8,7 +8,7 @@ O objetivo desta atividade consiste em abordar os seguintes tópicos:
 - Reconstruir uma página Web Existente
 - Criar um hyperlink
 - Criar uma lista não ordenada
-- Criar uma lista encandeada
+- Criar uma lista encadeada
 - Criar seções com linhas horizontais
   
 ## Descrição

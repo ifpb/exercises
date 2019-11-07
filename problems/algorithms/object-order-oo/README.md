@@ -1,4 +1,4 @@
-# Compras
+# Compras (OO)
 
 Crie um sistema de compras baseado neste diagrama:
 

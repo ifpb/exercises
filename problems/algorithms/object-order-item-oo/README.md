@@ -1,4 +1,4 @@
-# Compras por Categorias
+# Compras por Categorias (OO)
 
 Crie um sistema de compras baseado neste diagrama:
 

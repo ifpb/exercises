@@ -1,4 +1,4 @@
-# Compras
+# Compras por item
 
 Crie um sistema de compras baseado nestes itens:
 

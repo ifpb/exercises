@@ -1,4 +1,4 @@
-# Exame OO
+# Exame (OO)
 
 Considere que um professor está construindo um sistema de avaliações no qual as questões possuem peso, então dado que foi criado uma avaliação com estas questões:
 

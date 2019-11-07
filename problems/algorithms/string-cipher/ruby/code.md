@@ -1,4 +1,4 @@
-# [TriangleChecker](code.zip)
+# [Cipher](code.zip)
 
 `{{ page.path | replace:'code.md','' }}code/src/cipher.rb`:
 

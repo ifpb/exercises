@@ -1,4 +1,4 @@
-# Fibonacci
+# Fibonacci (Número)
 
 Na matemática, a série de Fibonacci é uma sucessão de números inteiros conforme esta sequência:
 

@@ -8,10 +8,10 @@
 {% include_relative code/src/object_brazilian_championship.rb %}
 ```
 
-`{{ page.path | replace:'code.md','' }}code/src/object_brazilian_championship.print.rb`:
+`{{ page.path | replace:'code.md','' }}code/print/object_brazilian_championship.print.rb`:
 
 ```rb
-{% include_relative code/src/object_brazilian_championship.print.rb %}
+{% include_relative code/print/object_brazilian_championship.print.rb %}
 ```
 
 > [Response](response/src/object_brazilian_championship.rb)

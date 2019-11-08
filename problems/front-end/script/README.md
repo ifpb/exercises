@@ -42,4 +42,5 @@
 [Weather API](weather/)
 [Calculator IP](calculator-ip/)
 [Cron Generator](cron-generator/)
+[Flag game](flag-game/)
 -->

@@ -1,9 +1,8 @@
 # Exercícios
 
 - Linguagens de programação
-  - [Instalação](languages/installation/)
   - [Execução de teste](languages/test/)
 - Desafios
   - [Algoritmos](problems/algorithms/)
-  - [Web (Frontend)](problems/front-end/)
-  - [Web (Backend)](problems/back-end/)
+  - [Web (Front-end)](problems/front-end/)
+  - [Web (Back-end)](problems/back-end/)

@@ -16,7 +16,7 @@
 | 12  | [Tabela IP (Read)](iptable-read/)                     | `iptable-read`            |
 | 13  | [Tabela IP (Create)](iptable-create/)                 | `iptable-create`          |
 | 14  | [Tabela IP (Create Uniq)](iptable-create-uniq/)       | `iptable-create-uniq`     |
-| 15  | [Tabela IP (CRUD)](iptable-create-crud/)              | `iptable-create-crud`     |
+| 15  | [Tabela IP (CRUD)](iptable-crud/)                     | `iptable-crud`            |
 | 16  | [Gerador de Lorem ipsum](lorem-ipsum-generator/)      | `lorem-ipsum-generator`   |
 | 17  | [HTML Entities](html-entities/)                       | `html-entities`           |
 | 18  | [Calculadora](calculator/)                            | `calculator`              |

@@ -7,5 +7,6 @@
   - Web
     - [Front-end](problems/web/front-end/)
     - [Back-end](problems/web/back-end/)
+    - [Apps](problems/web/app/)
   - Database
     - MySQL

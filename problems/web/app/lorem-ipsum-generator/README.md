@@ -1,6 +1,7 @@
 # Lorem ipsum generator
 
 ## Description
+
 ---
 
 ```
@@ -26,26 +27,8 @@ Viverra nibh cras pulvinar mattis nunc sed blandit. Pellentesque elit eget gravi
 Id interdum velit laoreet id donec ultrices tincidunt arcu non. Quis risus sed vulputate odio ut enim blandit volutpat. Feugiat pretium nibh ipsum consequat. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat. Aliquet nec ullamcorper sit amet risus nullam eget felis eget. Tincidunt ornare massa eget egestas purus viverra accumsan in. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. Id cursus metus aliquam eleifend mi. Sollicitudin nibh sit amet commodo nulla facilisi. Non consectetur a erat nam at lectus. Adipiscing at in tellus integer. Vitae nunc sed velit dignissim sodales ut. Risus sed vulputate odio ut. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros.
 ```
 
-## Tips
----
-
-[Element.innerHTML](https://ifpb.github.io/javascript-guide/w3c/dom/element.html#elementinnerhtml):
-```js
-const generateBtn = document.querySelector('#generate')
-const cardBody = document.querySelector('.card-body')
-
-generateBtn.addEventListener('click', function(event) {
-  event.preventDefault()
-  cardBody.innerHTML = loremGenerator(quantity.value, type.value)
-  this.blur()
-})
-```
-
 ## Interface
----
 
-Code: [code.zip](code.zip)
+---
 
 ![](assets/layout.gif)
-
-> [Response alternative](code-response/)

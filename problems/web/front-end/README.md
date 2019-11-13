@@ -2,4 +2,3 @@
 
 - [Estrutura](structure/)
 - [Estilo](style/)
-- [Script](script/)

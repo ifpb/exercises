@@ -1,4 +1,4 @@
-const salary = 3500;
+const salary = 5000;
 let tax;
 
 switch (true) {
@@ -11,7 +11,7 @@ switch (true) {
   case salary < 3751.06:
     tax = 0.15 * salary - 354.8;
     break;
-  case salary < 4664.68:
+  case salary < 4664.69:
     tax = 0.225 * salary - 636.13;
     break;
   default:

@@ -2,7 +2,7 @@
 
 As linguagens de programação geralmente possui um tipo para tratar coleção de valores em uma única variável, em algumas vezes, nomeamos este tipo como vetor.
 
-Quando obtemos um vetor é possível aplicar um conjunto de operações sobre esse valores, por exemplo, considerando um vetor com os valores `(1, 2, 3)` | `4`as operações de soma (`sum`), soma de números ímpares (`sumOdds`) e produtório (`product`) seria respectivamente `6` e `6`.
+Quando obtemos um vetor é possível aplicar um conjunto de operações sobre esse valores, por exemplo, considerando um vetor com os valores `(1, 2, 3)` \| `4`as operações de soma (`sum`), soma de números ímpares (`sumOdds`) e produtório (`product`) seria respectivamente `6` e `6`.
 
 Para analisar mais exemplos veja a _Tabela 1_.
 

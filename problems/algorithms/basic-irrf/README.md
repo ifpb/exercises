@@ -22,16 +22,16 @@ tax = salary * taxRate - deduction
 
 <!-- tax = (salary - dependents - INSS) x taxRate - deduction -->
 
-Então, se o salário for de R$ 3.000,00, o imposto será de R$ 38,87. Para analisar mais exemplos veja a _Tabela 2_.
+Então, se o salário for de R$ 3.000,00, o imposto será de R$ 95.19. Para analisar mais exemplos veja a _Tabela 2_.
 
 _Tabela 2:_
 
 | Entrada (`salary`) | Saída (`tax`) |
 | ------------------ | ------------- |
-| `3000`             | `38,87`       |
-| `3500`             | `170.2`       |
-| `1000`             | `0`           |
-| `2000`             | `7,2`         |
+| `3000`             | `95,20`       |
+| `3500`             | `170,20`      |
+| `1000`             | `0,00`        |
+| `2000`             | `7,20`        |
 | `5000`             | `505,64`      |
 
 Fonte: [Simulador IRRF](http://www.receita.fazenda.gov.br/aplicacoes/atrjo/simulador/simulador.asp?tipoSimulador=M) e [sitecontabil](https://www.sitecontabil.com.br/noticias/artigo.php?id=2272)

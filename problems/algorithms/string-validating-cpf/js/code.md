@@ -38,16 +38,16 @@ Se o `Resto` for igual ao segundo dígito verificador, a segunda parte da valida
 
 **Code**
 
-`{{ page.path | replace:'code.md','' }}code/validating-cpf.mjs`:
+`{{ page.path | replace:'code.md','' }}code/validating-cpf.js`:
 
 ```js
 {% include_relative code/validating-cpf.js %}
 ```
 
-`{{ page.path | replace:'code.md','' }}code/validating-cpf.print.mjs`:
+`{{ page.path | replace:'code.md','' }}code/validating-cpf.print.js`:
 
 ```js
-{% include_relative code/validating-cpf.print.mjs %}
+{% include_relative code/validating-cpf.print.js %}
 ```
 
 > [Response](response/validating-cpf.js)

@@ -1,10 +1,10 @@
 # BMI
 
-## Tips
+## Dicas
 
 ---
 
-## Code
+## Código
 
 ---
 

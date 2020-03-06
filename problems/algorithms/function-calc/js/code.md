@@ -1,15 +1,15 @@
 # [Calc](code.zip)
 
-`{{ page.path | replace:'code.md','' }}code/calc.mjs`:
+`{{ page.path | replace:'code.md','' }}code/calc.js`:
 
 ```js
 {% include_relative code/calc.js %}
 ```
 
-`{{ page.path | replace:'code.md','' }}code/calc.print.mjs`:
+`{{ page.path | replace:'code.md','' }}code/calc.print.js`:
 
 ```js
-{% include_relative code/calc.print.mjs %}
+{% include_relative code/calc.print.js %}
 ```
 
 > [Response](response/calc.js)

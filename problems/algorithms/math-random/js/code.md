@@ -8,16 +8,16 @@ Math.random();
 ```
 
 **Code**
-`{{ page.path | replace:'code.md','' }}code/random.mjs`:
+`{{ page.path | replace:'code.md','' }}code/random.js`:
 
 ```js
 {% include_relative code/random.js %}
 ```
 
-`{{ page.path | replace:'code.md','' }}code/random.print.mjs`:
+`{{ page.path | replace:'code.md','' }}code/random.print.js`:
 
 ```js
-{% include_relative code/random.print.mjs %}
+{% include_relative code/random.print.js %}
 ```
 
 > [Response](response/random.js)

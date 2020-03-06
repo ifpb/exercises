@@ -1,6 +1,6 @@
-# BMI
+# Índice de Massa Corporal (IMC)
 
-## Tips
+## Dicas
 
 ---
 
@@ -43,10 +43,11 @@ function calculadoraDeIMC() {
 }
 ```
 
-## Code
+## Código
 
 ---
 
+- [code](code)
 - [code.zip](code.zip)
-- [response.zip](response.zip)
 - [response](response/)
+- [response.zip](response.zip)

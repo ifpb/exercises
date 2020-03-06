@@ -1,15 +1,15 @@
 # [Comics](code.zip)
 
-`{{ page.path | replace:'code.md','' }}code/comics.mjs`:
+`{{ page.path | replace:'code.md','' }}code/comics.js`:
 
 ```js
 {% include_relative code/comics.js %}
 ```
 
-`{{ page.path | replace:'code.md','' }}code/comics.print.mjs`:
+`{{ page.path | replace:'code.md','' }}code/comics.print.js`:
 
 ```js
-{% include_relative code/comics.print.mjs %}
+{% include_relative code/comics.print.js %}
 ```
 
 > [Response](response/comics.js)

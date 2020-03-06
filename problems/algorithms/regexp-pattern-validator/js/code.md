@@ -5,16 +5,16 @@
 > CPF: [Check Digit](http://ghiorzi.org/DVnew.htm)
 
 **Code**
-`{{ page.path | replace:'code.md','' }}code/pattern-validator.mjs`:
+`{{ page.path | replace:'code.md','' }}code/pattern-validator.js`:
 
 ```js
 {% include_relative code/pattern-validator.js %}
 ```
 
-`{{ page.path | replace:'code.md','' }}code/pattern-validator.print.mjs`:
+`{{ page.path | replace:'code.md','' }}code/pattern-validator.print.js`:
 
 ```js
-{% include_relative code/pattern-validator.print.mjs %}
+{% include_relative code/pattern-validator.print.js %}
 ```
 
 > [Response](response/pattern-validator.js)

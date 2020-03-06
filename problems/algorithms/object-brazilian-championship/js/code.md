@@ -2,16 +2,16 @@
 
 **Code**
 
-`{{ page.path | replace:'code.md','' }}code/brazilian-championship.mjs`:
+`{{ page.path | replace:'code.md','' }}code/brazilian-championship.js`:
 
 ```js
 {% include_relative code/brazilian-championship.js %}
 ```
 
-`{{ page.path | replace:'code.md','' }}code/brazilian-championship.print.mjs`:
+`{{ page.path | replace:'code.md','' }}code/brazilian-championship.print.js`:
 
 ```js
-{% include_relative code/brazilian-championship.print.mjs %}
+{% include_relative code/brazilian-championship.print.js %}
 ```
 
 > [Response](response/brazilian-championship.js)

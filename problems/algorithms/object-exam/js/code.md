@@ -1,13 +1,15 @@
 # [Exam](code.zip)
 
-`{{ page.path | replace:'code.md','' }}code/exam.mjs`:
+`{{ page.path | replace:'code.md','' }}code/exam.js`:
+
 ```js
 {% include_relative code/exam.js %}
 ```
 
-`{{ page.path | replace:'code.md','' }}code/exam.print.mjs`:
+`{{ page.path | replace:'code.md','' }}code/exam.print.js`:
+
 ```js
-{% include_relative code/exam.print.mjs %}
+{% include_relative code/exam.print.js %}
 ```
 
 > [Response](response/exam.js)

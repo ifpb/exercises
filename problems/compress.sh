@@ -6,6 +6,13 @@ for i in $BRACE_EXPANSION; do
     echo ">>> not new";
   else
     echo ">>> $i";
-    zip -r "$i".zip "$i"
+    zip -r -j "$i".zip "$i"
   fi
 done;
+
+# Remove .zip
+# BRACE_EXPANSION=$(echo algorithms/*/*/{code,response})
+# for i in $BRACE_EXPANSION; do
+#   echo ">>> $i";
+#   rm "$i".zip
+# done;

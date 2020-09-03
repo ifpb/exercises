@@ -1,0 +1,10 @@
+@startuml
+title Hello HTTP
+hide footbox
+skinparam monochrome true
+
+Client -> Server: HTTP Request
+note right: GET / HTTP/1.1
+Server -> Client: HTTP Response
+note left: HTTP/1.1 200 OK\n\nHello World
+@enduml

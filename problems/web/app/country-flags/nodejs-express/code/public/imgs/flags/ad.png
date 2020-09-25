@@ -1,0 +1,11 @@
+--2020-09-25 17:39:33--  https://www.countryflags.io/AD/flat/64.png
+Resolving www.countryflags.io (www.countryflags.io)... 2606:4700:e2::ac40:8c02, 172.64.140.2, 172.64.141.2, ...
+Connecting to www.countryflags.io (www.countryflags.io)|2606:4700:e2::ac40:8c02|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1312 (1.3K) [image/png]
+Saving to: ‘64.png’
+
+     0K .                                                     100% 10.6M=0s
+
+2020-09-25 17:39:34 (10.6 MB/s) - ‘64.png’ saved [1312/1312]
+

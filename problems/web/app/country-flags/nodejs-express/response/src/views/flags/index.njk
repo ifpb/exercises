@@ -1,0 +1,29 @@
+{% extends "layout.njk" %}
+
+{% set title = "Flags" %}
+
+{% block style %}
+<style>
+  .flag {
+    min-height: 6.5rem;
+  }
+
+  .flag p {
+    font-size: .8rem;
+    color: #777;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1 class="my-5 text-center">{{ title }}</h1>
+
+<main class="row">
+  {% for flag in flags %}
+  <div class="flag col-2 my-2 text-center">
+    <img src="{{ flag.image }}" alt="{{ flag.name }}">
+    <p>{{ flag.name }}</p>
+  </div>
+  {% endfor %}
+</main>
+{% endblock %}

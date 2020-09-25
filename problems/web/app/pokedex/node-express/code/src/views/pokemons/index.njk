@@ -1,0 +1,17 @@
+{% extends "layout.njk" %}
+
+{% set title = "Pokedex" %}
+
+{% block content %}
+<h1 class="my-5 text-center">{{ title }}</h1>
+
+<section class="card-deck">
+  {% for pokemon in pokemons %}
+  <div class="col-3 mb-3">
+    <div class="card">
+      {# TODO #}
+    </div>
+  </div>
+  {% endfor %}
+</section>
+{% endblock %}

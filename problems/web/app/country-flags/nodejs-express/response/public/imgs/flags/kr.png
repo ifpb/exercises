@@ -1,0 +1,11 @@
+--2020-09-25 17:40:51--  https://www.countryflags.io/KR/flat/64.png
+Resolving www.countryflags.io (www.countryflags.io)... 2606:4700:e2::ac40:8c02, 2606:4700:e2::ac40:8d02, 172.64.140.2, ...
+Connecting to www.countryflags.io (www.countryflags.io)|2606:4700:e2::ac40:8c02|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1896 (1.9K) [image/png]
+Saving to: ‘64.png.122’
+
+     0K .                                                     100% 5.83M=0s
+
+2020-09-25 17:40:51 (5.83 MB/s) - ‘64.png.122’ saved [1896/1896]
+

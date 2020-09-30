@@ -1,1252 +1,1252 @@
 [
   {
     "id": "ad",
-    "image": "/imgs/countries/ad.png",
+    "image": "/imgs/flags/ad.png",
     "name": "Andorra"
   },
   {
     "id": "ae",
-    "image": "/imgs/countries/ae.png",
+    "image": "/imgs/flags/ae.png",
     "name": "United Arab Emirates"
   },
   {
     "id": "af",
-    "image": "/imgs/countries/af.png",
+    "image": "/imgs/flags/af.png",
     "name": "Afghanistan"
   },
   {
     "id": "ag",
-    "image": "/imgs/countries/ag.png",
+    "image": "/imgs/flags/ag.png",
     "name": "Antigua and Barbuda"
   },
   {
     "id": "ai",
-    "image": "/imgs/countries/ai.png",
+    "image": "/imgs/flags/ai.png",
     "name": "Anguilla"
   },
   {
     "id": "al",
-    "image": "/imgs/countries/al.png",
+    "image": "/imgs/flags/al.png",
     "name": "Albania"
   },
   {
     "id": "am",
-    "image": "/imgs/countries/am.png",
+    "image": "/imgs/flags/am.png",
     "name": "Armenia"
   },
   {
     "id": "an",
-    "image": "/imgs/countries/an.png",
+    "image": "/imgs/flags/an.png",
     "name": "Netherlands Antilles"
   },
   {
     "id": "ao",
-    "image": "/imgs/countries/ao.png",
+    "image": "/imgs/flags/ao.png",
     "name": "Angola"
   },
   {
     "id": "aq",
-    "image": "/imgs/countries/aq.png",
+    "image": "/imgs/flags/aq.png",
     "name": "Antarctica"
   },
   {
     "id": "ar",
-    "image": "/imgs/countries/ar.png",
+    "image": "/imgs/flags/ar.png",
     "name": "Argentina"
   },
   {
     "id": "as",
-    "image": "/imgs/countries/as.png",
+    "image": "/imgs/flags/as.png",
     "name": "American Samoa"
   },
   {
     "id": "at",
-    "image": "/imgs/countries/at.png",
+    "image": "/imgs/flags/at.png",
     "name": "Austria"
   },
   {
     "id": "au",
-    "image": "/imgs/countries/au.png",
+    "image": "/imgs/flags/au.png",
     "name": "Australia"
   },
   {
     "id": "aw",
-    "image": "/imgs/countries/aw.png",
+    "image": "/imgs/flags/aw.png",
     "name": "Aruba"
   },
   {
     "id": "ax",
-    "image": "/imgs/countries/ax.png",
+    "image": "/imgs/flags/ax.png",
     "name": "Åland Islands"
   },
   {
     "id": "az",
-    "image": "/imgs/countries/az.png",
+    "image": "/imgs/flags/az.png",
     "name": "Azerbaijan"
   },
   {
     "id": "ba",
-    "image": "/imgs/countries/ba.png",
+    "image": "/imgs/flags/ba.png",
     "name": "Bosnia and Herzegovina"
   },
   {
     "id": "bb",
-    "image": "/imgs/countries/bb.png",
+    "image": "/imgs/flags/bb.png",
     "name": "Barbados"
   },
   {
     "id": "bd",
-    "image": "/imgs/countries/bd.png",
+    "image": "/imgs/flags/bd.png",
     "name": "Bangladesh"
   },
   {
     "id": "be",
-    "image": "/imgs/countries/be.png",
+    "image": "/imgs/flags/be.png",
     "name": "Belgium"
   },
   {
     "id": "bf",
-    "image": "/imgs/countries/bf.png",
+    "image": "/imgs/flags/bf.png",
     "name": "Burkina Faso"
   },
   {
     "id": "bg",
-    "image": "/imgs/countries/bg.png",
+    "image": "/imgs/flags/bg.png",
     "name": "Bulgaria"
   },
   {
     "id": "bh",
-    "image": "/imgs/countries/bh.png",
+    "image": "/imgs/flags/bh.png",
     "name": "Bahrain"
   },
   {
     "id": "bi",
-    "image": "/imgs/countries/bi.png",
+    "image": "/imgs/flags/bi.png",
     "name": "Burundi"
   },
   {
     "id": "bj",
-    "image": "/imgs/countries/bj.png",
+    "image": "/imgs/flags/bj.png",
     "name": "Benin"
   },
   {
     "id": "bl",
-    "image": "/imgs/countries/bl.png",
+    "image": "/imgs/flags/bl.png",
     "name": "Saint Barthélemy"
   },
   {
     "id": "bm",
-    "image": "/imgs/countries/bm.png",
+    "image": "/imgs/flags/bm.png",
     "name": "Bermuda"
   },
   {
     "id": "bn",
-    "image": "/imgs/countries/bn.png",
+    "image": "/imgs/flags/bn.png",
     "name": "Brunei Darussalam"
   },
   {
     "id": "bo",
-    "image": "/imgs/countries/bo.png",
+    "image": "/imgs/flags/bo.png",
     "name": "Bolivia"
   },
   {
     "id": "bq",
-    "image": "/imgs/countries/bq.png",
+    "image": "/imgs/flags/bq.png",
     "name": "Bonaire, Sint Eustatius and Saba"
   },
   {
     "id": "br",
-    "image": "/imgs/countries/br.png",
+    "image": "/imgs/flags/br.png",
     "name": "Brazil"
   },
   {
     "id": "bs",
-    "image": "/imgs/countries/bs.png",
+    "image": "/imgs/flags/bs.png",
     "name": "Bahamas"
   },
   {
     "id": "bt",
-    "image": "/imgs/countries/bt.png",
+    "image": "/imgs/flags/bt.png",
     "name": "Bhutan"
   },
   {
     "id": "bv",
-    "image": "/imgs/countries/bv.png",
+    "image": "/imgs/flags/bv.png",
     "name": "Bouvet Island"
   },
   {
     "id": "bw",
-    "image": "/imgs/countries/bw.png",
+    "image": "/imgs/flags/bw.png",
     "name": "Botswana"
   },
   {
     "id": "by",
-    "image": "/imgs/countries/by.png",
+    "image": "/imgs/flags/by.png",
     "name": "Belarus"
   },
   {
     "id": "bz",
-    "image": "/imgs/countries/bz.png",
+    "image": "/imgs/flags/bz.png",
     "name": "Belize"
   },
   {
     "id": "ca",
-    "image": "/imgs/countries/ca.png",
+    "image": "/imgs/flags/ca.png",
     "name": "Canada"
   },
   {
     "id": "cc",
-    "image": "/imgs/countries/cc.png",
+    "image": "/imgs/flags/cc.png",
     "name": "Cocos (Keeling) Islands"
   },
   {
     "id": "cd",
-    "image": "/imgs/countries/cd.png",
+    "image": "/imgs/flags/cd.png",
     "name": "Congo, The Democratic Republic Of The"
   },
   {
     "id": "cf",
-    "image": "/imgs/countries/cf.png",
+    "image": "/imgs/flags/cf.png",
     "name": "Central African Republic"
   },
   {
     "id": "cg",
-    "image": "/imgs/countries/cg.png",
+    "image": "/imgs/flags/cg.png",
     "name": "Congo"
   },
   {
     "id": "ch",
-    "image": "/imgs/countries/ch.png",
+    "image": "/imgs/flags/ch.png",
     "name": "Switzerland"
   },
   {
     "id": "ci",
-    "image": "/imgs/countries/ci.png",
+    "image": "/imgs/flags/ci.png",
     "name": "Côte D'Ivoire"
   },
   {
     "id": "ck",
-    "image": "/imgs/countries/ck.png",
+    "image": "/imgs/flags/ck.png",
     "name": "Cook Islands"
   },
   {
     "id": "cl",
-    "image": "/imgs/countries/cl.png",
+    "image": "/imgs/flags/cl.png",
     "name": "Chile"
   },
   {
     "id": "cm",
-    "image": "/imgs/countries/cm.png",
+    "image": "/imgs/flags/cm.png",
     "name": "Cameroon"
   },
   {
     "id": "cn",
-    "image": "/imgs/countries/cn.png",
+    "image": "/imgs/flags/cn.png",
     "name": "China"
   },
   {
     "id": "co",
-    "image": "/imgs/countries/co.png",
+    "image": "/imgs/flags/co.png",
     "name": "Colombia"
   },
   {
     "id": "cr",
-    "image": "/imgs/countries/cr.png",
+    "image": "/imgs/flags/cr.png",
     "name": "Costa Rica"
   },
   {
     "id": "cu",
-    "image": "/imgs/countries/cu.png",
+    "image": "/imgs/flags/cu.png",
     "name": "Cuba"
   },
   {
     "id": "cv",
-    "image": "/imgs/countries/cv.png",
+    "image": "/imgs/flags/cv.png",
     "name": "Cape Verde"
   },
   {
     "id": "cw",
-    "image": "/imgs/countries/cw.png",
+    "image": "/imgs/flags/cw.png",
     "name": "Curaçao"
   },
   {
     "id": "cx",
-    "image": "/imgs/countries/cx.png",
+    "image": "/imgs/flags/cx.png",
     "name": "Christmas Island"
   },
   {
     "id": "cy",
-    "image": "/imgs/countries/cy.png",
+    "image": "/imgs/flags/cy.png",
     "name": "Cyprus"
   },
   {
     "id": "cz",
-    "image": "/imgs/countries/cz.png",
+    "image": "/imgs/flags/cz.png",
     "name": "Czech Republic"
   },
   {
     "id": "de",
-    "image": "/imgs/countries/de.png",
+    "image": "/imgs/flags/de.png",
     "name": "Germany"
   },
   {
     "id": "dj",
-    "image": "/imgs/countries/dj.png",
+    "image": "/imgs/flags/dj.png",
     "name": "Djibouti"
   },
   {
     "id": "dk",
-    "image": "/imgs/countries/dk.png",
+    "image": "/imgs/flags/dk.png",
     "name": "Denmark"
   },
   {
     "id": "dm",
-    "image": "/imgs/countries/dm.png",
+    "image": "/imgs/flags/dm.png",
     "name": "Dominica"
   },
   {
     "id": "do",
-    "image": "/imgs/countries/do.png",
+    "image": "/imgs/flags/do.png",
     "name": "Dominican Republic"
   },
   {
     "id": "dz",
-    "image": "/imgs/countries/dz.png",
+    "image": "/imgs/flags/dz.png",
     "name": "Algeria"
   },
   {
     "id": "ec",
-    "image": "/imgs/countries/ec.png",
+    "image": "/imgs/flags/ec.png",
     "name": "Ecuador"
   },
   {
     "id": "ee",
-    "image": "/imgs/countries/ee.png",
+    "image": "/imgs/flags/ee.png",
     "name": "Estonia"
   },
   {
     "id": "eg",
-    "image": "/imgs/countries/eg.png",
+    "image": "/imgs/flags/eg.png",
     "name": "Egypt"
   },
   {
     "id": "eh",
-    "image": "/imgs/countries/eh.png",
+    "image": "/imgs/flags/eh.png",
     "name": "Western Sahara"
   },
   {
     "id": "er",
-    "image": "/imgs/countries/er.png",
+    "image": "/imgs/flags/er.png",
     "name": "Eritrea"
   },
   {
     "id": "es",
-    "image": "/imgs/countries/es.png",
+    "image": "/imgs/flags/es.png",
     "name": "Spain"
   },
   {
     "id": "et",
-    "image": "/imgs/countries/et.png",
+    "image": "/imgs/flags/et.png",
     "name": "Ethiopia"
   },
   {
     "id": "fi",
-    "image": "/imgs/countries/fi.png",
+    "image": "/imgs/flags/fi.png",
     "name": "Finland"
   },
   {
     "id": "fj",
-    "image": "/imgs/countries/fj.png",
+    "image": "/imgs/flags/fj.png",
     "name": "Fiji"
   },
   {
     "id": "fk",
-    "image": "/imgs/countries/fk.png",
+    "image": "/imgs/flags/fk.png",
     "name": "Falkland Islands (Malvinas)"
   },
   {
     "id": "fm",
-    "image": "/imgs/countries/fm.png",
+    "image": "/imgs/flags/fm.png",
     "name": "Micronesia, Federated States Of"
   },
   {
     "id": "fo",
-    "image": "/imgs/countries/fo.png",
+    "image": "/imgs/flags/fo.png",
     "name": "Faroe Islands"
   },
   {
     "id": "fr",
-    "image": "/imgs/countries/fr.png",
+    "image": "/imgs/flags/fr.png",
     "name": "France"
   },
   {
     "id": "ga",
-    "image": "/imgs/countries/ga.png",
+    "image": "/imgs/flags/ga.png",
     "name": "Gabon"
   },
   {
     "id": "gb",
-    "image": "/imgs/countries/gb.png",
+    "image": "/imgs/flags/gb.png",
     "name": "United Kingdom"
   },
   {
     "id": "gd",
-    "image": "/imgs/countries/gd.png",
+    "image": "/imgs/flags/gd.png",
     "name": "Grenada"
   },
   {
     "id": "ge",
-    "image": "/imgs/countries/ge.png",
+    "image": "/imgs/flags/ge.png",
     "name": "Georgia"
   },
   {
     "id": "gf",
-    "image": "/imgs/countries/gf.png",
+    "image": "/imgs/flags/gf.png",
     "name": "French Guiana"
   },
   {
     "id": "gg",
-    "image": "/imgs/countries/gg.png",
+    "image": "/imgs/flags/gg.png",
     "name": "Guernsey"
   },
   {
     "id": "gh",
-    "image": "/imgs/countries/gh.png",
+    "image": "/imgs/flags/gh.png",
     "name": "Ghana"
   },
   {
     "id": "gi",
-    "image": "/imgs/countries/gi.png",
+    "image": "/imgs/flags/gi.png",
     "name": "Gibraltar"
   },
   {
     "id": "gl",
-    "image": "/imgs/countries/gl.png",
+    "image": "/imgs/flags/gl.png",
     "name": "Greenland"
   },
   {
     "id": "gm",
-    "image": "/imgs/countries/gm.png",
+    "image": "/imgs/flags/gm.png",
     "name": "Gambia"
   },
   {
     "id": "gn",
-    "image": "/imgs/countries/gn.png",
+    "image": "/imgs/flags/gn.png",
     "name": "Guinea"
   },
   {
     "id": "gp",
-    "image": "/imgs/countries/gp.png",
+    "image": "/imgs/flags/gp.png",
     "name": "Guadeloupe"
   },
   {
     "id": "gq",
-    "image": "/imgs/countries/gq.png",
+    "image": "/imgs/flags/gq.png",
     "name": "Equatorial Guinea"
   },
   {
     "id": "gr",
-    "image": "/imgs/countries/gr.png",
+    "image": "/imgs/flags/gr.png",
     "name": "Greece"
   },
   {
     "id": "gs",
-    "image": "/imgs/countries/gs.png",
+    "image": "/imgs/flags/gs.png",
     "name": "South Georgia and the South Sandwich Islands"
   },
   {
     "id": "gt",
-    "image": "/imgs/countries/gt.png",
+    "image": "/imgs/flags/gt.png",
     "name": "Guatemala"
   },
   {
     "id": "gu",
-    "image": "/imgs/countries/gu.png",
+    "image": "/imgs/flags/gu.png",
     "name": "Guam"
   },
   {
     "id": "gw",
-    "image": "/imgs/countries/gw.png",
+    "image": "/imgs/flags/gw.png",
     "name": "Guinea-Bissau"
   },
   {
     "id": "gy",
-    "image": "/imgs/countries/gy.png",
+    "image": "/imgs/flags/gy.png",
     "name": "Guyana"
   },
   {
     "id": "hk",
-    "image": "/imgs/countries/hk.png",
+    "image": "/imgs/flags/hk.png",
     "name": "Hong Kong"
   },
   {
     "id": "hm",
-    "image": "/imgs/countries/hm.png",
+    "image": "/imgs/flags/hm.png",
     "name": "Heard and McDonald Islands"
   },
   {
     "id": "hn",
-    "image": "/imgs/countries/hn.png",
+    "image": "/imgs/flags/hn.png",
     "name": "Honduras"
   },
   {
     "id": "hr",
-    "image": "/imgs/countries/hr.png",
+    "image": "/imgs/flags/hr.png",
     "name": "Croatia"
   },
   {
     "id": "ht",
-    "image": "/imgs/countries/ht.png",
+    "image": "/imgs/flags/ht.png",
     "name": "Haiti"
   },
   {
     "id": "hu",
-    "image": "/imgs/countries/hu.png",
+    "image": "/imgs/flags/hu.png",
     "name": "Hungary"
   },
   {
     "id": "id",
-    "image": "/imgs/countries/id.png",
+    "image": "/imgs/flags/id.png",
     "name": "Indonesia"
   },
   {
     "id": "ie",
-    "image": "/imgs/countries/ie.png",
+    "image": "/imgs/flags/ie.png",
     "name": "Ireland"
   },
   {
     "id": "il",
-    "image": "/imgs/countries/il.png",
+    "image": "/imgs/flags/il.png",
     "name": "Israel"
   },
   {
     "id": "im",
-    "image": "/imgs/countries/im.png",
+    "image": "/imgs/flags/im.png",
     "name": "Isle of Man"
   },
   {
     "id": "in",
-    "image": "/imgs/countries/in.png",
+    "image": "/imgs/flags/in.png",
     "name": "India"
   },
   {
     "id": "io",
-    "image": "/imgs/countries/io.png",
+    "image": "/imgs/flags/io.png",
     "name": "British Indian Ocean Territory"
   },
   {
     "id": "iq",
-    "image": "/imgs/countries/iq.png",
+    "image": "/imgs/flags/iq.png",
     "name": "Iraq"
   },
   {
     "id": "ir",
-    "image": "/imgs/countries/ir.png",
+    "image": "/imgs/flags/ir.png",
     "name": "Iran, Islamic Republic Of"
   },
   {
     "id": "is",
-    "image": "/imgs/countries/is.png",
+    "image": "/imgs/flags/is.png",
     "name": "Iceland"
   },
   {
     "id": "it",
-    "image": "/imgs/countries/it.png",
+    "image": "/imgs/flags/it.png",
     "name": "Italy"
   },
   {
     "id": "je",
-    "image": "/imgs/countries/je.png",
+    "image": "/imgs/flags/je.png",
     "name": "Jersey"
   },
   {
     "id": "jm",
-    "image": "/imgs/countries/jm.png",
+    "image": "/imgs/flags/jm.png",
     "name": "Jamaica"
   },
   {
     "id": "jo",
-    "image": "/imgs/countries/jo.png",
+    "image": "/imgs/flags/jo.png",
     "name": "Jordan"
   },
   {
     "id": "jp",
-    "image": "/imgs/countries/jp.png",
+    "image": "/imgs/flags/jp.png",
     "name": "Japan"
   },
   {
     "id": "ke",
-    "image": "/imgs/countries/ke.png",
+    "image": "/imgs/flags/ke.png",
     "name": "Kenya"
   },
   {
     "id": "kg",
-    "image": "/imgs/countries/kg.png",
+    "image": "/imgs/flags/kg.png",
     "name": "Kyrgyzstan"
   },
   {
     "id": "kh",
-    "image": "/imgs/countries/kh.png",
+    "image": "/imgs/flags/kh.png",
     "name": "Cambodia"
   },
   {
     "id": "ki",
-    "image": "/imgs/countries/ki.png",
+    "image": "/imgs/flags/ki.png",
     "name": "Kiribati"
   },
   {
     "id": "km",
-    "image": "/imgs/countries/km.png",
+    "image": "/imgs/flags/km.png",
     "name": "Comoros"
   },
   {
     "id": "kn",
-    "image": "/imgs/countries/kn.png",
+    "image": "/imgs/flags/kn.png",
     "name": "Saint Kitts And Nevis"
   },
   {
     "id": "kp",
-    "image": "/imgs/countries/kp.png",
+    "image": "/imgs/flags/kp.png",
     "name": "Korea, Democratic People's Republic Of"
   },
   {
     "id": "kr",
-    "image": "/imgs/countries/kr.png",
+    "image": "/imgs/flags/kr.png",
     "name": "Korea, Republic of"
   },
   {
     "id": "kw",
-    "image": "/imgs/countries/kw.png",
+    "image": "/imgs/flags/kw.png",
     "name": "Kuwait"
   },
   {
     "id": "ky",
-    "image": "/imgs/countries/ky.png",
+    "image": "/imgs/flags/ky.png",
     "name": "Cayman Islands"
   },
   {
     "id": "kz",
-    "image": "/imgs/countries/kz.png",
+    "image": "/imgs/flags/kz.png",
     "name": "Kazakhstan"
   },
   {
     "id": "la",
-    "image": "/imgs/countries/la.png",
+    "image": "/imgs/flags/la.png",
     "name": "Lao People's Democratic Republic"
   },
   {
     "id": "lb",
-    "image": "/imgs/countries/lb.png",
+    "image": "/imgs/flags/lb.png",
     "name": "Lebanon"
   },
   {
     "id": "lc",
-    "image": "/imgs/countries/lc.png",
+    "image": "/imgs/flags/lc.png",
     "name": "Saint Lucia"
   },
   {
     "id": "li",
-    "image": "/imgs/countries/li.png",
+    "image": "/imgs/flags/li.png",
     "name": "Liechtenstein"
   },
   {
     "id": "lk",
-    "image": "/imgs/countries/lk.png",
+    "image": "/imgs/flags/lk.png",
     "name": "Sri Lanka"
   },
   {
     "id": "lr",
-    "image": "/imgs/countries/lr.png",
+    "image": "/imgs/flags/lr.png",
     "name": "Liberia"
   },
   {
     "id": "ls",
-    "image": "/imgs/countries/ls.png",
+    "image": "/imgs/flags/ls.png",
     "name": "Lesotho"
   },
   {
     "id": "lt",
-    "image": "/imgs/countries/lt.png",
+    "image": "/imgs/flags/lt.png",
     "name": "Lithuania"
   },
   {
     "id": "lu",
-    "image": "/imgs/countries/lu.png",
+    "image": "/imgs/flags/lu.png",
     "name": "Luxembourg"
   },
   {
     "id": "lv",
-    "image": "/imgs/countries/lv.png",
+    "image": "/imgs/flags/lv.png",
     "name": "Latvia"
   },
   {
     "id": "ly",
-    "image": "/imgs/countries/ly.png",
+    "image": "/imgs/flags/ly.png",
     "name": "Libya"
   },
   {
     "id": "ma",
-    "image": "/imgs/countries/ma.png",
+    "image": "/imgs/flags/ma.png",
     "name": "Morocco"
   },
   {
     "id": "mc",
-    "image": "/imgs/countries/mc.png",
+    "image": "/imgs/flags/mc.png",
     "name": "Monaco"
   },
   {
     "id": "md",
-    "image": "/imgs/countries/md.png",
+    "image": "/imgs/flags/md.png",
     "name": "Moldova, Republic of"
   },
   {
     "id": "me",
-    "image": "/imgs/countries/me.png",
+    "image": "/imgs/flags/me.png",
     "name": "Montenegro"
   },
   {
     "id": "mf",
-    "image": "/imgs/countries/mf.png",
+    "image": "/imgs/flags/mf.png",
     "name": "Saint Martin"
   },
   {
     "id": "mg",
-    "image": "/imgs/countries/mg.png",
+    "image": "/imgs/flags/mg.png",
     "name": "Madagascar"
   },
   {
     "id": "mh",
-    "image": "/imgs/countries/mh.png",
+    "image": "/imgs/flags/mh.png",
     "name": "Marshall Islands"
   },
   {
     "id": "mk",
-    "image": "/imgs/countries/mk.png",
+    "image": "/imgs/flags/mk.png",
     "name": "Macedonia, the Former Yugoslav Republic Of"
   },
   {
     "id": "ml",
-    "image": "/imgs/countries/ml.png",
+    "image": "/imgs/flags/ml.png",
     "name": "Mali"
   },
   {
     "id": "mm",
-    "image": "/imgs/countries/mm.png",
+    "image": "/imgs/flags/mm.png",
     "name": "Myanmar"
   },
   {
     "id": "mn",
-    "image": "/imgs/countries/mn.png",
+    "image": "/imgs/flags/mn.png",
     "name": "Mongolia"
   },
   {
     "id": "mo",
-    "image": "/imgs/countries/mo.png",
+    "image": "/imgs/flags/mo.png",
     "name": "Macao"
   },
   {
     "id": "mp",
-    "image": "/imgs/countries/mp.png",
+    "image": "/imgs/flags/mp.png",
     "name": "Northern Mariana Islands"
   },
   {
     "id": "mq",
-    "image": "/imgs/countries/mq.png",
+    "image": "/imgs/flags/mq.png",
     "name": "Martinique"
   },
   {
     "id": "mr",
-    "image": "/imgs/countries/mr.png",
+    "image": "/imgs/flags/mr.png",
     "name": "Mauritania"
   },
   {
     "id": "ms",
-    "image": "/imgs/countries/ms.png",
+    "image": "/imgs/flags/ms.png",
     "name": "Montserrat"
   },
   {
     "id": "mt",
-    "image": "/imgs/countries/mt.png",
+    "image": "/imgs/flags/mt.png",
     "name": "Malta"
   },
   {
     "id": "mu",
-    "image": "/imgs/countries/mu.png",
+    "image": "/imgs/flags/mu.png",
     "name": "Mauritius"
   },
   {
     "id": "mv",
-    "image": "/imgs/countries/mv.png",
+    "image": "/imgs/flags/mv.png",
     "name": "Maldives"
   },
   {
     "id": "mw",
-    "image": "/imgs/countries/mw.png",
+    "image": "/imgs/flags/mw.png",
     "name": "Malawi"
   },
   {
     "id": "mx",
-    "image": "/imgs/countries/mx.png",
+    "image": "/imgs/flags/mx.png",
     "name": "Mexico"
   },
   {
     "id": "my",
-    "image": "/imgs/countries/my.png",
+    "image": "/imgs/flags/my.png",
     "name": "Malaysia"
   },
   {
     "id": "mz",
-    "image": "/imgs/countries/mz.png",
+    "image": "/imgs/flags/mz.png",
     "name": "Mozambique"
   },
   {
     "id": "na",
-    "image": "/imgs/countries/na.png",
+    "image": "/imgs/flags/na.png",
     "name": "Namibia"
   },
   {
     "id": "nc",
-    "image": "/imgs/countries/nc.png",
+    "image": "/imgs/flags/nc.png",
     "name": "New Caledonia"
   },
   {
     "id": "ne",
-    "image": "/imgs/countries/ne.png",
+    "image": "/imgs/flags/ne.png",
     "name": "Niger"
   },
   {
     "id": "nf",
-    "image": "/imgs/countries/nf.png",
+    "image": "/imgs/flags/nf.png",
     "name": "Norfolk Island"
   },
   {
     "id": "ng",
-    "image": "/imgs/countries/ng.png",
+    "image": "/imgs/flags/ng.png",
     "name": "Nigeria"
   },
   {
     "id": "ni",
-    "image": "/imgs/countries/ni.png",
+    "image": "/imgs/flags/ni.png",
     "name": "Nicaragua"
   },
   {
     "id": "nl",
-    "image": "/imgs/countries/nl.png",
+    "image": "/imgs/flags/nl.png",
     "name": "Netherlands"
   },
   {
     "id": "no",
-    "image": "/imgs/countries/no.png",
+    "image": "/imgs/flags/no.png",
     "name": "Norway"
   },
   {
     "id": "np",
-    "image": "/imgs/countries/np.png",
+    "image": "/imgs/flags/np.png",
     "name": "Nepal"
   },
   {
     "id": "nr",
-    "image": "/imgs/countries/nr.png",
+    "image": "/imgs/flags/nr.png",
     "name": "Nauru"
   },
   {
     "id": "nu",
-    "image": "/imgs/countries/nu.png",
+    "image": "/imgs/flags/nu.png",
     "name": "Niue"
   },
   {
     "id": "nz",
-    "image": "/imgs/countries/nz.png",
+    "image": "/imgs/flags/nz.png",
     "name": "New Zealand"
   },
   {
     "id": "om",
-    "image": "/imgs/countries/om.png",
+    "image": "/imgs/flags/om.png",
     "name": "Oman"
   },
   {
     "id": "pa",
-    "image": "/imgs/countries/pa.png",
+    "image": "/imgs/flags/pa.png",
     "name": "Panama"
   },
   {
     "id": "pe",
-    "image": "/imgs/countries/pe.png",
+    "image": "/imgs/flags/pe.png",
     "name": "Peru"
   },
   {
     "id": "pf",
-    "image": "/imgs/countries/pf.png",
+    "image": "/imgs/flags/pf.png",
     "name": "French Polynesia"
   },
   {
     "id": "pg",
-    "image": "/imgs/countries/pg.png",
+    "image": "/imgs/flags/pg.png",
     "name": "Papua New Guinea"
   },
   {
     "id": "ph",
-    "image": "/imgs/countries/ph.png",
+    "image": "/imgs/flags/ph.png",
     "name": "Philippines"
   },
   {
     "id": "pk",
-    "image": "/imgs/countries/pk.png",
+    "image": "/imgs/flags/pk.png",
     "name": "Pakistan"
   },
   {
     "id": "pl",
-    "image": "/imgs/countries/pl.png",
+    "image": "/imgs/flags/pl.png",
     "name": "Poland"
   },
   {
     "id": "pm",
-    "image": "/imgs/countries/pm.png",
+    "image": "/imgs/flags/pm.png",
     "name": "Saint Pierre And Miquelon"
   },
   {
     "id": "pn",
-    "image": "/imgs/countries/pn.png",
+    "image": "/imgs/flags/pn.png",
     "name": "Pitcairn"
   },
   {
     "id": "pr",
-    "image": "/imgs/countries/pr.png",
+    "image": "/imgs/flags/pr.png",
     "name": "Puerto Rico"
   },
   {
     "id": "ps",
-    "image": "/imgs/countries/ps.png",
+    "image": "/imgs/flags/ps.png",
     "name": "Palestine, State of"
   },
   {
     "id": "pt",
-    "image": "/imgs/countries/pt.png",
+    "image": "/imgs/flags/pt.png",
     "name": "Portugal"
   },
   {
     "id": "pw",
-    "image": "/imgs/countries/pw.png",
+    "image": "/imgs/flags/pw.png",
     "name": "Palau"
   },
   {
     "id": "py",
-    "image": "/imgs/countries/py.png",
+    "image": "/imgs/flags/py.png",
     "name": "Paraguay"
   },
   {
     "id": "qa",
-    "image": "/imgs/countries/qa.png",
+    "image": "/imgs/flags/qa.png",
     "name": "Qatar"
   },
   {
     "id": "re",
-    "image": "/imgs/countries/re.png",
+    "image": "/imgs/flags/re.png",
     "name": "Réunion"
   },
   {
     "id": "ro",
-    "image": "/imgs/countries/ro.png",
+    "image": "/imgs/flags/ro.png",
     "name": "Romania"
   },
   {
     "id": "rs",
-    "image": "/imgs/countries/rs.png",
+    "image": "/imgs/flags/rs.png",
     "name": "Serbia"
   },
   {
     "id": "ru",
-    "image": "/imgs/countries/ru.png",
+    "image": "/imgs/flags/ru.png",
     "name": "Russian Federation"
   },
   {
     "id": "rw",
-    "image": "/imgs/countries/rw.png",
+    "image": "/imgs/flags/rw.png",
     "name": "Rwanda"
   },
   {
     "id": "sa",
-    "image": "/imgs/countries/sa.png",
+    "image": "/imgs/flags/sa.png",
     "name": "Saudi Arabia"
   },
   {
     "id": "sb",
-    "image": "/imgs/countries/sb.png",
+    "image": "/imgs/flags/sb.png",
     "name": "Solomon Islands"
   },
   {
     "id": "sc",
-    "image": "/imgs/countries/sc.png",
+    "image": "/imgs/flags/sc.png",
     "name": "Seychelles"
   },
   {
     "id": "sd",
-    "image": "/imgs/countries/sd.png",
+    "image": "/imgs/flags/sd.png",
     "name": "Sudan"
   },
   {
     "id": "se",
-    "image": "/imgs/countries/se.png",
+    "image": "/imgs/flags/se.png",
     "name": "Sweden"
   },
   {
     "id": "sg",
-    "image": "/imgs/countries/sg.png",
+    "image": "/imgs/flags/sg.png",
     "name": "Singapore"
   },
   {
     "id": "sh",
-    "image": "/imgs/countries/sh.png",
+    "image": "/imgs/flags/sh.png",
     "name": "Saint Helena"
   },
   {
     "id": "si",
-    "image": "/imgs/countries/si.png",
+    "image": "/imgs/flags/si.png",
     "name": "Slovenia"
   },
   {
     "id": "sj",
-    "image": "/imgs/countries/sj.png",
+    "image": "/imgs/flags/sj.png",
     "name": "Svalbard And Jan Mayen"
   },
   {
     "id": "sk",
-    "image": "/imgs/countries/sk.png",
+    "image": "/imgs/flags/sk.png",
     "name": "Slovakia"
   },
   {
     "id": "sl",
-    "image": "/imgs/countries/sl.png",
+    "image": "/imgs/flags/sl.png",
     "name": "Sierra Leone"
   },
   {
     "id": "sm",
-    "image": "/imgs/countries/sm.png",
+    "image": "/imgs/flags/sm.png",
     "name": "San Marino"
   },
   {
     "id": "sn",
-    "image": "/imgs/countries/sn.png",
+    "image": "/imgs/flags/sn.png",
     "name": "Senegal"
   },
   {
     "id": "so",
-    "image": "/imgs/countries/so.png",
+    "image": "/imgs/flags/so.png",
     "name": "Somalia"
   },
   {
     "id": "sr",
-    "image": "/imgs/countries/sr.png",
+    "image": "/imgs/flags/sr.png",
     "name": "Suriname"
   },
   {
     "id": "ss",
-    "image": "/imgs/countries/ss.png",
+    "image": "/imgs/flags/ss.png",
     "name": "South Sudan"
   },
   {
     "id": "st",
-    "image": "/imgs/countries/st.png",
+    "image": "/imgs/flags/st.png",
     "name": "Sao Tome and Principe"
   },
   {
     "id": "sv",
-    "image": "/imgs/countries/sv.png",
+    "image": "/imgs/flags/sv.png",
     "name": "El Salvador"
   },
   {
     "id": "sx",
-    "image": "/imgs/countries/sx.png",
+    "image": "/imgs/flags/sx.png",
     "name": "Sint Maarten"
   },
   {
     "id": "sy",
-    "image": "/imgs/countries/sy.png",
+    "image": "/imgs/flags/sy.png",
     "name": "Syrian Arab Republic"
   },
   {
     "id": "sz",
-    "image": "/imgs/countries/sz.png",
+    "image": "/imgs/flags/sz.png",
     "name": "Swaziland"
   },
   {
     "id": "tc",
-    "image": "/imgs/countries/tc.png",
+    "image": "/imgs/flags/tc.png",
     "name": "Turks and Caicos Islands"
   },
   {
     "id": "td",
-    "image": "/imgs/countries/td.png",
+    "image": "/imgs/flags/td.png",
     "name": "Chad"
   },
   {
     "id": "tf",
-    "image": "/imgs/countries/tf.png",
+    "image": "/imgs/flags/tf.png",
     "name": "French Southern Territories"
   },
   {
     "id": "tg",
-    "image": "/imgs/countries/tg.png",
+    "image": "/imgs/flags/tg.png",
     "name": "Togo"
   },
   {
     "id": "th",
-    "image": "/imgs/countries/th.png",
+    "image": "/imgs/flags/th.png",
     "name": "Thailand"
   },
   {
     "id": "tj",
-    "image": "/imgs/countries/tj.png",
+    "image": "/imgs/flags/tj.png",
     "name": "Tajikistan"
   },
   {
     "id": "tk",
-    "image": "/imgs/countries/tk.png",
+    "image": "/imgs/flags/tk.png",
     "name": "Tokelau"
   },
   {
     "id": "tl",
-    "image": "/imgs/countries/tl.png",
+    "image": "/imgs/flags/tl.png",
     "name": "Timor-Leste"
   },
   {
     "id": "tm",
-    "image": "/imgs/countries/tm.png",
+    "image": "/imgs/flags/tm.png",
     "name": "Turkmenistan"
   },
   {
     "id": "tn",
-    "image": "/imgs/countries/tn.png",
+    "image": "/imgs/flags/tn.png",
     "name": "Tunisia"
   },
   {
     "id": "to",
-    "image": "/imgs/countries/to.png",
+    "image": "/imgs/flags/to.png",
     "name": "Tonga"
   },
   {
     "id": "tr",
-    "image": "/imgs/countries/tr.png",
+    "image": "/imgs/flags/tr.png",
     "name": "Turkey"
   },
   {
     "id": "tt",
-    "image": "/imgs/countries/tt.png",
+    "image": "/imgs/flags/tt.png",
     "name": "Trinidad and Tobago"
   },
   {
     "id": "tv",
-    "image": "/imgs/countries/tv.png",
+    "image": "/imgs/flags/tv.png",
     "name": "Tuvalu"
   },
   {
     "id": "tw",
-    "image": "/imgs/countries/tw.png",
+    "image": "/imgs/flags/tw.png",
     "name": "Taiwan, Republic Of China"
   },
   {
     "id": "tz",
-    "image": "/imgs/countries/tz.png",
+    "image": "/imgs/flags/tz.png",
     "name": "Tanzania, United Republic of"
   },
   {
     "id": "ua",
-    "image": "/imgs/countries/ua.png",
+    "image": "/imgs/flags/ua.png",
     "name": "Ukraine"
   },
   {
     "id": "ug",
-    "image": "/imgs/countries/ug.png",
+    "image": "/imgs/flags/ug.png",
     "name": "Uganda"
   },
   {
     "id": "um",
-    "image": "/imgs/countries/um.png",
+    "image": "/imgs/flags/um.png",
     "name": "United States Minor Outlying Islands"
   },
   {
     "id": "us",
-    "image": "/imgs/countries/us.png",
+    "image": "/imgs/flags/us.png",
     "name": "United States"
   },
   {
     "id": "uy",
-    "image": "/imgs/countries/uy.png",
+    "image": "/imgs/flags/uy.png",
     "name": "Uruguay"
   },
   {
     "id": "uz",
-    "image": "/imgs/countries/uz.png",
+    "image": "/imgs/flags/uz.png",
     "name": "Uzbekistan"
   },
   {
     "id": "va",
-    "image": "/imgs/countries/va.png",
+    "image": "/imgs/flags/va.png",
     "name": "Holy See (Vatican City State)"
   },
   {
     "id": "vc",
-    "image": "/imgs/countries/vc.png",
+    "image": "/imgs/flags/vc.png",
     "name": "Saint Vincent And The Grenadines"
   },
   {
     "id": "ve",
-    "image": "/imgs/countries/ve.png",
+    "image": "/imgs/flags/ve.png",
     "name": "Venezuela, Bolivarian Republic of"
   },
   {
     "id": "vg",
-    "image": "/imgs/countries/vg.png",
+    "image": "/imgs/flags/vg.png",
     "name": "Virgin Islands, British"
   },
   {
     "id": "vi",
-    "image": "/imgs/countries/vi.png",
+    "image": "/imgs/flags/vi.png",
     "name": "Virgin Islands, U.S."
   },
   {
     "id": "vn",
-    "image": "/imgs/countries/vn.png",
+    "image": "/imgs/flags/vn.png",
     "name": "Vietnam"
   },
   {
     "id": "vu",
-    "image": "/imgs/countries/vu.png",
+    "image": "/imgs/flags/vu.png",
     "name": "Vanuatu"
   },
   {
     "id": "wf",
-    "image": "/imgs/countries/wf.png",
+    "image": "/imgs/flags/wf.png",
     "name": "Wallis and Futuna"
   },
   {
     "id": "ws",
-    "image": "/imgs/countries/ws.png",
+    "image": "/imgs/flags/ws.png",
     "name": "Samoa"
   },
   {
     "id": "ye",
-    "image": "/imgs/countries/ye.png",
+    "image": "/imgs/flags/ye.png",
     "name": "Yemen"
   },
   {
     "id": "yt",
-    "image": "/imgs/countries/yt.png",
+    "image": "/imgs/flags/yt.png",
     "name": "Mayotte"
   },
   {
     "id": "za",
-    "image": "/imgs/countries/za.png",
+    "image": "/imgs/flags/za.png",
     "name": "South Africa"
   },
   {
     "id": "zm",
-    "image": "/imgs/countries/zm.png",
+    "image": "/imgs/flags/zm.png",
     "name": "Zambia"
   },
   {
     "id": "zw",
-    "image": "/imgs/countries/zw.png",
+    "image": "/imgs/flags/zw.png",
     "name": "Zimbabwe"
   }
 ]

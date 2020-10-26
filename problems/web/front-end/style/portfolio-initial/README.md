@@ -8,12 +8,12 @@ O objetivo desta atividade consiste em abordar os seguintes tópicos:
 
 - Definir layout com Flexbox
 - Definir layout com Grid
-  
+
 ## Descrição
 
 * * *
 
-Na seleção de uma empresa, uma das etapas de contratação consiste na elaboração de um portfólio para empresa. 
+Na seleção de uma empresa, uma das etapas de contratação consiste na elaboração de um portfólio para empresa.
 
 Toda a ideia da apresentação e conteúdo do portfólio foi elaborada segundo o mapa mental da *Figura 1*.
 
@@ -53,4 +53,4 @@ site
 └── index.html
 ```
 
-> [Alternativa de resposta](site-response/).
+> Alternativa de resposta: [flex](site-response/flex/) e [grid](site-response/grid/).

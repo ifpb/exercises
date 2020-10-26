@@ -25,9 +25,9 @@ header {
   background-position: center;
   height: 100vh;
   min-height: 400px;
-  display: flex;
+  display: grid;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   text-align: center;
 }
 
@@ -76,9 +76,9 @@ main .service .circle-icon {
   color: #fff;
   width: 6em;
   height: 6em;
-  display: flex;
+  display: grid;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   border-radius: 50%;
   margin: auto;
 }
@@ -122,9 +122,8 @@ footer .footer-content {
 }
 
 footer section.social ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -137,9 +136,9 @@ footer section.social a {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  display: flex;
+  display: grid;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   text-decoration: none;
   /*transition: all .6s;*/
 }

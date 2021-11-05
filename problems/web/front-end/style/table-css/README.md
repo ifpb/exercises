@@ -68,13 +68,13 @@ A `<table>` deve seguir os seguintes padrões de estilos:
 
 **INSTRUÇÃO 1.** Todo o texto deverá estar centralizado, exceto os nomes dos alunos que deverão estar com alinhamento a esquerda.
 
-**INSTRUÇÃO 2.** Largura (`width`) em `50%`, `min-width` de `300px`, e com `margin` `auto`;
+**INSTRUÇÃO 2.** Largura (`width`) em `50%` com `min-width` de `300px` e `margin` sendo `auto`, exceto na margem superior que deve possuir distância de `50px`;
 
-**INSTRUÇÃO 3.** Bordas com `collapse`
+**INSTRUÇÃO 3.** Borda do topo e da base com `1px solid black`;
 
-**INSTRUÇÃO 4.** Margem de distância do topo de `50px`;
+**INSTRUÇÃO 4.** Bordas com `collapse`;
 
-**INSTRUÇÃO 5.** Borda do topo e da base com `1px solid black`;
+**INSTRUÇÃO 5.** Recuo interno das células de `5px`;
 
 **INSTRUÇÃO 6.** As linhas ímpares, que contém os nomes dos alunos, deverão estar com o plano de fundo na cor `rgb(240,248,255)`.
 

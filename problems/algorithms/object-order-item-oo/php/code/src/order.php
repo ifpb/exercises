@@ -1,6 +1,0 @@
-<?php
-
-class Order
-{
-  // TODO
-}

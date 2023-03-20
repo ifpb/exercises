@@ -1,6 +1,0 @@
-<?php
-
-class Product
-{
-  // TODO
-}

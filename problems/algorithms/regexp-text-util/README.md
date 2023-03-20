@@ -1,1 +1,0 @@
-# Utilitário de texto

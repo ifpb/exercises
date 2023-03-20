@@ -1,3 +1,0 @@
-class Company
-  #TODO
-end

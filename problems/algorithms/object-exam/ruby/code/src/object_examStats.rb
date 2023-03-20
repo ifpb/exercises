@@ -1,3 +1,0 @@
-class ExamStats
-  #TODO
-end

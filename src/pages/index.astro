@@ -1,0 +1,54 @@
+---
+const allExercises = await Astro.glob("./exercises/*/README.*");
+
+const allSubjects = allExercises.reduce((acc, exercise) => {
+  const { subjects, areas } = exercise.frontmatter;
+
+  subjects.forEach((subject) => {
+    if (!acc[subject]) {
+      acc[subject] = [...areas];
+    } else {
+      acc[subject] = [...new Set([...acc[subject], ...areas])];
+    }
+  });
+
+  return acc;
+}, {});
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Exercícios</title>
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto lg:px-16">
+      <a href="/" class="no-underline">
+        <h1 class="text-center py-10 text-4xl font-bold">Exercícios</h1>
+      </a>
+      {
+        Object.keys(allSubjects).map((subject) => (
+          <div>
+            <a href={`/exercises/${subject}/1`}>
+              <h2 class="text-2xl capitalize font-bold my-4 cursor-pointer">{subject}</h2>
+            </a>
+            <div class="grid gap-5 grid-cols-3">
+              {
+                allSubjects[subject].map((area) => (
+                  <a href={`/exercises/${area}/1`}>
+                    <div class="max-w-sm rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer bg-white py-4 px-4">
+                      <h3 class="text-xl capitalize">{area}</h3>
+                    </div>
+                  </a>
+                ))
+              }
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </body>
+</html>

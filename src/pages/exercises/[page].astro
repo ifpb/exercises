@@ -1,0 +1,69 @@
+---
+export async function getStaticPaths({ paginate }) {
+  const allExercises = await Astro.glob("./*/README.*");
+
+  return paginate(allExercises, { pageSize: 10 });
+}
+
+const { page } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Exercícios</title>
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto px-4">
+      <a href="/" class="no-underline">
+        <h1 class="text-center py-10 text-4xl font-bold">Exercícios</h1>
+      </a>
+      <div class="grid gap-5 grid-cols-3">
+        {
+          page.data.map((exercise) => {
+            const slug = exercise.url.split("/")[2];
+
+            const { subjects, areas, title } = exercise.frontmatter;
+
+            const tags = [...subjects, ...areas];
+
+            return (
+              <div class="max-w-sm rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer bg-white py-2 px-4">
+                <a href={`/exercises/${slug}/`} class="no-underline">
+                  <h2 class="pb-3 font-bold">{title}</h2>
+                </a>
+                {
+                  tags.map((tag) => (
+                    <a href={`/exercises/${tag}/1`} class="no-underline cursor-pointer">
+                      <span class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                        #{tag}
+                      </span>
+                    </a>
+                  ))
+                }
+              </div>
+            )
+          })
+        }
+      </div>
+      <div class="mt-12 flex items-center flex-wrap justify-center">
+        <nav aria-label="Page navigation">
+          <ul class="flex flex-row">
+            <li><a href={page.url.prev} class="px-4 py-2 text-slate-600 transition-colors duration-150 bg-white border border-r-0 border-slate-600 rounded-l-lg focus:shadow-outline hover:bg-slate-100">&laquo;</a></li>
+            {
+              [...Array(page.lastPage).keys()].map((pageNumber) => pageNumber + 1).map((pageNumber) => (
+                pageNumber === page.currentPage ?
+                  <li><a href={`./${pageNumber}`} class="px-4 py-2 text-white transition-colors duration-150 bg-slate-600 border border-r-0 border-slate-600 focus:shadow-outline">{pageNumber}</a></li>:
+                  <li><a href={`./${pageNumber}`} class="px-4 py-2 text-slate-600 transition-colors duration-150 bg-white border border-r-0 border-slate-600 focus:shadow-outline">{pageNumber}</a></li>
+              ))
+            }
+            <li><a href={page.url.next} class="px-4 py-2 text-slate-600 transition-colors duration-150 bg-white border border-slate-600 rounded-r-lg focus:shadow-outline hover:bg-slate-100">&raquo;</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>

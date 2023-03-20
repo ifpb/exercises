@@ -1,3 +1,0 @@
-class BrazilianChampionship
-  #TODO
-end

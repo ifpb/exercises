@@ -1,1 +1,0 @@
-# Substituição Simples

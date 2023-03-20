@@ -1,3 +1,0 @@
-class Comics
- #TODO
-end

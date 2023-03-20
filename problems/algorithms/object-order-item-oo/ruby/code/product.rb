@@ -1,3 +1,0 @@
-class Product
-  # TODO
-end

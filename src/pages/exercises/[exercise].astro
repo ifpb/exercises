@@ -1,0 +1,75 @@
+---
+import fs from "node:fs/promises";
+import ExerciseLayout from "../../layouts/ExerciseLayout.astro";
+
+export async function getStaticPaths() {
+  const allExercises = await Astro.glob("./*/README.*");
+
+  const allCodes = await allExercises.reduce(async (acc, exercise) => {
+    const slug = exercise.url.split("/")[2];
+
+    const exerciseFiles = await fs.readdir(`./src/pages/exercises/${slug}/codes`);
+
+    const codes = exerciseFiles.filter((file) => file !== "README.md");
+
+    exercise.frontmatter.codes = codes;
+
+    return {
+      ...await acc,
+      [slug]: codes,
+    };
+  }, {});
+
+  // console.log(JSON.stringify(allExercises, null, 2));
+
+  return allExercises.map((exercise) => {
+    const slug = exercise.url.split("/")[2];
+
+    return {
+      params: {
+        exercise: slug,
+      },
+      props: {
+        exercise,
+        data: exercise.frontmatter,
+      },
+    };
+  });
+}
+
+const { exercise } = Astro.params;
+const { exercise: { Content }, data: { codes, title, preview } } = Astro.props;
+---
+
+<ExerciseLayout pageTitle={exercise}>
+  <article class="mx-auto prose md:prose-lg lg:prose-xl">
+    <h1 class="text-center">{title}</h1>
+    <Content/>
+    <h2>Códigos</h2>
+    <ul>
+      {codes.map((code) => {
+        const github = `https://github.com/ifpb/exercises/tree/main/src/pages/exercises/${exercise}/codes/${code}`;
+
+        return (
+          <li>
+            {code}
+            (código:
+              <a href={`${github}/code/`}>github</a>,
+              <a href={`https://download-directory.github.io/?url=${github}/code/`}>zip</a>
+            ; resposta:
+              <a href={`${github}/response/`}>github</a>,
+              <a href={`https://download-directory.github.io/?url=${github}/response/`}>zip</a>
+              { preview && (
+                <>
+                  , <a href={`/exercises/${exercise}/codes/${code}/response/`}>preview</a>
+                </>
+              )
+
+              }
+            )
+          </li>
+        );
+      })}
+    </ul>
+  </article>
+</ExerciseLayout>

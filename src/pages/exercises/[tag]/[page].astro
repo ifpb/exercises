@@ -1,21 +1,27 @@
 ---
+import fs from "node:fs/promises";
+
 export async function getStaticPaths({ paginate }) {
   const allExercises = await Astro.glob("../*/README.*");
 
-  const allTags = await Promise.all(await allExercises.map(async (exercise) => {
-    // TODO codes
+  const allTags = await Promise.all(await allExercises.map(async (exercise, index) => {
     const { subjects, areas, challenge } = exercise.frontmatter;
+
+    const slug = exercise.url.split("/")[2];
+
+    const codes = await fs.readdir(`./src/pages/exercises/${slug}/_codes`);
 
     const tags = [
       ...subjects,
       ...areas,
+      ...codes,
     ];
 
     if (challenge) {
       tags.push("desafio");
     }
 
-    exercise.frontmatter.tags = tags;
+    allExercises[index].frontmatter.tags = tags;
 
     return tags;
   }));
@@ -23,14 +29,8 @@ export async function getStaticPaths({ paginate }) {
   const filters = [...new Set(allTags.flat())];
 
   const pages = filters.map(async (tag) => {
-    const filteredExercises = allExercises.filter(({frontmatter: { subjects, areas, challenge }}) => {
-      const filteredExercise = [...subjects, ...areas];
-
-      if (challenge) {
-        filteredExercise.push("desafio");
-      }
-
-      return filteredExercise.some((filter) => filter === tag);
+    const filteredExercises = allExercises.filter(({frontmatter: { tags }}) => {
+      return tags.some((filter) => filter === tag);
     });
 
     return await paginate(filteredExercises, {
@@ -42,7 +42,10 @@ export async function getStaticPaths({ paginate }) {
   return await Promise.all(pages);
 }
 
+console.log(Astro.params)
+
 const { page } = Astro.props;
+const { tag } = Astro.params;
 ---
 
 <html lang="en">
@@ -51,29 +54,27 @@ const { page } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Exercícios</title>
+    <title>Exercícios de {tag}</title>
   </head>
   <body class="bg-gray-100">
     <div class="container mx-auto px-4">
-      <a href="/" class="no-underline">
-        <h1 class="text-center py-10 text-4xl font-bold">Exercícios</h1>
-      </a>
+      <h1 class="text-center py-10 text-4xl font-bold">Exercícios de {tag}</h1>
       <div class="grid gap-5 grid-cols-3">
         {
-          page.data.map((exercise) => {
+          page.data.map((exercise, index) => {
             const slug = exercise.url.split("/")[2];
 
             return (
               <div class="max-w-sm rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 bg-white py-2 px-4">
                 <a href={`/exercises/${slug}/`} class="no-underline cursor-pointer">
-                  <h2 class="pb-3 font-bold">{exercise.frontmatter.title}</h2>
+                  <h2 class="pb-3 font-bold">#{index + 1 + (page.currentPage - 1) * page.size} - {exercise.frontmatter.title}</h2>
                 </a>
                 <nav>
                   {exercise.frontmatter.tags.map((tag) => {
                     return (
                       <a href={`/exercises/${tag}/1`} class="no-underline cursor-pointer">
-                        <span class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                          #{tag}
+                        <span class="py-1 text-sm font-semibold text-gray-700 mr-1">
+                          {tag}
                         </span>
                       </a>
                     )

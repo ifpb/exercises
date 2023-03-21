@@ -3,7 +3,7 @@ title: Hello World
 subjects:
   - algoritmo
 areas:
-  - básico
+  - fundamentos
 ---
 
 ## Descrição

@@ -1,19 +1,33 @@
 ---
+import fs from "node:fs/promises";
+
 const allExercises = await Astro.glob("./exercises/*/README.*");
 
-const allSubjects = allExercises.reduce((acc, exercise) => {
+const allSubjects = await allExercises.reduce(async (acc, exercise) => {
+  const collection = await acc;
+
   const { subjects, areas } = exercise.frontmatter;
 
+  const slug = exercise.url.split("/")[2];
+
+  const codes = await fs.readdir(`./src/pages/exercises/${slug}/_codes`);
+
   subjects.forEach((subject) => {
-    if (!acc[subject]) {
-      acc[subject] = [...areas];
+    if (!collection[subject]) {
+      collection[subject] = [...areas];
     } else {
-      acc[subject] = [...new Set([...acc[subject], ...areas])];
+      collection[subject] = [...new Set([...collection[subject], ...areas])];
     }
   });
 
-  return acc;
-}, {});
+  if (!collection['código']) {
+    collection['código'] = [...codes];
+  } else {
+    collection['código'] = [...new Set([...collection['código'], ...codes])];
+  }
+
+  return collection;
+}, Promise.resolve({}));
 ---
 
 <html lang="en">
@@ -25,7 +39,7 @@ const allSubjects = allExercises.reduce((acc, exercise) => {
     <title>Exercícios</title>
   </head>
   <body class="bg-gray-100">
-    <div class="container mx-auto lg:px-16">
+    <div class="container mx-auto lg:px-16 py-8">
       <a href="/" class="no-underline">
         <h1 class="text-center py-10 text-4xl font-bold">Exercícios</h1>
       </a>
@@ -40,7 +54,7 @@ const allSubjects = allExercises.reduce((acc, exercise) => {
                 allSubjects[subject].map((area) => (
                   <a href={`/exercises/${area}/1`}>
                     <div class="max-w-sm rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer bg-white py-4 px-4">
-                      <h3 class="text-xl capitalize">{area}</h3>
+                      <h3 class={`text-xl ${subject !== 'código' && 'capitalize'}`}>{area}</h3>
                     </div>
                   </a>
                 ))
@@ -49,6 +63,11 @@ const allSubjects = allExercises.reduce((acc, exercise) => {
           </div>
         ))
       }
+      <div>
+        <a href={`/exercises/desafio/1`}>
+          <h2 class="text-2xl capitalize font-bold my-4 cursor-pointer">Desafios</h2>
+        </a>
+      </div>
     </div>
   </body>
 </html>

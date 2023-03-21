@@ -3,7 +3,7 @@ title: Imposto de Renda
 subjects:
   - algoritmo
 areas:
-  - básico
+  - fundamentos
 ---
 
 ## Descrição

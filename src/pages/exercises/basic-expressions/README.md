@@ -3,7 +3,7 @@ title: Construção de Expressões
 subjects:
   - algoritmo
 areas:
-  - básico
+  - fundamentos
 ---
 
 ## Descrição

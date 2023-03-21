@@ -3,7 +3,7 @@ title: Séries Harmônicas
 subjects:
   - algoritmo
 areas:
-  - básico
+  - fundamentos
 ---
 
 ## Descrição

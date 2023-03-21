@@ -3,7 +3,7 @@ title: Índice de Massa Corporal (IMC)
 subjects:
   - algoritmo
 areas:
-  - básico
+  - fundamentos
 ---
 
 ## Descrição

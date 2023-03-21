@@ -5,12 +5,10 @@ import ExerciseLayout from "../../layouts/ExerciseLayout.astro";
 export async function getStaticPaths() {
   const allExercises = await Astro.glob("./*/README.*");
 
-  const allCodes = await allExercises.reduce(async (acc, exercise) => {
+  await allExercises.reduce(async (acc, exercise) => {
     const slug = exercise.url.split("/")[2];
 
-    const exerciseFiles = await fs.readdir(`./src/pages/exercises/${slug}/codes`);
-
-    const codes = exerciseFiles.filter((file) => file !== "README.md");
+    const codes = await fs.readdir(`./src/pages/exercises/${slug}/_codes`);
 
     exercise.frontmatter.codes = codes;
 
@@ -19,8 +17,6 @@ export async function getStaticPaths() {
       [slug]: codes,
     };
   }, {});
-
-  // console.log(JSON.stringify(allExercises, null, 2));
 
   return allExercises.map((exercise) => {
     const slug = exercise.url.split("/")[2];
@@ -61,7 +57,7 @@ const { exercise: { Content }, data: { codes, title, preview } } = Astro.props;
               <a href={`https://download-directory.github.io/?url=${github}/response/`}>zip</a>
               { preview && (
                 <>
-                  , <a href={`/exercises/${exercise}/codes/${code}/response/`}>preview</a>
+                  , <a href={`/exercises/${exercise}/_codes/${code}/response/`}>preview</a>
                 </>
               )
 

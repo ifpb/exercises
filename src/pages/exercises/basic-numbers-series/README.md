@@ -3,7 +3,7 @@ title: Séries Numéricas
 subjects:
   - algoritmo
 areas:
-  - básico
+  - fundamentos
 ---
 
 ## Descrição

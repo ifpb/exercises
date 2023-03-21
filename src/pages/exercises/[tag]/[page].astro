@@ -2,7 +2,9 @@
 import fs from "node:fs/promises";
 
 export async function getStaticPaths({ paginate }) {
-  const allExercises = await Astro.glob("../*/README.*");
+  const allExercises = await (await Astro.glob("../*/README.*")).filter((exercise) => {
+    return !exercise.url.split("/")[2].startsWith("_");
+  });
 
   const allTags = await Promise.all(await allExercises.map(async (exercise, index) => {
     const { subjects, areas, challenge } = exercise.frontmatter;

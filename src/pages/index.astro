@@ -1,7 +1,9 @@
 ---
 import fs from "node:fs/promises";
 
-const allExercises = await Astro.glob("./exercises/*/README.*");
+const allExercises = (await Astro.glob("./exercises/*/README.*")).filter((exercise) => {
+  return !exercise.url.split("/")[2].startsWith("_");
+});
 
 const allSubjects = await allExercises.reduce(async (acc, exercise) => {
   const collection = await acc;
@@ -46,7 +48,7 @@ const allSubjects = await allExercises.reduce(async (acc, exercise) => {
       {
         Object.keys(allSubjects).map((subject) => (
           <div>
-            <a href={`/exercises/${subject}/1`}>
+            <a href={`/exercises/${subject !== 'código' ? `${subject}/` : ''}1`}>
               <h2 class="text-2xl capitalize font-bold my-4 cursor-pointer">{subject}</h2>
             </a>
             <div class="grid gap-5 grid-cols-3">

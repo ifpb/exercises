@@ -1,8 +1,10 @@
 ---
 export async function getStaticPaths({ paginate }) {
-  const allExercises = await Astro.glob("./*/README.*");
+  const allExercises = (await Astro.glob("./*/README.*")).filter((exercise) => {
+    return !exercise.url.split("/")[2].startsWith("_");
+  });
 
-  return paginate(allExercises, { pageSize: 10 });
+  return paginate(allExercises, { pageSize: 12 });
 }
 
 const { page } = Astro.props;
@@ -23,7 +25,7 @@ const { page } = Astro.props;
       </a>
       <div class="grid gap-5 grid-cols-3">
         {
-          page.data.map((exercise) => {
+          page.data.map((exercise, index) => {
             const slug = exercise.url.split("/")[2];
 
             const { subjects, areas, title } = exercise.frontmatter;
@@ -33,12 +35,12 @@ const { page } = Astro.props;
             return (
               <div class="max-w-sm rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer bg-white py-2 px-4">
                 <a href={`/exercises/${slug}/`} class="no-underline">
-                  <h2 class="pb-3 font-bold">{title}</h2>
+                  <h2 class="pb-3 font-bold">#{index + 1 + (page.currentPage - 1) * page.size} - {title}</h2>
                 </a>
                 {
                   tags.map((tag) => (
                     <a href={`/exercises/${tag}/1`} class="no-underline cursor-pointer">
-                      <span class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                      <span class="inline-block py-1 text-sm font-semibold text-gray-700 mr-1">
                         {tag}
                       </span>
                     </a>

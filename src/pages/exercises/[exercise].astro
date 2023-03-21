@@ -3,7 +3,9 @@ import fs from "node:fs/promises";
 import ExerciseLayout from "../../layouts/ExerciseLayout.astro";
 
 export async function getStaticPaths() {
-  const allExercises = await Astro.glob("./*/README.*");
+  const allExercises = (await Astro.glob("./*/README.*")).filter((exercise) => {
+    return !exercise.url.split("/")[2].startsWith("_");
+  });
 
   await allExercises.reduce(async (acc, exercise) => {
     const slug = exercise.url.split("/")[2];

@@ -3,13 +3,13 @@ import fs from "node:fs/promises";
 
 export async function getStaticPaths({ paginate }) {
   const allExercises = await (await Astro.glob("../*/README.*")).filter((exercise) => {
-    return !exercise.url.split("/")[2].startsWith("_");
+    return !exercise.url.split("/")[3].startsWith("_");
   });
 
   const allTags = await Promise.all(await allExercises.map(async (exercise, index) => {
     const { subjects, areas, challenge } = exercise.frontmatter;
 
-    const slug = exercise.url.split("/")[2];
+    const slug = exercise.url.split("/")[3];
 
     const codes = await fs.readdir(`./src/pages/exercises/${slug}/_codes`);
 
@@ -44,8 +44,6 @@ export async function getStaticPaths({ paginate }) {
   return await Promise.all(pages);
 }
 
-console.log(Astro.params)
-
 const { page } = Astro.props;
 const { tag } = Astro.params;
 ---
@@ -64,17 +62,17 @@ const { tag } = Astro.params;
       <div class="grid gap-5 grid-cols-3">
         {
           page.data.map((exercise, index) => {
-            const slug = exercise.url.split("/")[2];
+            const slug = exercise.url.split("/")[3];
 
             return (
               <div class="max-w-sm rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 bg-white py-2 px-4">
-                <a href={`/exercises/${slug}/`} class="no-underline cursor-pointer">
+                <a href={`/exercises/exercises/${slug}/`} class="no-underline cursor-pointer">
                   <h2 class="pb-3 font-bold">#{index + 1 + (page.currentPage - 1) * page.size} - {exercise.frontmatter.title}</h2>
                 </a>
                 <nav>
                   {exercise.frontmatter.tags.map((tag) => {
                     return (
-                      <a href={`/exercises/${tag}/1`} class="no-underline cursor-pointer">
+                      <a href={`/exercises/exercises/${tag}/1`} class="no-underline cursor-pointer">
                         <span class="py-1 text-sm font-semibold text-gray-700 mr-1">
                           {tag}
                         </span>
@@ -91,7 +89,7 @@ const { tag } = Astro.params;
         <div class="mt-12 flex items-center flex-wrap justify-center">
           <nav aria-label="Page navigation">
             <ul class="flex flex-row">
-              <li><a href={page.url.prev} class="px-4 py-2 text-slate-600 transition-colors duration-150 bg-white border border-r-0 border-slate-600 rounded-l-lg focus:shadow-outline hover:bg-slate-100">&laquo;</a></li>
+              <li><a href={'/exercises' + page.url.prev} class="px-4 py-2 text-slate-600 transition-colors duration-150 bg-white border border-r-0 border-slate-600 rounded-l-lg focus:shadow-outline hover:bg-slate-100">&laquo;</a></li>
               {
                 [...Array(page.lastPage).keys()].map((pageNumber) => pageNumber + 1).map((pageNumber) => (
                   pageNumber === page.currentPage ?
@@ -99,7 +97,7 @@ const { tag } = Astro.params;
                     <li><a href={`./${pageNumber}`} class="px-4 py-2 text-slate-600 transition-colors duration-150 bg-white border border-r-0 border-slate-600 focus:shadow-outline">{pageNumber}</a></li>
                 ))
               }
-              <li><a href={page.url.next} class="px-4 py-2 text-slate-600 transition-colors duration-150 bg-white border border-slate-600 rounded-r-lg focus:shadow-outline hover:bg-slate-100">&raquo;</a></li>
+              <li><a href={'/exercises' + page.url.next} class="px-4 py-2 text-slate-600 transition-colors duration-150 bg-white border border-slate-600 rounded-r-lg focus:shadow-outline hover:bg-slate-100">&raquo;</a></li>
             </ul>
           </nav>
         </div>

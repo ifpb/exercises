@@ -2,7 +2,7 @@
 import fs from "node:fs/promises";
 
 const allExercises = (await Astro.glob("./exercises/*/README.*")).filter((exercise) => {
-  return !exercise.url.split("/")[2].startsWith("_");
+  return !exercise.url.split("/")[3].startsWith("_");
 });
 
 const allSubjects = await allExercises.reduce(async (acc, exercise) => {
@@ -10,7 +10,8 @@ const allSubjects = await allExercises.reduce(async (acc, exercise) => {
 
   const { subjects, areas } = exercise.frontmatter;
 
-  const slug = exercise.url.split("/")[2];
+
+  const slug = exercise.url.split("/")[3];
 
   const codes = await fs.readdir(`./src/pages/exercises/${slug}/_codes`);
 
@@ -42,19 +43,19 @@ const allSubjects = await allExercises.reduce(async (acc, exercise) => {
   </head>
   <body class="bg-gray-100">
     <div class="container mx-auto lg:px-16 py-8">
-      <a href="/" class="no-underline">
+      <a href="./" class="no-underline">
         <h1 class="text-center py-10 text-4xl font-bold">Exercícios</h1>
       </a>
       {
         Object.keys(allSubjects).map((subject) => (
           <div>
-            <a href={`/exercises/${subject !== 'código' ? `${subject}/` : ''}1`}>
+            <a href={`./exercises/${subject !== 'código' ? `${subject}/` : ''}1`}>
               <h2 class="text-2xl capitalize font-bold my-4 cursor-pointer">{subject}</h2>
             </a>
             <div class="grid gap-5 grid-cols-3">
               {
                 allSubjects[subject].map((area) => (
-                  <a href={`/exercises/${area}/1`}>
+                  <a href={`./exercises/${area}/1`}>
                     <div class="max-w-sm rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer bg-white py-4 px-4">
                       <h3 class={`text-xl ${subject !== 'código' && 'capitalize'}`}>{area}</h3>
                     </div>
@@ -66,7 +67,7 @@ const allSubjects = await allExercises.reduce(async (acc, exercise) => {
         ))
       }
       <div>
-        <a href={`/exercises/desafio/1`}>
+        <a href={`./exercises/desafio/1`}>
           <h2 class="text-2xl capitalize font-bold my-4 cursor-pointer">Desafios</h2>
         </a>
       </div>

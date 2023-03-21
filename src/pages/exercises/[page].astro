@@ -1,7 +1,7 @@
 ---
 export async function getStaticPaths({ paginate }) {
   const allExercises = (await Astro.glob("./*/README.*")).filter((exercise) => {
-    return !exercise.url.split("/")[2].startsWith("_");
+    return !exercise.url.split("/")[3].startsWith("_");
   });
 
   return paginate(allExercises, { pageSize: 12 });
@@ -26,7 +26,7 @@ const { page } = Astro.props;
       <div class="grid gap-5 grid-cols-3">
         {
           page.data.map((exercise, index) => {
-            const slug = exercise.url.split("/")[2];
+            const slug = exercise.url.split("/")[3];
 
             const { subjects, areas, title } = exercise.frontmatter;
 

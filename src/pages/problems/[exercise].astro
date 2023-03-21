@@ -4,14 +4,14 @@ import ExerciseLayout from "../../layouts/ExerciseLayout.astro";
 import { GITHUB_EDIT_URL } from '../../consts';
 
 export async function getStaticPaths() {
-  const allExercises = (await Astro.glob("./*/README.*")).filter((exercise) => {
+  const allProblems = (await Astro.glob("./*/README.*")).filter((exercise) => {
     return !exercise.url.split("/")[3].startsWith("_");
   });
 
-  await allExercises.reduce(async (acc, exercise) => {
+  await allProblems.reduce(async (acc, exercise) => {
     const slug = exercise.url.split("/")[3];
 
-    const codes = await fs.readdir(`./src/pages/exercises/${slug}/_codes`);
+    const codes = await fs.readdir(`./src/pages/problems/${slug}/_codes`);
 
     exercise.frontmatter.codes = codes;
 
@@ -21,7 +21,7 @@ export async function getStaticPaths() {
     };
   }, {});
 
-  return allExercises.map((exercise) => {
+  return allProblems.map((exercise) => {
     const slug = exercise.url.split("/")[3];
 
     return {

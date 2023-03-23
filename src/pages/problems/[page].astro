@@ -2,8 +2,9 @@
 import ExerciseIndexLayout from '../../layouts/ExerciseIndexLayout.astro';
 
 export async function getStaticPaths({ paginate }) {
-  const allProblems = (await Astro.glob("../exercises/*/README.*"))
-    .filter((exercise) => !exercise.url.split("/")[3].startsWith("_"));
+  const allProblems = (await Astro.glob('../exercises/*/README.*')).filter(
+    (exercise) => !exercise.url.split('/')[3].startsWith('_')
+  );
 
   return paginate(allProblems, { pageSize: 12 });
 }

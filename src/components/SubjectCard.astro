@@ -1,0 +1,35 @@
+---
+const { title, description, tags, icon, name } = Astro.props;
+---
+
+<div class="w-full md:w-1/2 px-12 md:px-4 mx-auto mb-24">
+  <div
+    class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
+  >
+    <i class={`${icon} text-xl`}></i>
+  </div>
+  <h3 class="text-3xl mb-2 font-semibold leading-normal capitalize">
+    {title}
+  </h3>
+  <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
+    {description}
+  </p>
+  <div class="block pb-6">
+    {
+      tags.map((area) => (
+        <a href={`./problems/${area}/1`}>
+          <span class="text-xs font-semibold inline-block py-1 px-2 rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
+            {area}
+          </span>
+        </a>
+      ))
+    }
+  </div>
+  <a
+    href={`./problems/${name !== 'código' ? `${name}/` : ''}1`}
+    class="font-bold text-blueGray-700 hover:text-blueGray-500 ease-linear transition-all duration-150"
+  >
+    Veja todos
+    <i class="fa fa-angle-double-right ml-1 leading-relaxed"></i>
+  </a>
+</div>

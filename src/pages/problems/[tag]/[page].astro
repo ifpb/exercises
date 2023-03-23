@@ -1,44 +1,46 @@
 ---
-import fs from "node:fs/promises";
+import fs from 'node:fs/promises';
 import ExerciseIndexLayout from '../../../layouts/ExerciseIndexLayout.astro';
 
 export async function getStaticPaths({ paginate }) {
-  const allProblems = (await Astro.glob("../../exercises/*/README.*")).filter((exercise) => {
-    return !exercise.url.split("/")[3].startsWith("_");
-  });
-
-  const allTags = await Promise.all(await allProblems.map(async (exercise, index) => {
-    const { subjects, areas, challenge } = exercise.frontmatter;
-
-    const slug = exercise.url.split("/")[3];
-
-    const codes = await fs.readdir(`./src/pages/exercises/${slug}/_codes`);
-
-    const tags = [
-      ...subjects,
-      ...areas,
-      ...codes,
-    ];
-
-    if (challenge) {
-      tags.push("desafio");
+  const allProblems = (await Astro.glob('../../exercises/*/README.*')).filter(
+    (exercise) => {
+      return !exercise.url.split('/')[3].startsWith('_');
     }
+  );
 
-    allProblems[index].frontmatter.tags = tags;
+  const allTags = await Promise.all(
+    await allProblems.map(async (exercise, index) => {
+      const { subjects, areas, challenge } = exercise.frontmatter;
 
-    return tags;
-  }));
+      const slug = exercise.url.split('/')[3];
+
+      const codes = await fs.readdir(`./src/pages/exercises/${slug}/_codes`);
+
+      const tags = [...subjects, ...areas, ...codes];
+
+      if (challenge) {
+        tags.push('desafio');
+      }
+
+      allProblems[index].frontmatter.tags = tags;
+
+      return tags;
+    })
+  );
 
   const filters = [...new Set(allTags.flat())];
 
   const pages = filters.map(async (tag) => {
-    const filteredProblemss = allProblems.filter(({frontmatter: { tags }}) => {
-      return tags.some((filter) => filter === tag);
-    });
+    const filteredProblemss = allProblems.filter(
+      ({ frontmatter: { tags } }) => {
+        return tags.some((filter) => filter === tag);
+      }
+    );
 
     return await paginate(filteredProblemss, {
       params: { tag },
-      pageSize: 12
+      pageSize: 12,
     });
   });
 

@@ -5,22 +5,15 @@ const url = `https://www.googletagmanager.com/gtag/js?id=${id}`;
 ---
 
 <>
-  <script
-    async
-    type="text/partytown"
-    src={url}>
-  </script>
-  <script
-    type="text/partytown"
-    define:vars={{ id }}
-  >
+  <script async type="text/partytown" src={url}></script>
+  <script type="text/partytown" define:vars={{ id }}>
     (() => {
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
-      gtag("config", id);
+      gtag('js', new Date());
+      gtag('config', id);
     })();
   </script>
 </>

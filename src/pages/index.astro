@@ -1,18 +1,21 @@
 ---
-import fs from "node:fs/promises";
+import fs from 'node:fs/promises';
 import GoogleAnalytics from '../components/GoogleAnalytics.astro';
 import NavBar from '../components/NavBar.astro';
+import SubjectCard from '../components/SubjectCard.astro';
 
-const allProblems = (await Astro.glob("./exercises/*/README.*")).filter((exercise) => {
-  return !exercise.url.split("/")[3].startsWith("_");
-});
+const allProblems = (await Astro.glob('./exercises/*/README.*')).filter(
+  (exercise) => {
+    return !exercise.url.split('/')[3].startsWith('_');
+  }
+);
 
-const allSubjects = await allProblems.reduce(async (acc, exercise) => {
+const tags = await allProblems.reduce(async (acc, exercise) => {
   const collection = await acc;
 
   const { subjects, areas } = exercise.frontmatter;
 
-  const slug = exercise.url.split("/")[3];
+  const slug = exercise.url.split('/')[3];
 
   const codes = await fs.readdir(`./src/pages/exercises/${slug}/_codes`);
 
@@ -32,12 +35,50 @@ const allSubjects = await allProblems.reduce(async (acc, exercise) => {
 
   return collection;
 }, Promise.resolve({}));
+
+const subjects = [
+  {
+    title: 'Algoritmos',
+    description: `Venha compreender os principais conceitos de algoritmos. Neste site você encontrará vários exercícios e desafios para aperfeiçoar seu nível de programação.`,
+    name: 'algoritmo',
+    tags: tags['algoritmo'],
+    icon: 'fa-regular fa-keyboard',
+  },
+  {
+    title: 'Linguagens',
+    description: `Os exercícios utilizam códigos das princiapais linguagens de programação, disponibilizando um esboço inicial para resolver o exercício e também uma alternativa de resposta.`,
+    name: 'código',
+    tags: tags['código'],
+    icon: 'fa-solid fa-code',
+  },
+  {
+    title: 'Web',
+    description: `Para exercitar os conceitos de programação web você encontrará aqui vários cenários de páginas e aplicações web.`,
+    name: 'web',
+    tags: tags['web'],
+    icon: 'fa-solid fa-laptop-code',
+  },
+  {
+    title: 'Desafios',
+    description: `Depois dos exercícios básicos é hora de aprofundar os fundamentos e aperfeiçoar a programação com alguns desafios.`,
+    name: 'desafio',
+    tags: [],
+    icon: 'fa-solid fa-user-astronaut',
+  },
+];
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Exercícios</title>
@@ -46,31 +87,23 @@ const allSubjects = await allProblems.reduce(async (acc, exercise) => {
   <body class="bg-gray-100">
     <NavBar />
     <div class="container mx-auto px-4 py-16">
-      <h1 class="text-center pb-16 text-4xl font-bold">Exercícios</h1>
-      {
-        Object.keys(allSubjects).map((subject) => (
-          <div>
-            <a href={`./problems/${subject !== 'código' ? `${subject}/` : ''}1`}>
-              <h2 class="text-2xl capitalize font-bold my-4 cursor-pointer">{subject}</h2>
-            </a>
-            <div class="grid justify-items-stretch gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-              {
-                allSubjects[subject].map((area) => (
-                  <a href={`./problems/${area}/1`}>
-                    <div class="rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer bg-white py-4 px-4">
-                      <h3 class={`text-xl ${subject !== 'código' && 'capitalize'}`}>{area}</h3>
-                    </div>
-                  </a>
-                ))
-              }
-            </div>
-          </div>
-        ))
-      }
-      <div>
-        <a href={`./problems/desafio/1`}>
-          <h2 class="text-2xl capitalize font-bold my-4 cursor-pointer">Desafios</h2>
-        </a>
+      <div class="mx-auto max-w-2xl py-8 sm:py-12 lg:py-14">
+        <div class="text-center">
+          <h1
+            class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
+          >
+            A arte da programação exige prática.
+          </h1>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Este site tem como foco disponibilizar algumas práticas de
+            programação por meio de exercícios e desafios. Então, se seu
+            objetivo é dominiar a arte de programação, este é o lugar certo.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap mt-16">
+        {Object.values(subjects).map((subject) => <SubjectCard {...subject} />)}
       </div>
     </div>
   </body>

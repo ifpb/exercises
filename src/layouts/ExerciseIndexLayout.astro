@@ -1,0 +1,41 @@
+---
+import ExerciseCard from '../components/ExerciseCard.astro';
+import GoogleAnalytics from '../components/GoogleAnalytics.astro';
+import PaginationIndex from '../components/PaginationIndex.astro';
+
+const { pageTitle, page, tag } = Astro.props;
+
+const PaginationIndexProps = {
+  page
+};
+
+if (tag) {
+  PaginationIndexProps.tag = tag;
+}
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <GoogleAnalytics />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h1 class="text-center py-10 text-4xl font-bold">{pageTitle}</h1>
+      <div class="grid justify-items-stretch gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {
+          page.data.map((exercise, index) => {
+            const id = index + 1 + (page.currentPage - 1) * page.size;
+
+            return <ExerciseCard exercise={exercise} id={id} />
+          })
+        }
+      </div>
+      {(page.lastPage > 1) && <PaginationIndex {...PaginationIndexProps} />}
+    </div>
+  </body>
+</html>

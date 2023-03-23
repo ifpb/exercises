@@ -1,6 +1,6 @@
 ---
 import fs from "node:fs/promises";
-import ExerciseLayout from "../../layouts/ExerciseLayout.astro";
+import ExercisePageLayout from "../../layouts/ExercisePageLayout.astro";
 import { GITHUB_EDIT_URL } from '../../consts';
 
 export async function getStaticPaths() {
@@ -46,8 +46,8 @@ const currentFile = `${currentDir}/README.${fileExtension}`;
 const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
 ---
 
-<ExerciseLayout pageTitle={title}>
-  <article class="mx-auto prose md:prose-lg lg:prose-xl">
+<ExercisePageLayout pageTitle={title}>
+  <article class="mx-auto px-4 md:px-0 prose md:prose-lg lg:prose-xl">
     <h1 class="text-center">{title}</h1>
     <Content/>
     <p>
@@ -99,4 +99,4 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
       })}
     </ul>
   </article>
-</ExerciseLayout>
+</ExercisePageLayout>

@@ -1,5 +1,6 @@
 ---
 import fs from "node:fs/promises";
+import GoogleAnalytics from '../components/GoogleAnalytics.astro';
 
 const allProblems = (await Astro.glob("./exercises/*/README.*")).filter((exercise) => {
   return !exercise.url.split("/")[3].startsWith("_");
@@ -39,23 +40,22 @@ const allSubjects = await allProblems.reduce(async (acc, exercise) => {
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Exercícios</title>
+    <GoogleAnalytics />
   </head>
   <body class="bg-gray-100">
-    <div class="container mx-auto lg:px-16 py-8">
-      <a href="./" class="no-underline">
-        <h1 class="text-center py-10 text-4xl font-bold">Exercícios</h1>
-      </a>
+    <div class="container mx-auto px-4 lg:px-16 py-8">
+      <h1 class="text-center py-10 text-4xl font-bold">Exercícios</h1>
       {
         Object.keys(allSubjects).map((subject) => (
           <div>
             <a href={`./problems/${subject !== 'código' ? `${subject}/` : ''}1`}>
               <h2 class="text-2xl capitalize font-bold my-4 cursor-pointer">{subject}</h2>
             </a>
-            <div class="grid gap-5 grid-cols-3">
+            <div class="grid justify-items-stretch gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {
                 allSubjects[subject].map((area) => (
                   <a href={`./problems/${area}/1`}>
-                    <div class="max-w-sm rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer bg-white py-4 px-4">
+                    <div class="rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer bg-white py-4 px-4">
                       <h3 class={`text-xl ${subject !== 'código' && 'capitalize'}`}>{area}</h3>
                     </div>
                   </a>

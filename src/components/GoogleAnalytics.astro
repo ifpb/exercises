@@ -1,0 +1,16 @@
+---
+import { GA_MEASUREMENT_ID } from '../consts';
+---
+
+<script
+  type="text/partytown"
+  src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}>
+</script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", {GA_MEASUREMENT_ID});
+</script>

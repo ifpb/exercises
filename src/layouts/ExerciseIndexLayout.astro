@@ -1,6 +1,7 @@
 ---
 import ExerciseCard from '../components/ExerciseCard.astro';
 import GoogleAnalytics from '../components/GoogleAnalytics.astro';
+import NavBar from '../components/NavBar.astro';
 import PaginationIndex from '../components/PaginationIndex.astro';
 
 const { pageTitle, page, tag } = Astro.props;
@@ -24,8 +25,9 @@ if (tag) {
     <GoogleAnalytics />
   </head>
   <body class="bg-gray-100">
-    <div class="container mx-auto px-4">
-      <h1 class="text-center py-10 text-4xl font-bold">{pageTitle}</h1>
+    <NavBar />
+    <div class="container mx-auto px-4 py-16">
+      <h1 class="text-center pb-16 text-4xl font-bold">{pageTitle}</h1>
       <div class="grid justify-items-stretch gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {
           page.data.map((exercise, index) => {

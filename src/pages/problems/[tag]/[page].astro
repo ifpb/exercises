@@ -2,7 +2,7 @@
 import fs from "node:fs/promises";
 
 export async function getStaticPaths({ paginate }) {
-  const allProblems = await (await Astro.glob("../*/README.*")).filter((exercise) => {
+  const allProblems = (await Astro.glob("../../exercises/*/README.*")).filter((exercise) => {
     return !exercise.url.split("/")[3].startsWith("_");
   });
 
@@ -11,7 +11,7 @@ export async function getStaticPaths({ paginate }) {
 
     const slug = exercise.url.split("/")[3];
 
-    const codes = await fs.readdir(`./src/pages/problems/${slug}/_codes`);
+    const codes = await fs.readdir(`./src/pages/exercises/${slug}/_codes`);
 
     const tags = [
       ...subjects,

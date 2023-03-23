@@ -1,14 +1,14 @@
 #!/bin/bash
-for f in src/pages/problems/*; do
-	exercise="${f/src\/pages\/problems\//}"
+rm -r "dist/exercises"
+
+for f in src/pages/exercises/*; do
+	exercise="${f/src\/pages\/exercises\//}"
 
   if ! [[ "$exercise" =~ ^_.*  ]]; then
-    originPath="src/pages/problems/${exercise}/_codes"
+    originPath="src/pages/exercises/${exercise}/_codes"
 
     if [ -d $originPath ]; then
       cp -r $originPath "dist/problems/${exercise}/_codes"
-
-      rm -r "dist/problems/${exercise}/README"
     fi
   fi
 done

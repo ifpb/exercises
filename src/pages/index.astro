@@ -1,7 +1,7 @@
 ---
 import fs from "node:fs/promises";
 
-const allProblems = (await Astro.glob("./problems/*/README.*")).filter((exercise) => {
+const allProblems = (await Astro.glob("./exercises/*/README.*")).filter((exercise) => {
   return !exercise.url.split("/")[3].startsWith("_");
 });
 
@@ -10,10 +10,9 @@ const allSubjects = await allProblems.reduce(async (acc, exercise) => {
 
   const { subjects, areas } = exercise.frontmatter;
 
-
   const slug = exercise.url.split("/")[3];
 
-  const codes = await fs.readdir(`./src/pages/problems/${slug}/_codes`);
+  const codes = await fs.readdir(`./src/pages/exercises/${slug}/_codes`);
 
   subjects.forEach((subject) => {
     if (!collection[subject]) {

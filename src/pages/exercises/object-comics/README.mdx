@@ -1,0 +1,22 @@
+---
+title: Personagens de Quadrinhos
+subjects:
+  - algoritmo
+areas:
+  - objeto
+---
+
+import { Image } from '@astrojs/image/components';
+import comics from './_assets/comics.svg';
+
+## Descrição
+
+Crie uma coleção de personagens (`Character`) em um quadrinho (`Comic`) seguindo esta representação da *Figura 1*.
+
+*Figura 1 - Objeto dos Personagens de Quadrinho*
+
+<Image src={comics} alt="Objeto dos Personagens de Quadrinho" />
+
+No quadrinho será possível determinar quais são os personagens de uma empresa específica, por exemplo, se os quadrinhos possuírem os personagens: Batman, Hulk, Spider-Man e Superman, e for solicitado personagens da Marvel ou DC, será exibido apenas os personagens específicados.
+
+Também será listado os pesos dos personagens por empresa específica.

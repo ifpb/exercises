@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="314px" preserveAspectRatio="none" style="width:463px;height:314px;" version="1.1" viewBox="0 0 463 314" width="463px" zoomAndPan="magnify"><defs><filter height="300%" id="fu8clbwegrifn" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class Character--><rect fill="#F8F8F8" filter="url(#fu8clbwegrifn)" height="143.7734" id="Character" style="stroke: #383838; stroke-width: 1.5;" width="446" x="6" y="160"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56" x="201" y="176.6016">Character</text><line style="stroke: #383838; stroke-width: 1.5;" x1="7" x2="451" y1="184.1328" y2="184.1328"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="76" x="12" y="198.7676">-comic: string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="69" x="12" y="211.7227">-hero: string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="73" x="12" y="224.6777">-name: string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="70" x="12" y="237.6328">-height: float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="71" x="12" y="250.5879">-weight: float</text><line style="stroke: #383838; stroke-width: 1.5;" x1="7" x2="451" y1="256.9082" y2="256.9082"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="434" x="12" y="271.543">+__construct(comic: string, hero: string, name: string, height: float, weight: float)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="152" x="12" y="284.498">+__get(name: string): mixed</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="228" x="12" y="297.4531">+__set($name: string, $value: mixed): void</text><!--class Comic--><rect fill="#F8F8F8" filter="url(#fu8clbwegrifn)" height="91.9531" id="Comic" style="stroke: #383838; stroke-width: 1.5;" width="227" x="115.5" y="8"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="35" x="211.5" y="24.6016">Comic</text><line style="stroke: #383838; stroke-width: 1.5;" x1="116.5" x2="341.5" y1="32.1328" y2="32.1328"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="177" x="121.5" y="46.7676">-$characters: Array&lt;Character&gt;</text><line style="stroke: #383838; stroke-width: 1.5;" x1="116.5" x2="341.5" y1="53.0879" y2="53.0879"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="176" x="121.5" y="67.7227">+add(character: Character): void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="215" x="121.5" y="80.6777">+names($comic: string): Array&lt;String&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="121.5" y="93.6328">+weights($comic: string): float</text><!--link Comic to Character--><path d="M229,113.5056 C229,128.3181 229,144.3597 229,159.7129 " fill="none" id="Comic-Character" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="229,100.3027,225,106.3027,229,112.3027,233,106.3027,229,100.3027" style="stroke: #383838; stroke-width: 1.0;"/><!--
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome true
+hide circle
+
+class Character {
+  -comic: string
+  -hero: string
+  -name: string
+  -height: float
+  -weight: float
+  +__construct(comic: string, hero: string, name: string, height: float, weight: float)
+  +__get(name: string): mixed
+  +__set($name: string, $value: mixed): void
+}
+
+class Comic {
+  -$characters: Array<Character>
+  +add(character: Character): void
+  +names($comic: string): Array<String>
+  +weights($comic: string): float
+}
+
+Comic o- - Character
+@enduml
+
+PlantUML version 1.2019.03(Sun Mar 10 08:04:44 BRT 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_101-b13
+Operating System: Mac OS X
+OS Version: 10.14.4
+Default Encoding: US-ASCII
+Language: en
+Country: US
+--></g></svg>

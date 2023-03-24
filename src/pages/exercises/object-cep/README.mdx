@@ -1,0 +1,34 @@
+---
+title: Objeto CEP
+subjects:
+  - algoritmo
+areas:
+  - objeto
+---
+
+import { Image } from '@astrojs/image/components';
+import cep from './_assets/object-cep.svg';
+
+## Descrição
+
+Estruture os dados do CEP da *Tabela 1*, conforme ilustrado na *Figura 1*, com algum tipo de dados.
+
+*Figura 1 - Objeto CEP*
+
+<Image src={cep} alt="Objeto CEP" />
+
+*Tabela 1 - Dados do CEP*
+
+| Campo         | Valor         |
+| ------------- | ------------- |
+| `cep`         | `01001-000`   |
+| `logradouro`  | `Praça da Sé` |
+| `complemento` | `lado ímpar`  |
+| `bairro`      | `Sé`          |
+| `localidade`  | `São Paulo`   |
+| `uf`          | `SP`          |
+| `unidade`     |               |
+| `ibge`        | `3550308`     |
+| `gia`         | `1004`        |
+
+**Dica**: Utilize o tipo de dados objeto:.

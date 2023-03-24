@@ -1,0 +1,25 @@
+### Lower case
+
+POST http://127.0.0.1:3000/util/text/lowercase HTTP/1.1
+Content-Type: application/json
+
+{
+  "input": "Lorem Ipsum"
+}
+
+### Upper case
+
+POST http://127.0.0.1:3000/util/text/uppercase HTTP/1.1
+Content-Type: application/json
+
+{
+  "input": "Lorem Ipsum"
+}
+
+### Minimum
+
+GET http://127.0.0.1:3000/util/number/minimum/?input=10,1,100 HTTP/1.1
+
+### Maximum
+
+GET http://127.0.0.1:3000/util/number/maximum/?input=10,1,100 HTTP/1.1

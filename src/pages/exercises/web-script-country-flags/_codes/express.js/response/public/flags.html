@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>Flags</title>
+
+<style>
+  .flag {
+    min-height: 6.5rem;
+  }
+
+  .flag p {
+    font-size: .8rem;
+    color: #777;
+  }
+</style>
+
+</head>
+<body>
+  <div class="container">
+
+    <h1 class="my-5 text-center">Flags</h1>
+
+    <main class="row">
+
+    </main>
+  <div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script>
+    async function loadFlags() {
+      const res = await fetch('/flags');
+      const flags = await res.json();
+      let flagsView = '';
+
+      for (const flag of flags) {
+        flagsView += `<div class="flag col-2 my-2 text-center">
+          <img src="${flag.image}" alt="${flag.name}">
+          <p>${flag.name}</p>
+        </div>`;
+      }
+
+      document.querySelector('main').innerHTML = flagsView;
+    }
+
+    loadFlags();
+  </script>
+</body>
+</html>

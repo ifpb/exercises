@@ -1,0 +1,74 @@
+---
+title: Curriculum Vitae com Ícone e Web Fonte
+preview: true
+subjects:
+  - web
+areas:
+  - estilo
+---
+
+import { Image, Picture } from '@astrojs/image/components';
+import screen from './_assets/screen.png';
+import button from './_assets/button.png';
+
+## Objetivo
+
+O objetivo desta atividade consiste em abordar os seguintes temas:
+
+- Configurar e usar fontes do [Google Fonts](https://fonts.google.com/)
+- Configurar e usar ícones do [Material Icon](https://material.io/icons/) e do [Font Awesome](http://fontawesome.io/)
+- Estilizando ícones como texto
+- Usar:
+  - Properties: `border-radius`, `font-family`, `font-size`, `text-align`, `color`, `background-color`, `text-decoration`, `line-height`
+  - Value: `<length> (em)`
+
+## Descrição
+
+A criação de um Curriculum Vitae é algo importante para a vida profissional. Ao saber do aumento de especialista de HTML e CSS no IFPB, algumas pessoas resolveram contratar alguém para ajudar na missão de construir um curriculum.
+
+A princípio foi fornecido, textualmente, algumas informações que estão disponíveis no arquivo compactado [site.zip](https://download-directory.github.io/?url=https://github.com/ifpb/exercises/tree/main/src/pages/problems/web-markup-curriculum-icon/_codes/html/code/). Também foi fornecido foto e algumas descrições, que juntos deverão ser apresentados em um navegador Web, conforme ilustra a *Figura 1*.
+
+*Figura 1* - Layout do Currículum com Estilo
+
+<Image src={screen} alt="Layout do Currículum com Estilo" class="border p-4" />
+
+É importante frisar que este exercício trata-se de uma continuação do exercício do Curriculo Vitae com Estilo, logo, para alcançar tal resultado, tente adicionar alguns estilos sugeridos a seguir por meio da linguagem CSS.
+
+**Obs.:** Os arquivos e diretórios do site apresentam a estrutura a seguir:
+
+```
+site
+├── css
+│   └── style.css
+├── img
+│   └── avatar.png
+├── index.html
+└── pages
+    └── resumo.html
+```
+
+As instruções passadas para gerar o currículos, conforme a *Figura 1*, são:
+
+**INSTRUÇÃO 1.** Aplique ao `<h1>` a tipo de fonte Audiowide disponibilizado pelo [Google](https://fonts.googleapis.com/css?family=Audiowide), da família cursiva, e com o tamanho da fonte igual a `30px`.
+
+**INSTRUÇÃO 2.** Adicione no `<h2>` o `border-radius` com valor de `5px`.
+
+**INSTRUÇÃO 3.** Acrescente no final do hyperlink `leia mais` o ícone `launch` do [Material Icon](https://material.io/icons/) disponibilizado pelo [Google](](https://fonts.googleapis.com/icon?family=Material+Icons)). No entanto, no documento, altere o tamanho de sua fonte para `1rem`. Altere também a altura da linha do ícone e também dos parágrafos para `1.5rem`.
+
+**INSTRUÇÃO 4.** No arquivo `pages/resumo.html` crie um botão conforme a *Figura 2* composto pelo ícone [arrow-circle-left](https://fontawesome.com/icons/arrow-circle-left?style=solid), do [Font Awesome](http://fontawesome.io/) disponibilizado por [CDNJS](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css), e a palavra `voltar`. Este botão deverá estar em um hiperlink referenciando o arquivo `index.html`. Internamente o botão deverá conter uma classe chamada `btn`, que define o tamanho de fonte de `1.3rem`. Porém, quando o cursor estiver sobre este botão a cor do texto deverá ser `branca`, o plano de fundo `darkblue` e sem o `sublinhado`.
+
+*Figura 2 - Aparências do botão voltar*
+
+<Image src={button} alt="Aparências do botão volta" class="border p-4" />
+
+**INSTRUÇÃO 5.** Adicione ao bloco, cujo o id é `social`, três hiperlinks, cada um contendo os seguintes ícones do [Font Awesome](http://fontawesome.io/): [facebook-square](https://fontawesome.com/icons/facebook-square?style=brands), [twitter-square](https://fontawesome.com/icons/twitter-square?style=brands), [linkedin-square](https://fontawesome.com/icons/linkedin?style=brands). Estes hiperlinks devem estar `centralizados` dentro do bloco, com a cor de texto `branca` e tamanho de fonte `2rem`. Os ícones `facebook-square`, `twitter-square`, `linkedin-square` devem ser apresentados, respectivamente, nas cores `navy`, `dodgerblue`, `navy`.
+
+**INSTRUÇÃO 6.** Na visualização de impressao de ambos os documentos html:
+
+**a)** O `<body>` e o `<h1>` devem apresentar a cor de texto `preta` e o tipo de fonte `Times, serif`;
+
+**b)** O Título `<h1>` de id `person` deve estar alinhado a `esquerda`;
+
+**c)** O Título `<h2>` deve possuir o plano de fundo com o valor `unset`;
+
+**d)** Os Hiperlinks em `<h2>` e que os que possuem a classe `topo` devem possuir a cor de texto `branca`;

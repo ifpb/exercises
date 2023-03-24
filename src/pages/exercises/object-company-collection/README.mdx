@@ -1,0 +1,54 @@
+---
+title: Coleção de Empresas
+subjects:
+  - algoritmo
+areas:
+  - objeto
+---
+
+import { Image } from '@astrojs/image/components';
+import companyInstance from './_assets/object-company-instance.svg';
+import companyShow from './_assets/object-company-show.svg';
+import companyCollectionShow from './_assets/object-company-collection-show.svg';
+
+## Descrição
+
+Crie uma variável que contenha as informações desta tabela:
+
+| Name          | Founded | Industry                   | Kind             |
+| ------------- | ------- | -------------------------- | ---------------- |
+| Amazon        | 1994    | E-Commerce, Cloud          | Internet company |
+| Facebook      | 2004    | Social                     | Internet company |
+| Alphabet Inc. | 2015    | Search, Cloud, Advertising | Internet company |
+
+Uma das formas de estruturação desta tabela pode ser por meio da classe do diagrama da *Figura 1*:
+
+*Figura 1 - Instância da Empresa*
+
+<Image src={companyInstance} alt="Instância da Empresa" />
+
+Portanto, crie a classe Company conforme o diagrama da *Figura 2*:
+
+*Figura 2 - Exibição da Empresa*
+
+<Image src={companyShow} alt="Exibição da Empresa" />
+
+Contudo, o resultado do método `show()` deve ser o nome e ano de fundação da empresa (sempre com tamanho de 15 caracteres):
+
+```
+Name.........Founded
+```
+
+Crie também a classe `Companies` para agrupar uma coleção de `Company`, tal como exibido na *Figura 3*:
+
+*Figura 3 - Exibição da Coleção de Empresas*
+
+<Image src={companyCollectionShow} alt="Exibição da Coleção de Empresas" />
+
+O método `show()` da coleção deve evocar todos os `show()` de suas instâncias:
+
+```
+Amazon.........1994
+Alphabet Inc...2015
+Facebook.......2004
+```

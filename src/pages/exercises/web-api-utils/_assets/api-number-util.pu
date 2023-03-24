@@ -1,0 +1,10 @@
+@startuml
+title Number Util
+hide footbox
+skinparam monochrome true
+
+Client -> Server: HTTP Request
+note right: GET /util/number/minimum/?input=10,1,100 HTTP/1.1
+Server -> Client: HTTP Response
+note left: HTTP/1.1 200 OK\n\n{\n  "action": "minimum",\n  "input": [\n    "10",\n    "1",\n    "100"\n  ],\n  "output": 1\n}
+@enduml

@@ -6,6 +6,10 @@ export async function getStaticPaths({ paginate }) {
     (exercise) => !exercise.url.split('/')[3].startsWith('_')
   );
 
+  allProblems.sort((a, b) =>
+    a.frontmatter.title.localeCompare(b.frontmatter.title)
+  );
+
   return paginate(allProblems, { pageSize: 12 });
 }
 

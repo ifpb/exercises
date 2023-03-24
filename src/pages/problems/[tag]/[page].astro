@@ -9,6 +9,10 @@ export async function getStaticPaths({ paginate }) {
     }
   );
 
+  allProblems.sort((a, b) =>
+    a.frontmatter.title.localeCompare(b.frontmatter.title)
+  );
+
   const allTags = await Promise.all(
     await allProblems.map(async (exercise, index) => {
       const { subjects, areas, challenge } = exercise.frontmatter;

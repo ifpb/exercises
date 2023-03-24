@@ -1,0 +1,51 @@
+.container {
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 25rem;
+}
+
+.offer-description {
+  column-count: 2;
+}
+    
+.offer-values {
+  color: #6a404f;
+}
+
+.offer-option {
+  color: #dd8117;
+}
+
+.offer-price {
+  font-size: 2.5rem;
+}
+
+.offer-market-price {
+  text-decoration: line-through;
+  font-size: .8rem;
+  min-height: 1.1em;
+  line-height: 1.5;
+}
+
+.offer-discount-value {
+  font-size: .8rem;
+  min-height: 1.1em;
+  line-height: 1.5;
+}
+
+.offer-discount-percent {
+  font-size: 1.1rem;
+  min-height: 1.1em;
+  line-height: 1.5;
+}

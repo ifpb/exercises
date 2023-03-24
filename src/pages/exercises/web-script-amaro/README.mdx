@@ -1,5 +1,5 @@
 ---
-title: Desafio Fron-end da Amaro
+title: Desafio Front-end da Amaro
 preview: true
 challenge: true
 subjects:
@@ -8,7 +8,7 @@ areas:
   - script
 ---
 
-import { Image, Picture } from '@astrojs/image/components';
+import { Image } from '@astrojs/image/components';
 import layoutVisible from './_assets/layout-visible.png';
 import products from './_assets/products.png';
 import productSize from './_assets/product-size.png';
@@ -23,7 +23,7 @@ Para ajudar a inicialização do desafio foi definido uma proposta de layout est
 
 *Figura 1 - Layout da Página*
 
-<Image src={layoutVisible} alt="Minha Primeira Página" />
+<Image src={layoutVisible} alt="Layout da Página" />
 
 A seguir será descrito alguns componentes para auxiliar a geração dinâmica da página usando as informações do arquivo JSON.
 
@@ -54,7 +54,7 @@ Usando esses dados crie uma lista de produtos conforme ilustra à *Figura 2*.
 
 *Figura 2 - Lista de produtos*
 
-<Image src={products} alt="Minha Primeira Página" />
+<Image src={products} alt="Lista de produtos" />
 
 
 Também considere que o HTML necessário para compor este grid de produtos deve ser este:
@@ -120,7 +120,7 @@ Usando esses dados crie cada produto com os seus tamanhos disponíveis, conforme
 
 *Figura 3 - Tamanho disponível dos produto*
 
-<Image src={productSize} alt="Minha Primeira Página" />
+<Image src={productSize} alt="Tamanho disponível dos produto" />
 
 Também considere que o HTML necessário para compor cada produto deve conter a lista `.product-sizes`:
 
@@ -192,7 +192,7 @@ Então, usando esses dados adapte cada produto que esteja em promoção para que
 
 *Figura 4 - Produto na promoção*
 
-<Image src={productOff} alt="Minha Primeira Página" />
+<Image src={productOff} alt="Produto na promoção" />
 
 Considere que o HTML necessário para compor cada produto em promoção deve conter a seguinte estrutura:
 
@@ -225,4 +225,4 @@ Considere que o HTML necessário para compor cada produto em promoção deve con
 
 *Figura 5 - Filtro de produtos*
 
-<Image src={productsFilter} alt="Minha Primeira Página" />
+<Image src={productsFilter} alt="Filtro de produtos" />

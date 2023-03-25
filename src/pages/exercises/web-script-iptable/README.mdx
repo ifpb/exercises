@@ -1,0 +1,38 @@
+---
+title: Tabela de Endereços IP
+preview: true
+subjects:
+  - web
+areas:
+  - script
+---
+
+import { Image } from '@astrojs/image/components';
+import layoutRead from './_assets/layout-read.png';
+import layoutCreate from './_assets/layout-create.gif';
+import layoutCreateUnique from './_assets/layout-create-unique.gif';
+import layoutCrud from './_assets/layout-crud.gif';
+
+## Descrição
+
+Crie um aplicativo que liste um conjunto de endereços IP em uma tabela. O resultado final deve ser semelhante ao da _Figura 1_.
+
+_Figura 1: Página de exibição da tabela de endereços IP_
+
+<Image src={layoutRead} alt="Página de exibição da tabela de endereços IP" class="border p-4" />
+
+Tente gerar o cadastro de novos endereços IP usando um formulário com os seguintes campos da _Figura 2_. Outra opção seria permitir que o usuário cadastre apenas um endereço IP por vez. O resultado final deve ser semelhante ao da _Figura 3_.
+
+_Figura 2: Cadastro de novos endereços IP_
+
+<Image src={layoutCreate} alt="Cadastro de novos endereços IP" class="border p-4" />
+
+_Figura 3: Cadastro único de novos endereços IP_
+
+<Image src={layoutCreateUnique} alt="Cadastro único de novos endereços IP" class="border p-4" />
+
+O usuário também deve poder editar e excluir os endereços IP cadastrados. O resultado final deve ser semelhante ao da _Figura 4_.
+
+_Figura 4: Gerenciamento de endereços IP_
+
+<Image src={layoutCrud} alt="Gerenciamento de endereços IP" class="border p-4" />

@@ -48,7 +48,7 @@ const {
 const currentPage = Astro.url.pathname;
 const currentDir = `src/pages${currentPage
   .replace(/\/$/, '')
-  .replace('/exercises', '')}`;
+  .replace('/problems', '')}`;
 const fileExtension = file.split('.').pop();
 const currentFile = `${currentDir}/README.${fileExtension}`;
 const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;

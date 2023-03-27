@@ -1,5 +1,5 @@
 ---
-title: Carrinho de Compra
+title: Carrinho de Compra Simples
 subjects:
   - algoritmo
 areas:

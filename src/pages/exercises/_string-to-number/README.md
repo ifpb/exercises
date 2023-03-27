@@ -1,1 +1,0 @@
-# Parser de String para Number

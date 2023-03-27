@@ -1,5 +1,5 @@
 ---
-title: Carrinho de Compra
+title: Carrinho de Compra com Quantidade
 subjects:
   - algoritmo
 areas:

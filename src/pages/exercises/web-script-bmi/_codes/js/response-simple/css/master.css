@@ -1,0 +1,24 @@
+.container {
+  margin: 40px auto;
+}
+
+.card-body {
+  padding: 10px 30px;
+}
+
+.form-group>*:first-child {
+  font-weight: bold;
+}
+
+#calc-imc-btn {
+  font-size: 1.2em;
+}
+
+#calc-imc-btn .fa {
+  font-size: 1.4em;
+}
+
+.form-control[readonly] {
+  background-color: #fefefe;
+}
+

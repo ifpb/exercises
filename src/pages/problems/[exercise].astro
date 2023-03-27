@@ -13,7 +13,13 @@ export async function getStaticPaths() {
   await allProblems.reduce(async (acc, exercise) => {
     const slug = exercise.url.split('/')[3];
 
-    const codes = await fs.readdir(`./src/pages/exercises/${slug}/_codes`);
+    let codes;
+
+    try {
+      codes = await fs.readdir(`./src/pages/exercises/${slug}/_codes`);
+    } catch (error) {
+      codes = [];
+    }
 
     exercise.frontmatter.codes = codes;
 
@@ -61,35 +67,36 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
     <h2>Códigos</h2>
     <ul>
       {
-        codes.map((code) => {
-          const codeDir = `${GITHUB_EDIT_URL}/${currentDir}/_codes/${code}`;
+        codes &&
+          codes.map((code) => {
+            const codeDir = `${GITHUB_EDIT_URL}/${currentDir}/_codes/${code}`;
 
-          return (
-            <li>
-              {code}
-              (código:
-              <a href={`${codeDir}/code/`}>github</a>,
-              <a
-                href={`https://download-directory.github.io/?url=${codeDir}/code/`}
-              >
-                zip
-              </a>
-              ; resposta:
-              <a href={`${codeDir}/response/`}>github</a>,
-              <a
-                href={`https://download-directory.github.io/?url=${codeDir}/response/`}
-              >
-                zip
-              </a>
-              {preview && (
-                <>
-                  , <a href={`./_codes/${code}/response/`}>preview</a>
-                </>
-              )}
-              )
-            </li>
-          );
-        })
+            return (
+              <li>
+                {code}
+                (código:
+                <a href={`${codeDir}/code/`}>github</a>,
+                <a
+                  href={`https://download-directory.github.io/?url=${codeDir}/code/`}
+                >
+                  zip
+                </a>
+                ; resposta:
+                <a href={`${codeDir}/response/`}>github</a>,
+                <a
+                  href={`https://download-directory.github.io/?url=${codeDir}/response/`}
+                >
+                  zip
+                </a>
+                {preview && (
+                  <>
+                    , <a href={`./_codes/${code}/response/`}>preview</a>
+                  </>
+                )}
+                )
+              </li>
+            );
+          })
       }
     </ul>
     <p>

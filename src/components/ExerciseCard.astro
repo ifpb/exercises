@@ -11,7 +11,13 @@ const {
 
 const nameDir = url.split('/')[3];
 
-const codes = await fs.readdir(`./src/pages/exercises/${nameDir}/_codes`);
+let codes;
+
+try {
+  codes = await fs.readdir(`./src/pages/exercises/${nameDir}/_codes`);
+} catch (error) {
+  codes = [];
+}
 
 const tags = [...subjects, ...areas, ...codes];
 

@@ -1,1 +1,0 @@
-# Transcrição RNA

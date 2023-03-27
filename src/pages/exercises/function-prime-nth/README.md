@@ -1,5 +1,5 @@
 ---
-title: Enésimo Primo
+title: Enésimo Número Primo
 subjects:
   - algoritmo
 areas:

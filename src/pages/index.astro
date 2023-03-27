@@ -17,7 +17,13 @@ const tags = await allProblems.reduce(async (acc, exercise) => {
 
   const slug = exercise.url.split('/')[3];
 
-  const codes = await fs.readdir(`./src/pages/exercises/${slug}/_codes`);
+  let codes;
+
+  try {
+    codes = await fs.readdir(`./src/pages/exercises/${slug}/_codes`);
+  } catch (error) {
+    codes = [];
+  }
 
   subjects.forEach((subject) => {
     if (!collection[subject]) {

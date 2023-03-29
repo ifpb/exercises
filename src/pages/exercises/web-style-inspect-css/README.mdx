@@ -1,0 +1,40 @@
+---
+title: Analise de Estilo de uma Página
+subjects:
+  - web
+areas:
+  - estilo
+---
+
+import { Image } from '@astrojs/image/components';
+import horarioOriginal from './_assets/horario-original.png';
+import horarioPersonalizado from './_assets/horario-personalizado.png';
+
+## Objetivo
+
+O objetivo desta atividade consiste em abordar os seguintes temas:
+
+- Edição da cópia de uma página usando a Ferramenta de Desenvolvedor do Browser
+- Analisar e editar estilos de um elemento HTML
+
+## Descrição
+
+A Ferramenta de Desenvolvedor, abordado no exercício Analisando uma página Web, pode permitir a edição da estrutura da página carregada.
+
+Para experimentar este recurso acesse o horário de algum laboratório do IFPB, nessa [página](http://joaopessoa.ifpb.edu.br/horario/), e através da Ferramenta de Desenvolvedor remova da página em memória, apresentado na *Figura 1*, alguns elementos de cabeçalho da página para que assim reste apenas o título do laboratório e sua tabela dos horários, conforme a *Figura 2*.
+
+*Figura 1 - Horário Original do Lab 58*
+
+<Image src={horarioOriginal} alt="Horário Original do Lab 58" class="border p-4" />
+
+*Figura 2 - Horário Personalizado do Lab 58*
+
+<Image src={horarioPersonalizado} alt="Horário Personalizado do Lab 58" class="border p-4" />
+
+Mas, essa ferramenta também pode ser usada para analisar e editar os estilos aplicados sobre as tags.
+
+Portanto, tente analisar o estilo das tags seleciondas, inclusive, veja que é possível alterar o estilo em memório, por exemplo, tente alterar apenas o tamanho do nome do laboratório na própria ferramenta.
+
+Detalhe, também é possível verificar se foi editado ou carregado uma propriedade ou valor com valor inválido. Na seção `Styles`, da aba `Elements`, a declaração inválida geralmente fica com algum ícone de alerta.
+
+Contudo, veja que ao fazer o recarregamento da página as configurações editadas são perdidas, pois a edição é feita apenas na cópia corrente.

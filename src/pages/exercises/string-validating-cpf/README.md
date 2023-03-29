@@ -1,5 +1,5 @@
 ---
-title: Dígito Verificador do CPF
+title: Validação do CPF
 subjects:
   - algoritmo
 areas:
@@ -8,9 +8,11 @@ areas:
 
 ## Descrição
 
-O CPF é um identificador formado pela sequência de nove números mais dois Dígitos Verificadores (DV). Existem regras que definem o cálculo do dígito verificador, e a composição dos números, por exemplo, não é possível gerar um número que possua todos os dígitos iguais como `000.000.000`. A seguir será detalhado o algoritmo de geração dos DV para um CPF.
+O CPF é um número de identificação pessoal que é utilizado para fins fiscais e de segurança social, que é composto por 11 dígitos, sendo que os dois últimos são os dígitos verificadores.
 
-O cálculo do DV começa com o produto dos nove primeiros número do CPF multiplicados com os pesos `10, 9, ... 2`. Para o número `000111222` o primeiro dígito pode ser calculado pela _Tabela 1_:
+O Dígito Verificador (DV) do CPF é processado através de um algoritmo que utiliza os 9 primeiros dígitos para calcular os dois últimos dígitos verificadores. O algoritmo do DV é o mesmo para os dois dígitos verificadores, sendo que o primeiro é calculado a partir dos 9 primeiros dígitos e o segundo a partir dos 10 primeiros dígitos.
+
+O cálculo do primeiro DV começa com o produto dos nove primeiros número do CPF multiplicados com os pesos `10, 9, ... 2`. Para o número `000111222` o primeiro dígito pode ser calculado pela _Tabela 1_:
 
 _Tabela 1 - Cálculo do Primeiro Dígito Verificador_
 
@@ -32,12 +34,13 @@ _Tabela 2 - Cálculo do Segundo Dígito Verificador_
 
 Calcule o somatório das multiplicações `(0 + 0 + ... + 16 = 61)`. Novamente divide-se o resultado por 11, logo 61 divido por 11 é igual a 5 com resto 6. Se o resto da divisão seja menor que 2, o digito será 0, caso contrário subtrai-se de 11. Portanto, o resultado do segundo dígito será `11 - 6 = 5`, e o CPF será `000.111.222-85`.
 
-Para analisar mais exemplos veja a _Tabela 3_.
+Para mais detalhes veja a *Tabela 1*:
 
-_Tabela 3 - Exemplos de Geração do Dígito Verificador_
+*Tabela 1 - Exemplos de validação do DV*
 
-| Entrada   | Saída       |
-| --------- | ----------- |
-| 000000000 | false       |
-| 123456789 | 12345678909 |
-| 000111222 | 00011122285 |
+| CPF           | Valido  |
+| ------------- | ------- |
+| `12345678909` | `true`  |
+| `00011122285` | `true`  |
+| `11122233300` | `false` |
+| `11122233396` | `true`  |

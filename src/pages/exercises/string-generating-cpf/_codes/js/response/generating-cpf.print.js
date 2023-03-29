@@ -13,3 +13,7 @@ console.log('12345678909');
 // the check digit of 000111222 is 85
 console.log(cpfCheckDigit('000111222'));
 console.log('00011122285');
+
+// the check digit of 000111222 is 85
+console.log(cpfCheckDigit('111222333'));
+console.log('11122233396');

@@ -8,9 +8,9 @@ areas:
 
 ## Descrição
 
-Veja o [Regulamento Série A do Campeonato Brasileiro](https://www.terra.com.br/esportes/futebol/brasileiro-serie-a/regulamento-serie-a-do-campeonato-brasileiro-futebol-terra,2008961477eed310VgnCLD200000bbcceb0aRCRD.html) para determinar a classificação dos times conforme a *Tabela 1*.
+Veja o [Regulamento Série A do Campeonato Brasileiro](https://www.terra.com.br/esportes/futebol/brasileiro-serie-a/regulamento-serie-a-do-campeonato-brasileiro-futebol-terra,2008961477eed310VgnCLD200000bbcceb0aRCRD.html) para determinar a classificação dos times conforme a _Tabela 1_.
 
-*Tabela 1 - Tabela de Pontuação.*
+_Tabela 1 - Tabela de Pontuação._
 
 | Time             | Jogos | Vitórias | Empates | Derrotas | Gols Pró | Gols contra | Saldo de Gols | Pontos |
 | ---------------- | ----- | -------- | ------- | -------- | -------- | ----------- | ------------- | ------ |

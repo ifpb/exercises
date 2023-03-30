@@ -14,7 +14,7 @@ Quando obtemos um vetor é possível aplicar um conjunto de operações sobre es
 
 Para analisar mais exemplos veja a _Tabela 1_.
 
-_Tabela 1:_
+_Tabela 1 - Exemplos de Operações em Vetores_
 
 | Operação  | Entrada              | Saída |
 | --------- | -------------------- | ----- |
@@ -27,4 +27,3 @@ _Tabela 1:_
 | `product` | `(1, 2, 3)`          | `6`   |
 | `product` | `(2, 2, 2)`          | `8`   |
 | `product` | `(1, 2, 3, 4, 5, 6)` | `720` |
-

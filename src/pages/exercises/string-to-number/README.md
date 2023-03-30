@@ -8,9 +8,9 @@ areas:
 
 ## Descrição
 
-Crie um programa que receba uma string e converta para seu código em uma determinada base de acordo com a *Tabela 1*.
+Crie um programa que receba uma string e converta para seu código em uma determinada base de acordo com a _Tabela 1_.
 
-*Tabela 1 - Conversão de string para número.*
+_Tabela 1 - Conversão de string para número._
 
 | Parser  | Entrada                      | Saída                        |
 | ------- | ---------------------------- | ---------------------------- |

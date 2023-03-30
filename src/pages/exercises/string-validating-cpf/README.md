@@ -34,9 +34,9 @@ _Tabela 2 - Cálculo do Segundo Dígito Verificador_
 
 Calcule o somatório das multiplicações `(0 + 0 + ... + 16 = 61)`. Novamente divide-se o resultado por 11, logo 61 divido por 11 é igual a 5 com resto 6. Se o resto da divisão seja menor que 2, o digito será 0, caso contrário subtrai-se de 11. Portanto, o resultado do segundo dígito será `11 - 6 = 5`, e o CPF será `000.111.222-85`.
 
-Para mais detalhes veja a *Tabela 1*:
+Para mais detalhes veja a _Tabela 1_:
 
-*Tabela 1 - Exemplos de validação do DV*
+_Tabela 1 - Exemplos de validação do DV._
 
 | CPF           | Valido  |
 | ------------- | ------- |

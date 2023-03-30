@@ -10,7 +10,7 @@ areas:
 
 Crie uma função para calcular o fatorial de um valor, por exemplo, se recebermos o valor `4`, então o seu fatorial será `24`. Para analisar mais exemplos veja a _Tabela 1_.
 
-_Tabela 1:_
+_Tabela 1 - Exemplos de Fatorial._
 
 | Entrada | Saída |
 | ------- | ----- |

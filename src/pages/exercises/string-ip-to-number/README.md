@@ -18,9 +18,9 @@ Por tanto, crie um programa que dado um endereço IP com 4 octetos retorne o seu
 192.168.0.1 = 11000000.10101000.00000000.00000001 = 3232235521
 ```
 
-Para mais exemplos veja a *Tabela 1*:
+Para mais exemplos veja a _Tabela 1_:
 
-*Tabela 1 - Exemplos de conversão de IP para número*
+_Tabela 1 - Exemplos de conversão de IP para número._
 
 | IP            | Número       |
 | ------------- | ------------ |

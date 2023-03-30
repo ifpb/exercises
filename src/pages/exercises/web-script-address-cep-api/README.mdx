@@ -14,11 +14,15 @@ import layout from './_assets/layout.gif';
 
 Construa um formulário de endereço que preencha automaticamente o endereço por meio do CEP, conforme ilustrado na _Figura 1_.
 
-_Figura 1: Preenchimento automático do endereço por meio do CEP_
+_Figura 1: Preenchimento automático do endereço por meio do CEP._
 
-<Image src={layout} alt="Preenchimento automático do endereço por meio do CEP" class="border p-4" />
+<Image
+  src={layout}
+  alt="Preenchimento automático do endereço por meio do CEP"
+  class="border p-4"
+/>
 
-A consulta de informações de endereço por meio do CEP deve ser feita utilizando a	API do [Via CEP](https://viacep.com.br), para realizar a consulta, basta fazer uma requisição HTTP para a URL `https://viacep.com.br/ws/{CEP}/json/`, no qual o `{CEP}` é o CEP que deseja consultar. Por exemplo, para consultar o CEP `01001-000`, basta fazer uma requisição HTTP para a URL [`https://viacep.com.br/ws/01001000/json/`](https://viacep.com.br/ws/01001000/json/), e resultao será:
+A consulta de informações de endereço por meio do CEP deve ser feita utilizando a API do [Via CEP](https://viacep.com.br), para realizar a consulta, basta fazer uma requisição HTTP para a URL `https://viacep.com.br/ws/{CEP}/json/`, no qual o `{CEP}` é o CEP que deseja consultar. Por exemplo, para consultar o CEP `01001-000`, basta fazer uma requisição HTTP para a URL [`https://viacep.com.br/ws/01001000/json/`](https://viacep.com.br/ws/01001000/json/), e resultao será:
 
 ```json
 {

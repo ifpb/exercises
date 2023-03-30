@@ -12,7 +12,7 @@ A decomposição em Fatores Primos é um importante operação matemática que a
 
 Então, a decomposição do número `27` consistem `3*3*3`. Para analisar mais exemplos veja a _Tabela 1_.
 
-_Tabela 1:_
+_Tabela 1 - Exemplos de Decomposição em Fatores Primos._
 
 | Entrada       | Saída                |
 | ------------- | -------------------- |

@@ -29,20 +29,23 @@ Ao optar por uma tabela em HTML deve-se usar as tags `<table>`, `<tr>` e `<td>`,
 ```html
 <table>
   <tr>
-    <td>1.1</td><td>1.2</td>
+    <td>1.1</td>
+    <td>1.2</td>
   </tr>
   <tr>
-    <td>2.1</td><td>2.2</td>
+    <td>2.1</td>
+    <td>2.2</td>
   </tr>
   <tr>
-    <td>3.1</td><td>3.2</td>
+    <td>3.1</td>
+    <td>3.2</td>
   </tr>
 </table>
 ```
 
-Em resumo, o resultado das operações de geração de tabelas está descrito na *Tabela 1*.
+Em resumo, o resultado das operações de geração de tabelas está descrito na _Tabela 1_.
 
-*Tabela 1 - Operção de geração de tabela*
+_Tabela 1 - Operção de geração de tabela._
 
 | Operação          | Entrada        | Saída                                                                                                                                                                                                                                                                        |
 | ----------------- | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

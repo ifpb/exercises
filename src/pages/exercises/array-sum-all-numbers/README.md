@@ -10,7 +10,7 @@ areas:
 
 Crie uma função que ao receber um vetor unidimensional gere uma soma de todos os valores inteiros. Para analisar mais exemplos veja a _Tabela 1_.
 
-_Tabela 1:_
+_Tabela 1 - Exemplos de Soma de Inteiros._
 
 | Entrada                      | Saída |
 | ---------------------------- | ----- |

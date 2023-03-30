@@ -16,7 +16,7 @@ h = 1/1 + 1/2 + ... + 1/n
 
 Então, ao definir `n` com o valor inteiro `10` o resultado de `h` será `2,9289682539682538`. Para analisar mais exemplos veja a _Tabela 1_.
 
-_Tabela 1:_
+_Tabela 1 - Exemplos de Séries Harmônicas._
 
 | Entrada (n) | Saída (h)            |
 | ----------- | -------------------- |

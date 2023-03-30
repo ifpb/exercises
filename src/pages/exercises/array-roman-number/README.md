@@ -12,7 +12,7 @@ O sistema de numeração romana é uma forma de representação numérica compos
 
 Então crie uma função para receber um número decimal e o retorne no formato romano, por exemplo, ao receber `27` retorne `XXVII`. Para analisar mais exemplos veja a _Tabela 1_.
 
-_Tabela 1:_
+_Tabela 1 - Exemplos de Números Romanos._
 
 | Entrada | Saída    |
 | ------- | -------- |

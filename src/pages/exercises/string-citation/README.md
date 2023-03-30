@@ -10,7 +10,7 @@ areas:
 
 Crie um programa para gerar a citação de nomes de modo normal e compacto segundo a _Tabela 1_. Considere que os nomes simples e não possuem preposições.
 
-_Tabela 1_
+_Tabela 1 - Exemplos de Citação de Nomes._
 
 | Entrada                                | Saída                         |
 | -------------------------------------- | ----------------------------- |

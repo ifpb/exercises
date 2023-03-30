@@ -32,8 +32,8 @@ Tomando como partida o código fonte do arquivo [exe0.html](./_codes/js/response
 
 Então, tente definir o estilo de modo inline (local na tag) para mudar a cor e o tamanho da fonte dos contéudos dos elementos `<h1>` e `<p>`:
 
-* h1 - color (blue) / font-size (16px)
-* p - color (red) / font-size (12px)
+- h1 - color (blue) / font-size (16px)
+- p - color (red) / font-size (12px)
 
 Agora usando o arquivo [exe1.html](./_codes/js/response/response/exe1.html), que possui conteúdo semelhante ao [exe0.html](./_codes/js/response/response/exe0.html), tente fazer a mesma estilização só que de modo interno.
 
@@ -66,14 +66,14 @@ O CSS Externo é uma ótima alternativa de reutilização de estilo entre vária
 
 Para estilizar a estrutura apresentada, o arquivo `css` deverá conter os seguintes estilos:
 
-* o texto do h1 estar centralizado (align center), na cor branca (color white), com font-size igual 16px e com background-color gray.
-* os elementos com a classe "texto" devem ter a color red.
-* os elementos com a classe "italico" devem estar em itálico (font-style italic).
-* Apenas na palavra "também", mude sua color (blue) e o font-weight (bold). Use o elemento <spam> para isolar a palavra.
+- o texto do h1 estar centralizado (align center), na cor branca (color white), com font-size igual 16px e com background-color gray.
+- os elementos com a classe "texto" devem ter a color red.
+- os elementos com a classe "italico" devem estar em itálico (font-style italic).
+- Apenas na palavra "também", mude sua color (blue) e o font-weight (bold). Use o elemento <spam> para isolar a palavra.
 
 ## Alternativa de resposta
 
-  * [exe0.html](./_codes/js/response/response-response/exe0.html)
-  * [exe1.html](./_codes/js/response/response-response/exe1.html)
-  * [exe2.html](./_codes/js/response/response-response/exe2.html)
-  * [exe3.html](./_codes/js/response/response-response/exe3.html).
+- [exe0.html](./_codes/js/response/response-response/exe0.html)
+- [exe1.html](./_codes/js/response/response-response/exe1.html)
+- [exe2.html](./_codes/js/response/response-response/exe2.html)
+- [exe3.html](./_codes/js/response/response-response/exe3.html).

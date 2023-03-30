@@ -20,11 +20,11 @@ import sortFilter from './_assets/sort-filter.png';
 
 Uma empresa de artigos Nerd está em busca de profissionais para criar um página Web sobre a Pokedex de Pokemons.
 
-A princípio a empresa disponibilizou os dados dos Pokemons no arquivo [pokedex.json](code/data/pokedex.json) e pretende criar uma tela semelhante ao da *Figura 1*.
+A princípio a empresa disponibilizou os dados dos Pokemons no arquivo [pokedex.json](code/data/pokedex.json) e pretende criar uma tela semelhante ao da _Figura 1_.
 
-*Figura 1 - Layout da Página*
+_Figura 1 - Layout da Página._
 
-<Image src={layout} alt="Layout da Página" />
+<Image src={layout} alt="Layout da Página" class="border p-4" />
 
 Detalhe, a empresa já disponibilizou uma estrutura inicial no arquivo [code.zip](code.zip), e a seguir será descrito alguns componentes para auxiliar a geração dinâmica da página usando as informações do arquivo JSON.
 
@@ -55,18 +55,23 @@ Detalhe, a empresa já disponibilizou uma estrutura inicial no arquivo [code.zip
 ]
 ```
 
-Usando esses dados crie a Pokedex seguindo o padrão da *Figura 2*.
+Usando esses dados crie a Pokedex seguindo o padrão da _Figura 2_.
 
-*Figura 2 - Pokedex*
+_Figura 2 - Pokedex._
 
-<Image src={pokedex} alt="Pokedex" />
+<Image src={pokedex} alt="Pokedex" class="border p-4" />
 
 Também considere que o HTML necessário para compor esta Pokedex deve possuir uma estrutura como esta para o Pokemon Bulbasaur:
 
 ```html
-<div class="pokemon" data-name="Bulbasaur" data-type="grass,poison" tabindex="1">
+<div
+  class="pokemon"
+  data-name="Bulbasaur"
+  data-type="grass,poison"
+  tabindex="1"
+>
   <figure class="pokemon-figure">
-    <img src="img/Bulbasaur.png" alt="Bulbasaur">
+    <img src="img/Bulbasaur.png" alt="Bulbasaur" />
   </figure>
   <section class="pokemon-description">
     <span class="pokemon-id">#001</span>
@@ -117,27 +122,30 @@ Também considere que o HTML necessário para compor esta Pokedex deve possuir u
 </div>
 ```
 
-**COMPONENTE 2 -** Crie o filtro da Pokedex por nome para exibir os pokemon da Pokedex que possuirem o termo digitado em seu nome, caso contrário ele não será exibido. A *Figura 3*, por exemplo, lista na Pokedex os pokemons que possuem o nome `pikachu`.
+**COMPONENTE 2 -** Crie o filtro da Pokedex por nome para exibir os pokemon da Pokedex que possuirem o termo digitado em seu nome, caso contrário ele não será exibido. A _Figura 3_, por exemplo, lista na Pokedex os pokemons que possuem o nome `pikachu`.
 
-*Figura 3 - Filtro por nome*
+_Figura 3 - Filtro por nome._
 
-<Image src={filterByName} alt="Filtro por nome" />
+<Image src={filterByName} alt="Filtro por nome" class="border p-4" />
 
-**COMPONENTE 3 -** Crie o filtro da Pokedex por tipo para exibir apenas os pokemon de algum tipo específico. A *Figura 4*, por exemplo, lista na Pokedex apenas os pokemons que possuem o tipo `eletric`.
+**COMPONENTE 3 -** Crie o filtro da Pokedex por tipo para exibir apenas os pokemon de algum tipo específico. A _Figura 4_, por exemplo, lista na Pokedex apenas os pokemons que possuem o tipo `eletric`.
 
-*Figura 4 - Filtro por tipo*
+_Figura 4 - Filtro por tipo._
 
-<Image src={filterByType} alt="Filtro por tipo" />
+<Image src={filterByType} alt="Filtro por tipo" class="border p-4" />
 
+**COMPONENTE 4 -** Crie o ordenador da Pokedex para ajudar na listagem da Pokedex conforme a _Figura 5_.
 
-**COMPONENTE 4 -** Crie o ordenador da Pokedex para ajudar na listagem da Pokedex conforme a *Figura 5*.
+_Figura 5 - Ordenador da Pokedex._
 
-*Figura 5 - Ordenador da Pokedex*
+<Image src={sort} alt="Ordenador da Pokedex" class="border p-4" />
 
-<Image src={sort} alt="Ordenador da Pokedex" />
+**COMPONENTE 5 -** Faça que o formulário realize o filtro e ordenação de modo integrado, tal como a _Figura 6_.
 
-**COMPONENTE 5 -** Faça que o formulário realize o filtro e ordenação de modo integrado, tal como a *Figura 6*.
+_Figura 6 - Ordenador e Filtros combinados._
 
-*Figura 6 - Ordenador e Filtros combinados*
-
-<Image src={sortFilter} alt="Ordenador e Filtros combinados" />
+<Image
+  src={sortFilter}
+  alt="Ordenador e Filtros combinados"
+  class="border p-4"
+/>

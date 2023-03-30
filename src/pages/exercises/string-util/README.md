@@ -8,10 +8,9 @@ areas:
 
 ## Descrição
 
-
 Construa uma função de utilitários para manipulação de String, por exemplo, ao receber as String `"lorem ipsum dolor"` e `"uppercase"` a função deve retornar `"LOREM IPSUM DOLOR"`. Para analisar as possíveis entradas e saídas deste utilitário de String veja a _Tabela 1_.
 
-_Tabela 1:_
+_Tabela 1 - Exemplos de Utilitários de String._
 
 | Entrada                             | Saída                 |
 | ----------------------------------- | --------------------- |

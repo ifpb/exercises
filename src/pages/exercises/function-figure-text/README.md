@@ -28,7 +28,7 @@ Então crie uma função para criar que ao receber o tipo de figura e seu tamanh
 
 Para analisar mais exemplos veja a _Tabela 1_.
 
-_Tabela 1:_
+_Tabela 1 - Exemplos de Figuras Textuais._
 
 | Entrada            | Saída                                               |
 | ------------------ | --------------------------------------------------- |

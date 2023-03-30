@@ -21,17 +21,17 @@ Crie uma variável que contenha as informações desta tabela:
 | Facebook      | 2004    | Social                     | Internet company |
 | Alphabet Inc. | 2015    | Search, Cloud, Advertising | Internet company |
 
-Uma das formas de estruturação desta tabela pode ser por meio da classe do diagrama da *Figura 1*:
+Uma das formas de estruturação desta tabela pode ser por meio da classe do diagrama da _Figura 1_:
 
-*Figura 1 - Instância da Empresa*
+_Figura 1 - Instância da Empresa_
 
-<Image src={companyInstance} alt="Instância da Empresa" />
+<Image src={companyInstance} alt="Instância da Empresa" class="border p-4" />
 
-Portanto, crie a classe Company conforme o diagrama da *Figura 2*:
+Portanto, crie a classe Company conforme o diagrama da _Figura 2_:
 
-*Figura 2 - Exibição da Empresa*
+_Figura 2 - Exibição da Empresa_
 
-<Image src={companyShow} alt="Exibição da Empresa" />
+<Image src={companyShow} alt="Exibição da Empresa" class="border p-4" />
 
 Contudo, o resultado do método `show()` deve ser o nome e ano de fundação da empresa (sempre com tamanho de 15 caracteres):
 
@@ -39,11 +39,15 @@ Contudo, o resultado do método `show()` deve ser o nome e ano de fundação da 
 Name.........Founded
 ```
 
-Crie também a classe `Companies` para agrupar uma coleção de `Company`, tal como exibido na *Figura 3*:
+Crie também a classe `Companies` para agrupar uma coleção de `Company`, tal como exibido na _Figura 3_:
 
-*Figura 3 - Exibição da Coleção de Empresas*
+_Figura 3 - Exibição da Coleção de Empresas_
 
-<Image src={companyCollectionShow} alt="Exibição da Coleção de Empresas" />
+<Image
+  src={companyCollectionShow}
+  alt="Exibição da Coleção de Empresas"
+  class="border p-4"
+/>
 
 O método `show()` da coleção deve evocar todos os `show()` de suas instâncias:
 

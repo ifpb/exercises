@@ -14,7 +14,7 @@ Quando obtemos um vetor é possível aplicar um conjunto de operações sobre es
 
 Para analisar alguns exemplos veja a _Tabela 1_.
 
-_Tabela 1:_
+_Tabela 1 - Exemplos de Utilitários de Array._
 
 | Operação  | Entrada                                                  | Saída                                                     |
 | --------- | -------------------------------------------------------- | --------------------------------------------------------- |

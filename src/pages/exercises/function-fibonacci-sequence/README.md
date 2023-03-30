@@ -18,7 +18,7 @@ Crie uma função para exibir a sequencia de Fibonacci até a posição `n`, por
 
 Para analisar mais exemplos veja a _Tabela 1_.
 
-_Tabela 1:_
+_Tabela 1 - Exemplos de Sequência de Fibonacci._
 
 | Entrada | Saída              |
 | ------- | ------------------ |

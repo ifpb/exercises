@@ -14,7 +14,7 @@ Para ajudar a gerar uma série de `n` números primos, crie uma função que ao 
 
 Para analisar mais exemplos veja a _Tabela 1_.
 
-_Tabela 1:_
+_Tabela 1: Exemplos para Listar Números Primos._
 
 | Entrada | Saída                        |
 | ------- | ---------------------------- |

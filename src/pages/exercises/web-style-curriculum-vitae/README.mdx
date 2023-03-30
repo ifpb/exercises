@@ -25,11 +25,11 @@ Para concorrer a uma dessas vagas geralmente o candidato deve passar por um proc
 
 Uma dessas etapas, geralmente, consiste na análise de perfil para identificar as habilidades e o histórico do profissional.
 
-Então, pensando em facilitar o processo nessa etapa, um Headhunter da Empresa X idealizou a criação do currículo semelhante ao da *Figura 1* para filtrar seus candidatos, pois esse currículo aborda as principais informações que ele deseja na análise curricular.
+Então, pensando em facilitar o processo nessa etapa, um Headhunter da Empresa X idealizou a criação do currículo semelhante ao da _Figura 1_ para filtrar seus candidatos, pois esse currículo aborda as principais informações que ele deseja na análise curricular.
 
-*Figura 1 - Layout do Curriculum*
+_Figura 1 - Layout do Curriculum._
 
-<Image src={layout} alt="Layout do Curriculum" />
+<Image src={layout} alt="Layout do Curriculum" class="border p-4" />
 
 A seguir, será detalhado a estrutura e estilo das quatro **INFORMAÇÕES** a serem declarados por um possível candidato, no entanto, o Headhunter informa que das 4 apenas 3 já seriam suficientes para a vaga, desde que inclua o contato e as skills.
 
@@ -37,26 +37,26 @@ Para acelerar a submissão do currículo o Headhunter já disponibilizou boa par
 
 ## Informações
 
-**INFORMAÇÃO 1 -** Crie a região contento informações de contato no arquivo [`code/index.html`](./_codes/css/code/index.html), especificamente em `TODO INFORMAÇÃO 1`, conforme a *Figura 2*:
+**INFORMAÇÃO 1 -** Crie a região contento informações de contato no arquivo [`code/index.html`](./_codes/css/code/index.html), especificamente em `TODO INFORMAÇÃO 1`, conforme a _Figura 2_:
 
-*Figura 2 - Informações de Contato.*
+\_Figura 2 - Informações de Contato..
 
-<Image src={contact} alt="Informações de Contato" />
-
-mas considerando que:
-
-* Os dados de contato que forem relacionados a link, como a URL do perfil do github, devem estar como um hyperlink.
-* Em [`code/css/contact.css`](./_codes/css/code/css/contact.css) cada contato deve haver um distanciamento vertical entre si, e os ícones e os dados devem apresentar distribuição o mais próximo possível da *Figura 2*.
-
-**INFORMAÇÃO 2 -** Crie a região contento informações sobre as skills no arquivo [`code/index.html`](./_codes/css/code/index.html), especificamente em `TODO INFORMAÇÃO 2`, conforme a *Figura 3*:
-
-*Figura 3 - Informações sobre as Skills.*
-
-<Image src={skills} alt="Informações sobre as Skills" />
+<Image src={contact} alt="Informações de Contato" class="border p-4" />
 
 mas considerando que:
 
-* Cada progresso de skill deve ser estruturado conforme o seguinte HTML:
+- Os dados de contato que forem relacionados a link, como a URL do perfil do github, devem estar como um hyperlink.
+- Em [`code/css/contact.css`](./_codes/css/code/css/contact.css) cada contato deve haver um distanciamento vertical entre si, e os ícones e os dados devem apresentar distribuição o mais próximo possível da _Figura 2_.
+
+**INFORMAÇÃO 2 -** Crie a região contento informações sobre as skills no arquivo [`code/index.html`](./_codes/css/code/index.html), especificamente em `TODO INFORMAÇÃO 2`, conforme a _Figura 3_:
+
+_Figura 3 - Informações sobre as Skills._
+
+<Image src={skills} alt="Informações sobre as Skills" class="border p-4" />
+
+mas considerando que:
+
+- Cada progresso de skill deve ser estruturado conforme o seguinte HTML:
 
 ```
 <div class="skill">
@@ -69,26 +69,34 @@ mas considerando que:
 </div>
 ```
 
-* Em [`code/css/skill.css`](./_codes/css/code/css/skill.css) as tags `.progress` devem possuir um background de `hsla(0, 0%, 100%, .19)`, e margem de `.5rem 0 10px`.
-* Cada `.skill` deve possuir uma margem esquerda de `20px`, um recuo interno superior de `4px`, e largura de `93%`.
+- Em [`code/css/skill.css`](./_codes/css/code/css/skill.css) as tags `.progress` devem possuir um background de `hsla(0, 0%, 100%, .19)`, e margem de `.5rem 0 10px`.
+- Cada `.skill` deve possuir uma margem esquerda de `20px`, um recuo interno superior de `4px`, e largura de `93%`.
 
-**INFORMAÇÃO 3 -** Crie a região contento informações sobre as experiências profissionais no arquivo [`code/index.html`](./_codes/css/code/index.html), especificamente em `TODO INFORMAÇÃO 3`, conforme a *Figura 4*:
+**INFORMAÇÃO 3 -** Crie a região contento informações sobre as experiências profissionais no arquivo [`code/index.html`](./_codes/css/code/index.html), especificamente em `TODO INFORMAÇÃO 3`, conforme a _Figura 4_:
 
-*Figura 4 - Informações sobre as Experiências Profissionais.*
+_Figura 4 - Informações sobre as Experiências Profissionais._
 
-<Image src={experience} alt="Informações sobre as Experiências Profissionais" />
+<Image
+  src={experience}
+  alt="Informações sobre as Experiências Profissionais"
+  class="border p-4"
+/>
 
 mas considerando que:
 
-* Em [`code/css/block.css`](./_codes/css/code/css/block.css) os blocos de informação devem possuir uma largura de `90%`, cor de plano branco, recuo interno de `20px`, margem de `5px auto`, e sombra de borda com o seguinte valor `0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)`.
-* O título da experiência deve conter a cor `rgba(0, 0, 0, .87)`, o tamanho de `15px` e negrito de `300`.
-* O período da experiência deve conter a cor `rgba(0, 0, 0, .54)`, o tamanho de `14px` e o negrito de `300`.
-* A descrição da experiência deve conter o tamanho de `14px`, a cor `rgba(0, 0, 0, .87)`, e o distanciamento superior de 20px.
+- Em [`code/css/block.css`](./_codes/css/code/css/block.css) os blocos de informação devem possuir uma largura de `90%`, cor de plano branco, recuo interno de `20px`, margem de `5px auto`, e sombra de borda com o seguinte valor `0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)`.
+- O título da experiência deve conter a cor `rgba(0, 0, 0, .87)`, o tamanho de `15px` e negrito de `300`.
+- O período da experiência deve conter a cor `rgba(0, 0, 0, .54)`, o tamanho de `14px` e o negrito de `300`.
+- A descrição da experiência deve conter o tamanho de `14px`, a cor `rgba(0, 0, 0, .87)`, e o distanciamento superior de 20px.
 
-**INFORMAÇÃO 4 -** Crie a região contento informações sobre a formação profissional no arquivo [`code/index.html`](./_codes/css/code/index.html), especificamente em `TODO INFORMAÇÃO 4`, conforme a *Figura 5*:
+**INFORMAÇÃO 4 -** Crie a região contento informações sobre a formação profissional no arquivo [`code/index.html`](./_codes/css/code/index.html), especificamente em `TODO INFORMAÇÃO 4`, conforme a _Figura 5_:
 
-*Figura 5 - Informações sobre a Formação Profissional.*
+_Figura 5 - Informações sobre a Formação Profissional._
 
-<Image src={education} alt="Informações sobre a Formação Profissional" />
+<Image
+  src={education}
+  alt="Informações sobre a Formação Profissional"
+  class="border p-4"
+/>
 
 mas considerando que o mesmo estilo aplicado nos blocos da Informação 3 devem ser habilitados nesta informação.

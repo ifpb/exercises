@@ -88,7 +88,7 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
                 >
                   zip
                 </a>
-                {preview && (
+                {preview && ['html', 'css', 'js'].includes(code) && (
                   <>
                     , <a href={`./_codes/${code}/response/`}>preview</a>
                   </>

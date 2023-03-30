@@ -1,0 +1,42 @@
+---
+title: Listagem de Investimentos
+preview: true
+subjects:
+  - web
+areas:
+  - script
+---
+
+import { Image } from '@astrojs/image/components';
+import layout from './_assets/layout.png';
+
+## Descrição
+
+Crie um aplicativo que liste um conjunto de investimentos em um grid de cards. O resultado final deve ser semelhante ao da _Figura 1_.
+
+_Figura 1: Listagem dos investimentos._
+
+<Image src={layout} alt="Listagem dos investimentos" class="border p-4" />
+
+Para listar os investimentos use o array `investiments` que está disponível no arquivo `data/investiments.js`:
+
+```js
+export const investiments = [
+  {
+    name: 'Tesouro Selic 2029',
+    value: 100,
+    origin: 'Tesouro Nacional',
+    category: 'Pos',
+    date: '2023-03-22',
+    interest: '100% Selic',
+  },
+  {
+    name: 'Tesouro IPCA 2029',
+    value: 100,
+    origin: 'Tesouro Nacional',
+    category: 'IPCA',
+    date: '2023-03-22',
+    interest: 'IPCA + 5,83%',
+  },
+];
+```

@@ -10,9 +10,9 @@ areas:
 
 O DNA e RNA são moléculas que armazenam a informação genética. Tanto o DNA quanto o RNA são compostos por nucleotídeos, que são compostos por uma base nitrogenada, um açúcar e um grupo fosfato. As bases nitrogenadas são compostas por carbono, hidrogênio, oxigênio, nitrogênio e fósforo. As bases nitrogenadas do DNA são adenina (A), citosina (C), guanina (G) e timina (T). As bases nitrogenadas do RNA são adenina (A), citosina (C), guanina (G) e uracila (U).
 
-A transcrição é o processo de cópia de uma molécula de DNA para uma molécula de RNA. A transcrição de DNA para RNA segue as seguintes regras da *Tabela 1*:
+A transcrição é o processo de cópia de uma molécula de DNA para uma molécula de RNA. A transcrição de DNA para RNA segue as seguintes regras da _Tabela 1_:
 
-*Tabela 1 - Regras de transcrição das bases do DNA para RNA*
+_Tabela 1 - Regras de transcrição das bases do DNA para RNA._
 
 | DNA | RNA |
 | --- | --- |

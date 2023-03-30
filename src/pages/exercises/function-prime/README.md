@@ -12,7 +12,7 @@ Na matemática um número é considerado primo se ele possuir apenas dois diviso
 
 Para verificar se um número é prime crie uma função que ao receber um valor identifique se é primo, por exemplo, ao receber o valor `4` e `7` o retorno será respectivamente `false` e `true`. Para analisar mais exemplos veja a _Tabela 1_.
 
-_Tabela 1:_
+_Tabela 1 - Exemplos de Verificação de Número Primo._
 
 | Entrada | Saída   |
 | ------- | ------- |

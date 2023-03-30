@@ -58,7 +58,11 @@ const octet1 = 127;
 const octet2 = 0;
 const octet3 = 0;
 const octet4 = 1;
-const ip = ((octet1 & 0xff) << 24) | ((octet2 & 0xff) << 16) | ((octet3 & 0xff) << 8) | (octet4 & 0xff);
+const ip =
+  ((octet1 & 0xff) << 24) |
+  ((octet2 & 0xff) << 16) |
+  ((octet3 & 0xff) << 8) |
+  (octet4 & 0xff);
 console.log(ip); //=> 2130706433
 ```
 
@@ -76,13 +80,13 @@ console.log(10 > number < 20); //=> true
 
 ```js
 // equality operator
-console.log(1 == "1a"); //=> false
-console.log(1 == "1"); //=> true
+console.log(1 == '1a'); //=> false
+console.log(1 == '1'); //=> true
 ```
 
 ```js
 // identity/strict equality
-console.log(1 === "1"); //=> false
+console.log(1 === '1'); //=> false
 ```
 
 ```js

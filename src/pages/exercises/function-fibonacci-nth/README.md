@@ -16,7 +16,7 @@ Na matemática, a série de Fibonacci é uma sucessão de números inteiros conf
 
 Crie uma função para calcular o número da sequencia de Fibonacci de posição `n`, por exemplo, o quarto elemento da série é `2`. Para analisar mais exemplos veja a _Tabela 1_.
 
-_Tabela 1:_
+_Tabela 1 - Exemplos de Números de Fibonacci._
 
 | Entrada | Saída       |
 | ------- | ----------- |

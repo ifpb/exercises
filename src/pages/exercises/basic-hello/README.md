@@ -12,7 +12,7 @@ Crie um algoritmo que exiba uma saudação utilizando o nome de alguma variável
 
 Para analisar mais exemplos veja a _Tabela 1_.
 
-_Tabela 1:_
+_Tabela 1 - Exemplos de Hello World._
 
 | Entrada | Saída           |
 | ------- | --------------- |

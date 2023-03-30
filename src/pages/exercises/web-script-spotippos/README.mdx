@@ -19,8 +19,9 @@ A empresa [Grupozap](https://www.grupozap.com) está em busca de um profissional
 
 Para ajudar a inicialização do desafio foi definido uma proposta de layout estático disponível no arquivo [code.zip](https://download-directory.github.io/?url=https://github.com/ifpb/exercises/tree/main/src/pages/exercises/web-script-spotippos/_codes/js/code/) e ilustrado na Figura 1.
 
-*Figura 1 - Layout da Página*
-<Image src={layout} alt="Layout da Página" />
+_Figura 1 - Layout da Página._
+
+<Image src={layout} alt="Layout da Página" class="border p-4" />
 
 A seguir será descrito alguns componentes para auxiliar a geração dinâmica da página usando as informações da `const imoveis` disponível em `js/imoveis.js`.
 
@@ -42,10 +43,11 @@ A seguir será descrito alguns componentes para auxiliar a geração dinâmica d
 }
 ```
 
-Usando esses dados crie uma lista de imóveis conforme ilustra a *Figura 2*.
+Usando esses dados crie uma lista de imóveis conforme ilustra a _Figura 2_.
 
-*Figura 2 - Lista de imóveis*
-<Image src={imoveis} alt="Lista de imóveis" />
+_Figura 2 - Lista de imóveis._
+
+<Image src={imoveis} alt="Lista de imóveis" class="border p-4" />
 
 Também considere que o HTML necessário para compor este grid de imóveis deve ser este:
 
@@ -54,19 +56,22 @@ Também considere que o HTML necessário para compor este grid de imóveis deve 
   <div class="resumo">
     <span class="id">ID. 1</span>
     <h2 class="title">Imóvel código 1, com 3 quartos e 2 banheiros.</h2>
-    <div class="description">Laboris quis quis elit commodo eiusmod qui exercitation. In laborum fugiat quis minim occaecat id.</div>
+    <div class="description">
+      Laboris quis quis elit commodo eiusmod qui exercitation. In laborum fugiat
+      quis minim occaecat id.
+    </div>
   </div>
   <div class="info">
     <div class="infoItem squareMeter">
-      <img class="logo" src="img/logo/shape.svg" alt="logo">
+      <img class="logo" src="img/logo/shape.svg" alt="logo" />
       <div class="value">61 M²</div>
     </div>
     <div class="infoItem bath">
-      <img class="logo" src="img/logo/toilet.svg" alt="logo">
+      <img class="logo" src="img/logo/toilet.svg" alt="logo" />
       <div class="value">2 BANHEIROS</div>
     </div>
     <div class="infoItem bed">
-      <img class="logo" src="img/logo/bed.svg" alt="logo">
+      <img class="logo" src="img/logo/bed.svg" alt="logo" />
       <div class="value">3 QUARTOS</div>
     </div>
     <div class="price">R$ 643.000,00</div>
@@ -77,14 +82,15 @@ Também considere que o HTML necessário para compor este grid de imóveis deve 
 **Dica**: Para exibir o preço do imóvel no formato brasileiro, use o seguinte código:
 
 ```js
-const price = 643000
-console.log(price.toLocaleString('pt-BR', { minimumFractionDigits: 2 }))
+const price = 643000;
+console.log(price.toLocaleString('pt-BR', { minimumFractionDigits: 2 }));
 //=> 643.000,00
 ```
 
-**COMPONENTE 2 -** Pensando em facilitar apenas a listagem dos imóveis que possuiam alguns parâmetros iniciais, o layout possui um seção de filtro. A idéia é que ao mudar os campos, a listagem seja atualizada conforme os valores digitados. A *Figura 3* ilustra bem como seria a ação do filtro.
+**COMPONENTE 2 -** Pensando em facilitar apenas a listagem dos imóveis que possuiam alguns parâmetros iniciais, o layout possui um seção de filtro. A idéia é que ao mudar os campos, a listagem seja atualizada conforme os valores digitados. A _Figura 3_ ilustra bem como seria a ação do filtro.
 
-*Figura 3 - Filro dos imóveis*
-<Image src={filtro} alt="Filtro dos imóveis" />
+_Figura 3 - Filro dos imóveis._
+
+<Image src={filtro} alt="Filtro dos imóveis" class="border p-4" />
 
 **Observação:** Veja que o filtro considera valores maiores ou igual ao informado.

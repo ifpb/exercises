@@ -1,0 +1,26 @@
+---
+title: Objeto Host
+subjects:
+  - algoritmo
+areas:
+  - objeto
+---
+
+import { Image } from '@astrojs/image/components';
+import objectHost from './_assets/object-host.svg';
+
+## Descrição
+
+Estruture a informação desta coleção de Hosts com algum tipo de dados, talvez usando objeto:
+
+| Host     | Address     | Mask          |
+| -------- | ----------- | ------------- |
+| PC 1     | 192.168.0.1 | 255.255.255.0 |
+| Server 1 | 172.16.0.1  | 255.255.0.0   |
+| Server 2 | 10.0.0.1    | 255.0.0.0     |
+
+Para facilitar o processo, observe este diagrama da _Figura 1_:
+
+_Figura 1 - Objeto Host_
+
+<Image src={objectHost} alt="Objeto Entidade do HTML" class="border p-4 w-64" />

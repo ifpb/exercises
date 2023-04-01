@@ -1,0 +1,18 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome true
+hide circle
+
+class Exams {
+  -weight: Weight
+  -answer: Answer
+  -exams: Exam
+  +__construct(answer: Answer, weight: Weight)
+  +add(exam: Exam): void
+  +avg(): float
+  +min([count: float]): Array<float>
+  +max([count: float]): Array<float>
+  +lt([limit: float]): Array<float>
+  +gt([limit: float]): Array<float>
+}
+@enduml

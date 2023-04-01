@@ -1,5 +1,5 @@
 ---
-title: Sequência de Fibonacci
+title: Sequência de Fibonacci (String)
 subjects:
   - algoritmo
 areas:

@@ -1,0 +1,27 @@
+---
+title: Objeto HTML Entity
+subjects:
+  - algoritmo
+areas:
+  - objeto
+---
+
+import { Image } from '@astrojs/image/components';
+import objectHtmlEntity from './_assets/object-html-entity.svg';
+
+## Descrição
+
+Estruture a informação desta coleção de Entidades do HTML com algum tipo de dados, usando objeto:
+
+| Char   | Entity   | Decimal  | Hexa     | Description    |
+| ------ | -------- | -------- | -------- | -------------- |
+| &amp;  | `&amp;`  | `&#38;`  | `&#x26;` | ampersand      |
+| &lt;   | `&lt;`   | `&#60;`  | `&#x3C;` | less than      |
+| &gt;   | `&gt;`   | `&#62;`  | `&#x3E;` | greater than   |
+| &copy; | `&copy;` | `&#169;` | `&#xA9;` | copyright sign |
+
+Para facilitar o processo, observe este diagrama da _Figura 1_:
+
+_Figura 1 - Objeto Entidade do HTML_
+
+<Image src={objectHtmlEntity} alt="Objeto Entidade do HTML" class="border p-4" />

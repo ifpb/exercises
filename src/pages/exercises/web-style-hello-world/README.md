@@ -1,5 +1,5 @@
 ---
-title: Criando seu primeiro estilo
+title: Seu Primeiro Estilo em CSS
 subjects:
   - web
 areas:
@@ -20,9 +20,9 @@ O objetivo desta atividade consiste em criar os primeiros passos com a linguagem
 
 ### CSS Local vs CSS Interno
 
-Tomando como partida o código fonte do arquivo [exe0.html](./_codes/js/response/response/exe0.html), observe que o `<body>` possui a seguinte estrutura:
+Tomando como partida o código fonte do arquivo [exe0.html](./_examples/css/response/exe0.html), observe que o `<body>` possui a seguinte estrutura:
 
-```
+```html
 <body>
   <h1>Linguagem de Marcação</h1>
   <p>Isto é um parágrafo.</p>
@@ -35,13 +35,13 @@ Então, tente definir o estilo de modo inline (local na tag) para mudar a cor e 
 - h1 - color (blue) / font-size (16px)
 - p - color (red) / font-size (12px)
 
-Agora usando o arquivo [exe1.html](./_codes/js/response/response/exe1.html), que possui conteúdo semelhante ao [exe0.html](./_codes/js/response/response/exe0.html), tente fazer a mesma estilização só que de modo interno.
+Agora usando o arquivo [exe1.html](./_examples/css/response/exe1.html), que possui conteúdo semelhante ao [exe0.html](./_examples/css/response/exe0.html), tente fazer a mesma estilização só que de modo interno.
 
 ### Seletor de Id
 
-Algumas vezes, diante de inúmeras tags do mesmo tipo, é necessário estilizar algum tag específica. Então, considere o conteúdo do arquivo [exe2.html](./_codes/js/response/response/exe2.html):
+Algumas vezes, diante de inúmeras tags do mesmo tipo, é necessário estilizar algum tag específica. Então, considere o conteúdo do arquivo [exe2.html](./_examples/css/response/exe2.html):
 
-```
+```html
 <body>
   <h1>Linguagem de Marcação</h1>
   <p id="para">Isto é um parágrafo.</p>
@@ -53,9 +53,9 @@ Para mudar a cor do texto do elemento que possuir o atributo `id="para"` para a 
 
 ### CSS Externo e Seletor de Classe
 
-O CSS Externo é uma ótima alternativa de reutilização de estilo entre várias páginas HTML. Então, para experimentar esta opção de configuração de estilo, crie uma pasta chamada `css` e nela gere o arquivo `estilo.css` para ser referenciado pelo arquivo [exe3.html](./_codes/js/response/response/exe3.html):
+O CSS Externo é uma ótima alternativa de reutilização de estilo entre várias páginas HTML. Então, para experimentar esta opção de configuração de estilo, crie uma pasta chamada `css` e nela gere o arquivo `estilo.css` para ser referenciado pelo arquivo [exe3.html](./_examples/css/response/exe3.html):
 
-```
+```html
 <body>
   <h1>Linguagem de Marcação</h1>
   <p>Isto é um parágrafo.</p>
@@ -73,7 +73,7 @@ Para estilizar a estrutura apresentada, o arquivo `css` deverá conter os seguin
 
 ## Alternativa de resposta
 
-- [exe0.html](./_codes/js/response/response-response/exe0.html)
-- [exe1.html](./_codes/js/response/response-response/exe1.html)
-- [exe2.html](./_codes/js/response/response-response/exe2.html)
-- [exe3.html](./_codes/js/response/response-response/exe3.html).
+- [exe0.html](./_examples/css/response/exe0.html)
+- [exe1.html](./_examples/css/response/exe1.html)
+- [exe2.html](./_examples/css/response/exe2.html)
+- [exe3.html](./_examples/css/response/exe3.html).

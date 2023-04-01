@@ -1,0 +1,21 @@
+---
+title: Informações do IP (Mapa)
+preview: true
+subjects:
+  - web
+areas:
+  - script
+---
+
+import { Image } from '@astrojs/image/components';
+import layout from './_assets/layout.gif';
+
+## Descrição
+
+Crie um aplicativo que exiba as informações do IP do usuário em uma tabela e um mapa da localização do IP, que tenha interface parecido com a da _Figura 1_.
+
+_Figura 1: Busca de Informações do IP._
+
+<Image src={layout} alt="Busca de Informações do IP" class="border p-4" />
+
+Para obter informações do IP, utilize a API [Ipinfo](https://ipinfo.io/developers). Por exemplo, para obter informações do IP `8.8.8.8`, utilize a URL `https://ipinfo.io/8.8.8.8/json?token=TOKEN`.

@@ -1,5 +1,5 @@
 ---
-title: Saque mínimo
+title: Saque Mínimo
 subjects:
   - algoritmo
 areas:

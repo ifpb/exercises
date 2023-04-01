@@ -64,41 +64,44 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
   <article class="mx-auto px-4 md:px-0 prose md:prose-lg lg:prose-xl">
     <h1 class="text-center">{title}</h1>
     <Content />
-    <h2>Códigos</h2>
-    <ul>
-      {
-        codes &&
-          codes.map((code) => {
-            const codeDir = `${GITHUB_EDIT_URL}/${currentDir}/_codes/${code}`;
+    {
+      !!codes.length && (
+        <>
+          <h2>Códigos</h2>
+          <ul>
+            {codes.map((code) => {
+              const codeDir = `${GITHUB_EDIT_URL}/${currentDir}/_codes/${code}`;
 
-            return (
-              <li>
-                {code}
-                (código:
-                <a href={`${codeDir}/code/`}>github</a>,
-                <a
-                  href={`https://download-directory.github.io/?url=${codeDir}/code/`}
-                >
-                  zip
-                </a>
-                ; resposta:
-                <a href={`${codeDir}/response/`}>github</a>,
-                <a
-                  href={`https://download-directory.github.io/?url=${codeDir}/response/`}
-                >
-                  zip
-                </a>
-                {preview && ['html', 'css', 'js'].includes(code) && (
-                  <>
-                    , <a href={`./_codes/${code}/response/`}>preview</a>
-                  </>
-                )}
-                )
-              </li>
-            );
-          })
-      }
-    </ul>
+              return (
+                <li>
+                  {code}
+                  (código:
+                  <a href={`${codeDir}/code/`}>github</a>,
+                  <a
+                    href={`https://download-directory.github.io/?url=${codeDir}/code/`}
+                  >
+                    zip
+                  </a>
+                  ; resposta:
+                  <a href={`${codeDir}/response/`}>github</a>,
+                  <a
+                    href={`https://download-directory.github.io/?url=${codeDir}/response/`}
+                  >
+                    zip
+                  </a>
+                  {preview && ['html', 'css', 'js'].includes(code) && (
+                    <>
+                      , <a href={`./_codes/${code}/response/`}>preview</a>
+                    </>
+                  )}
+                  )
+                </li>
+              );
+            })}
+          </ul>
+        </>
+      )
+    }
     <p>
       <a href={githubEditUrl} target="_blank">
         <svg

@@ -1,5 +1,5 @@
 ---
-title: Sequência de Fibonacci
+title: Sequência de Fibonacci (Array)
 subjects:
   - algoritmo
 areas:
@@ -20,10 +20,10 @@ Para analisar mais exemplos veja a _Tabela 1_.
 
 _Tabela 1:_
 
-| Entrada | Saída              |
-| ------- | ------------------ |
-| `0`     |                    |
-| `1`     | `0`                |
-| `2`     | `0, 1`             |
-| `4`     | `0, 1, 1, 2`       |
-| `6`     | `0, 1, 1, 2, 3, 5` |
+| Entrada | Saída                |
+| ------- | -------------------- |
+| `0`     |                      |
+| `1`     | `(0)`                |
+| `2`     | `(0, 1)`             |
+| `4`     | `(0, 1, 1, 2)`       |
+| `6`     | `(0, 1, 1, 2, 3, 5)` |

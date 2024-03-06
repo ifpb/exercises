@@ -1,59 +1,48 @@
-import { describe, test } from 'node:test';
-import assert from 'node:assert';
 import { sum, product, sumOdds } from './array-operations.js';
 
 describe('Array Operation', () => {
   test('adding values from [1, 2, 3]', () => {
     let values = [1, 2, 3];
-
-    assert.equal(sum(values), 6);
+    expect(sum(values)).toBe(6);
   });
 
   test.skip('adding values from [2, 2, 2]', () => {
     let values = [2, 2, 2];
-
-    assert.equal(sum(values), 6);
+    expect(sum(values)).toBe(6);
   });
 
   test.skip('adding values from [1, 2, 3, 4, 5, 6]', () => {
     let values = [1, 2, 3, 4, 5, 6];
-
-    assert.equal(sum(values), 21);
+    expect(sum(values)).toBe(21);
   });
 
   test.skip('adding odd values from [1, 2, 3]', () => {
     let values = [1, 2, 3];
-
-    assert.equal(sumOdds(values), 4);
+    expect(sumOdds(values)).toBe(4);
   });
 
   test.skip('adding odd values from [2, 2, 2]', () => {
     let values = [2, 2, 2];
-
-    assert.equal(sumOdds(values), 0);
+    expect(sumOdds(values)).toBe(0);
   });
 
   test.skip('adding odd values from [1, 2, 3, 4, 5, 6]', () => {
     let values = [1, 2, 3, 4, 5, 6];
-
-    assert.equal(sumOdds(values), 9);
+    expect(sumOdds(values)).toBe(9);
   });
 
   test.skip('multiplying values from [1, 2, 3]', () => {
     let values = [1, 2, 3];
-
-    assert.equal(product(values), 6);
+    expect(product(values)).toBe(6);
   });
 
   test.skip('multiplying values from [2, 2, 2]', () => {
     let values = [2, 2, 2];
-
-    assert.equal(product(values), 8);
+    expect(product(values)).toBe(8);
   });
 
   test.skip('multiplying values from [1, 2, 3, 4, 5, 6]', () => {
     let values = [1, 2, 3, 4, 5, 6];
-
-    assert.equal(product(values), 720);
+    expect(product(values)).toBe(720);
   });
 });

@@ -1,5 +1,3 @@
-function sumIntegerInArray(array) {
+export function sumIntegerInArray(array) {
   // TODO...
 }
-
-export { sumIntegerInArray };

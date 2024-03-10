@@ -1,5 +1,3 @@
-function withdraw(number) {
+export function withdraw(number) {
   // TODO
 }
-
-export { withdraw };

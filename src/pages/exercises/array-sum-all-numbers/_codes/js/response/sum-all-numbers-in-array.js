@@ -1,7 +1,7 @@
-function sumIntegerInArray(array) {
+export function sumIntegerInArray(array) {
   let sum = 0;
 
-  array.forEach(element => {
+  array.forEach((element) => {
     if (Array.isArray(element)) {
       sum = sum + sumIntegerInArray(element);
     } else {
@@ -11,5 +11,3 @@ function sumIntegerInArray(array) {
 
   return sum;
 }
-
-export { sumIntegerInArray };

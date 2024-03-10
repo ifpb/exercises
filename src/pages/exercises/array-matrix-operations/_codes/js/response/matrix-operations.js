@@ -1,4 +1,4 @@
-function addingMatrix(a, b) {
+export function addingMatrix(a, b) {
   let sum = [];
   for (var row = 0; row < a.length; row++) {
     let temp = [];
@@ -10,7 +10,7 @@ function addingMatrix(a, b) {
   return sum;
 }
 
-function multiplyingMatrix(a, b) {
+export function multiplyingMatrix(a, b) {
   let result = [];
   for (var x = 0; x < a.length; x++) {
     let temp = [];
@@ -25,5 +25,3 @@ function multiplyingMatrix(a, b) {
   }
   return result;
 }
-
-export { addingMatrix, multiplyingMatrix };

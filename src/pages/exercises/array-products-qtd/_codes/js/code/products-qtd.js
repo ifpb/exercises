@@ -1,13 +1,11 @@
-function gtZero(products) {
+export function gtZero(products) {
   // TODO
 }
 
-function subTotal(products) {
+export function subTotal(products) {
   // TODO
 }
 
-function total(products) {
+export function total(products) {
   // TODO
 }
-
-export { gtZero, subTotal, total };

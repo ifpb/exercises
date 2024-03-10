@@ -1,9 +1,7 @@
-function addingMatrix(a, b) {
+export function addingMatrix(a, b) {
   // TODO
 }
 
-function multiplyingMatrix(a, b) {
+export function multiplyingMatrix(a, b) {
   // TODO
 }
-
-export { addingMatrix, multiplyingMatrix };

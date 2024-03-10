@@ -1,48 +1,33 @@
 import { sum, product, sumOdds } from './array-operations.js';
 
 describe('Array Operation', () => {
-  test('adding values from [1, 2, 3]', () => {
-    let values = [1, 2, 3];
-    expect(sum(values)).toBe(6);
+  describe('sum()', () => {
+    it('should return sum of values', () => {
+      expect(sum([1, 2, 3])).toBe(6);
+
+      expect(sum([2, 2, 2])).toBe(6);
+
+      expect(sum([1, 2, 3, 4, 5, 6])).toBe(21);
+    });
   });
 
-  test.skip('adding values from [2, 2, 2]', () => {
-    let values = [2, 2, 2];
-    expect(sum(values)).toBe(6);
+  describe.skip('sumOdds()', () => {
+    it('should return sum of odd values', () => {
+      expect(sumOdds([1, 2, 3])).toBe(4);
+
+      expect(sumOdds([2, 2, 2])).toBe(0);
+
+      expect(sumOdds([1, 2, 3, 4, 5, 6])).toBe(9);
+    });
   });
 
-  test.skip('adding values from [1, 2, 3, 4, 5, 6]', () => {
-    let values = [1, 2, 3, 4, 5, 6];
-    expect(sum(values)).toBe(21);
-  });
+  describe.skip('product()', () => {
+    it('should return product of values', () => {
+      expect(product([1, 2, 3])).toBe(6);
 
-  test.skip('adding odd values from [1, 2, 3]', () => {
-    let values = [1, 2, 3];
-    expect(sumOdds(values)).toBe(4);
-  });
+      expect(product([2, 2, 2])).toBe(8);
 
-  test.skip('adding odd values from [2, 2, 2]', () => {
-    let values = [2, 2, 2];
-    expect(sumOdds(values)).toBe(0);
-  });
-
-  test.skip('adding odd values from [1, 2, 3, 4, 5, 6]', () => {
-    let values = [1, 2, 3, 4, 5, 6];
-    expect(sumOdds(values)).toBe(9);
-  });
-
-  test.skip('multiplying values from [1, 2, 3]', () => {
-    let values = [1, 2, 3];
-    expect(product(values)).toBe(6);
-  });
-
-  test.skip('multiplying values from [2, 2, 2]', () => {
-    let values = [2, 2, 2];
-    expect(product(values)).toBe(8);
-  });
-
-  test.skip('multiplying values from [1, 2, 3, 4, 5, 6]', () => {
-    let values = [1, 2, 3, 4, 5, 6];
-    expect(product(values)).toBe(720);
+      expect(product([1, 2, 3, 4, 5, 6])).toBe(720);
+    });
   });
 });

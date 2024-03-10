@@ -1,5 +1,3 @@
-function total(products) {
+export function total(products) {
   // TODO
 }
-
-export { total };

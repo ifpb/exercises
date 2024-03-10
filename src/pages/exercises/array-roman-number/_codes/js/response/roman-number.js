@@ -1,4 +1,4 @@
-function toRoman(number) {
+export function toRoman(number) {
   const romanMatrix = [
     [1000, 'M'],
     [900, 'CM'],
@@ -25,5 +25,3 @@ function toRoman(number) {
 
   return result.join('');
 }
-
-export { toRoman };

@@ -1,25 +1,23 @@
-function min(array) {
+export function min(array) {
   // TODO
 }
 
-function max(array) {
+export function max(array) {
   // TODO
 }
 
-function range(length, last, step) {
+export function range(length, last, step) {
   // TODO
 }
 
-function zip(...arrays) {
+export function zip(...arrays) {
   // TODO
 }
 
-function uniq(array) {
+export function uniq(array) {
   // TODO
 }
 
-function sortNum(array) {
+export function sortNum(array) {
   // TODO
 }
-
-export { min, max, range, zip, uniq, sortNum };

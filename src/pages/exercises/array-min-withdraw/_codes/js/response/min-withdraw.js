@@ -1,4 +1,4 @@
-function withdraw(money) {
+export function withdraw(money) {
   let minBanknotes = [];
   let banknotes = [100, 50, 20, 10, 5, 2, 1];
   for (const banknote of banknotes) {
@@ -10,5 +10,3 @@ function withdraw(money) {
   }
   return minBanknotes;
 }
-
-export { withdraw };

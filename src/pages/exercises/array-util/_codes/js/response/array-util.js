@@ -1,4 +1,4 @@
-function min(array) {
+export function min(array) {
   let minValue = array[0];
 
   for (let flag = 1; flag < array.length; flag++) {
@@ -8,7 +8,7 @@ function min(array) {
   return minValue;
 }
 
-function max(array) {
+export function max(array) {
   let maxValue = array[0];
 
   for (let value of array) {
@@ -18,7 +18,7 @@ function max(array) {
   return maxValue;
 }
 
-function range(length, last, step) {
+export function range(length, last, step) {
   let begin = last ? length : 0;
   let end = last || length;
   step = step || 1;
@@ -31,17 +31,18 @@ function range(length, last, step) {
   return result;
 }
 
-function zip(...arrays) {
+export function zip(...arrays) {
   let result = [];
   for (let index = 0; index < arrays.length; index++) {
     let values = [];
-    for (let array = 0; array < arrays.length; array++) values.push(arrays[array][index]);
+    for (let array = 0; array < arrays.length; array++)
+      values.push(arrays[array][index]);
     result.push(values);
   }
   return result;
 }
 
-function uniq(array) {
+export function uniq(array) {
   let result = [];
   for (let value of array) {
     if (!result.includes(value)) result.push(value);
@@ -49,8 +50,6 @@ function uniq(array) {
   return result;
 }
 
-function sortNum(array) {
+export function sortNum(array) {
   return array.sort((a, b) => a - b);
 }
-
-export { min, max, range, zip, uniq, sortNum };

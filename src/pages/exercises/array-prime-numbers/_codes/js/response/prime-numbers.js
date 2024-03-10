@@ -1,10 +1,10 @@
-import { isPrime } from '../../../function/prime/response/prime.js';
+import { isPrime } from '../../../../function-prime/_codes/js/response/prime.js';
 
 /**
  * begin: 1..n
  * end: 1..n, end > begin
  */
-function primes(begin, end) {
+export function primeNumbers(begin, end) {
   let result = [];
 
   if (end < begin) return result;
@@ -17,5 +17,3 @@ function primes(begin, end) {
 
   return result;
 }
-
-export { primes };

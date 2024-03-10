@@ -1,4 +1,4 @@
-function fibonacci(number) {
+export function fibonacci(number) {
   let a = 0;
   let b = 1;
   let result = [a, b];
@@ -19,5 +19,3 @@ function fibonacci(number) {
 
   return result;
 }
-
-export { fibonacci };

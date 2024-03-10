@@ -1,13 +1,11 @@
-function sum(array) {
+export function sum(array) {
   // TODO
 }
 
-function product(array) {
+export function product(array) {
   // TODO
 }
 
-function sumOdds(array) {
+export function sumOdds(array) {
   // TODO
 }
-
-export { sum, product, sumOdds };

@@ -1,5 +1,3 @@
-function toRoman(number) {
+export function toRoman(number) {
   // TODO
 }
-
-export { toRoman };

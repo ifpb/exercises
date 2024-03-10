@@ -1,5 +1,3 @@
-function triangleChecker(a, b, c) {
+export function triangleChecker(a, b, c) {
   // TODO
 }
-
-export { triangleChecker };

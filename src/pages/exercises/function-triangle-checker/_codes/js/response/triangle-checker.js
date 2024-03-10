@@ -1,4 +1,4 @@
-function triangleChecker(a, b, c) {
+export function triangleChecker(a, b, c) {
   if (a >= b + c || b >= a + c || c >= a + b) return 'none';
   else
     switch (true) {
@@ -10,5 +10,3 @@ function triangleChecker(a, b, c) {
         return 'isosceles';
     }
 }
-
-export { triangleChecker };

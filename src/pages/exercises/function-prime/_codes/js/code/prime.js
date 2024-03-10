@@ -1,5 +1,3 @@
-function isPrime(number) {
+export function isPrime(number) {
   // TODO
 }
-
-export { isPrime };

@@ -1,4 +1,4 @@
-function fibonacci(number) {
+export function fibonacci(number) {
   let a = 0;
   let b = 1;
   let temp = 1;
@@ -12,9 +12,7 @@ function fibonacci(number) {
       number--;
     }
   else if (number == 1) return 0;
-  else return undefined;
+  else return NaN;
 
   return temp;
 }
-
-export { fibonacci };

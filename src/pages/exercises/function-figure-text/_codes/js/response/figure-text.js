@@ -1,4 +1,4 @@
-function halfSquare(size) {
+export function halfSquare(size) {
   let result = '';
   let block = '#';
   for (let row = 1; row <= size; row++) {
@@ -13,7 +13,7 @@ function halfSquare(size) {
   return result;
 }
 
-function triangleText(size) {
+export function triangleText(size) {
   let result = '';
   let block = '#';
   for (let row = 1; row <= size; row++) {
@@ -25,7 +25,7 @@ function triangleText(size) {
   return result;
 }
 
-function halfDiamondText(size) {
+export function halfDiamondText(size) {
   let result = '';
   let block = '#';
   for (let row = 1; row <= 2 * size - 1; row++) {
@@ -37,7 +37,7 @@ function halfDiamondText(size) {
   return result;
 }
 
-function diamondText(size) {
+export function diamondText(size) {
   let result = '';
   let block = '#';
   for (let row = 1; row <= 2 * size - 1; row++) {
@@ -54,7 +54,7 @@ function diamondText(size) {
   return result;
 }
 
-function boardText(size) {
+export function boardText(size) {
   let result = '';
   let block = '#';
   for (let row = 1; row <= size; row++) {
@@ -66,4 +66,3 @@ function boardText(size) {
   return result;
 }
 
-export { triangleText, halfDiamondText, diamondText, boardText };

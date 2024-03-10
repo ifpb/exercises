@@ -1,5 +1,3 @@
-function factorial(number) {
+export function factorial(number) {
   // TODO
 }
-
-export { factorial };

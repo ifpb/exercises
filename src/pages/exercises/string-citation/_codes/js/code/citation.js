@@ -1,9 +1,7 @@
-function citation(name) {
+export function citation(name) {
   // TODO
 }
 
-function compactCitation(name) {
+export function compactCitation(name) {
   // TODO
 }
-
-export { citation, compactCitation };

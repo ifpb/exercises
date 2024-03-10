@@ -1,5 +1,3 @@
-function checkingDigitCpf(cpf) {
+export function isValidCpf(cpf) {
   // TODO
 }
-
-export { checkingDigitCpf };

@@ -1,5 +1,3 @@
-function toRna(dna) {
+export function toRna(dna) {
   // TODO
 }
-
-export { toRna };

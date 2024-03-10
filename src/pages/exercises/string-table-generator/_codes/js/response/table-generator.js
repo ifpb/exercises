@@ -1,4 +1,4 @@
-function createTable(rows, cols, text) {
+export function createTable(rows, cols, text) {
   let result = '';
   text = text ? `${text} ` : '';
 
@@ -12,7 +12,7 @@ function createTable(rows, cols, text) {
   return result;
 }
 
-function createTableHTML(rows, cols, text) {
+export function createTableHTML(rows, cols, text) {
   let result = '<table>\n';
   text = text ? `${text} ` : '';
 
@@ -29,5 +29,3 @@ function createTableHTML(rows, cols, text) {
   result += '</table>\n';
   return result;
 }
-
-export { createTable, createTableHTML };

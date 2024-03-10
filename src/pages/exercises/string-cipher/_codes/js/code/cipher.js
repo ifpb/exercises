@@ -1,5 +1,3 @@
-function rot(message, number) {
+export function rot(message, number) {
   // TODO
 }
-
-export { rot };

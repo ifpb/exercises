@@ -11,18 +11,10 @@ Suspendisse sed lobortis massa. Cras mollis mollis lorem, non convallis nibh pla
 Integer porttitor nulla eu augue ultrices, id egestas odio venenatis. Nulla luctus tincidunt turpis ut suscipit. Maecenas vestibulum suscipit elit in lobortis. Nullam at tincidunt elit, eget facilisis ipsum. Duis tempor arcu sit amet nibh aliquet, at gravida ante placerat. Cras mollis at erat at vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 In sit amet pellentesque turpis. Aenean porta ornare dignissim. Fusce consectetur at neque non pharetra. Etiam varius, sem sed viverra mollis, velit libero lacinia diam, sed consectetur enim urna quis nisl. Maecenas eget accumsan magna, non consectetur odio. Quisque blandit, eros id tincidunt commodo, orci ligula tristique ante, at posuere ante dolor sed dui. Proin pretium turpis ipsum, a elementum elit molestie finibus. Phasellus sollicitudin massa eget efficitur suscipit. Aenean sed lorem sed tortor vestibulum cursus. Maecenas semper tincidunt sapien et hendrerit. Vestibulum id lobortis lacus, non sollicitudin tortor. Ut vehicula feugiat orci, interdum convallis arcu volutpat sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam eu lobortis nisl. Morbi vitae erat commodo, tincidunt neque in, tempor leo.`;
 
-function word(number) {
-  return lorem
-    .split(/\s/g)
-    .slice(0, number)
-    .join(' ');
+export function word(number) {
+  return lorem.split(/\s/g).slice(0, number).join(' ');
 }
 
-function paragraph(number) {
-  return lorem
-    .split('\n')
-    .slice(0, number)
-    .join('\n');
+export function paragraph(number) {
+  return lorem.split('\n').slice(0, number).join('\n');
 }
-
-export { word, paragraph };

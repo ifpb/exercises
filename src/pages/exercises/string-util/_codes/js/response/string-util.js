@@ -3,7 +3,7 @@
  * action: lowercase, uppercase, camelcase, snakecase, reverse,
  *         countchar, countword, countline
  */
-function formatter(text, action) {
+export function formatter(text, action) {
   switch (action) {
     case 'lowercase':
       return text.toLowerCase();
@@ -14,10 +14,7 @@ function formatter(text, action) {
     case 'snakecase':
       return text.replace(/\s/g, '_');
     case 'reverse':
-      return text
-        .split('')
-        .reverse()
-        .join('');
+      return text.split('').reverse().join('');
     case 'countchar':
       return text.split('').length;
     case 'countword':
@@ -36,5 +33,3 @@ function toCamelCase(text) {
   }
   return result.join(' ');
 }
-
-export { formatter };

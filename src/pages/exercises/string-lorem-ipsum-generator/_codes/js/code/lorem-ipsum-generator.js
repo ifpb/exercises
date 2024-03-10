@@ -1,9 +1,7 @@
-function word(number) {
+export function word(number) {
   // TODO
 }
 
-function paragraph(number) {
+export function paragraph(number) {
   // TODO
 }
-
-export { word, paragraph };

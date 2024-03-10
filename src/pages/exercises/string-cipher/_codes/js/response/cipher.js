@@ -1,4 +1,4 @@
-Array.prototype.rotate = function(n) {
+Array.prototype.rotate = function (n) {
   return this.slice(n, this.length).concat(this.slice(0, n));
 };
 
@@ -15,13 +15,11 @@ function complent(rotate) {
   return complent;
 }
 
-function rot(message, number = 13) {
+export function rot(message, number = 13) {
   let substitution = complent(number);
 
   return message
     .split('')
-    .map(char => substitution[char] || char)
+    .map((char) => substitution[char] || char)
     .join('');
 }
-
-export { rot };

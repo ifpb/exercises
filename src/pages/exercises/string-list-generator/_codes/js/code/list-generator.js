@@ -1,5 +1,3 @@
-function createList(number) {
+export function createList(number) {
   // TODO
 }
-
-export { createList };

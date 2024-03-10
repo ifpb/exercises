@@ -1,4 +1,4 @@
-function substitution(message, plaintext, ciphertext) {
+export function substitution(message, plaintext, ciphertext) {
   plaintext = plaintext.split('');
   ciphertext = ciphertext.split('');
   const substitution = {};
@@ -9,8 +9,6 @@ function substitution(message, plaintext, ciphertext) {
 
   return message
     .split('')
-    .map(char => substitution[char] || char)
+    .map((char) => substitution[char] || char)
     .join('');
 }
-
-export { substitution };

@@ -1,12 +1,12 @@
-function firstTeam(standings) {
+export function firstTeam(standings) {
   return standings.sort(sortTeam)[0].team;
 }
 
-function showStading(standings) {
+export function showStanding(standings) {
   return printTeams(standings.sort(sortTeam));
 }
 
-function sortTeam(a, b) {
+export function sortTeam(a, b) {
   if (a.pts > b.pts) return -1;
   if (a.pts < b.pts) return 1;
   if (a.w > b.w) return -1;
@@ -18,7 +18,7 @@ function sortTeam(a, b) {
   return 0;
 }
 
-function printTeams(standings) {
+export function printTeams(standings) {
   const maxLength = standings.reduce(
     (max, character) => {
       const teamLength = character.team.length;
@@ -41,40 +41,22 @@ function printTeams(standings) {
       max.pts = ptsLength > max.pts ? ptsLength : max.pts;
       return max;
     },
-    { team: 0, mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+    { team: 0, mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 }
   );
 
   return standings
-    .map(row => {
+    .map((row) => {
       return [
         row.team.padEnd(maxLength.team),
-        Number(row.mp)
-          .toString()
-          .padStart(maxLength.mp),
-        Number(row.w)
-          .toString()
-          .padStart(maxLength.w),
-        Number(row.d)
-          .toString()
-          .padStart(maxLength.d),
-        Number(row.l)
-          .toString()
-          .padStart(maxLength.l),
-        Number(row.gf)
-          .toString()
-          .padStart(maxLength.gf),
-        Number(row.ga)
-          .toString()
-          .padStart(maxLength.ga),
-        Number(row.gd)
-          .toString()
-          .padStart(maxLength.gd),
-        Number(row.pts)
-          .toString()
-          .padStart(maxLength.pts),
+        Number(row.mp).toString().padStart(maxLength.mp),
+        Number(row.w).toString().padStart(maxLength.w),
+        Number(row.d).toString().padStart(maxLength.d),
+        Number(row.l).toString().padStart(maxLength.l),
+        Number(row.gf).toString().padStart(maxLength.gf),
+        Number(row.ga).toString().padStart(maxLength.ga),
+        Number(row.gd).toString().padStart(maxLength.gd),
+        Number(row.pts).toString().padStart(maxLength.pts),
       ].join(' | ');
     })
     .join('\n');
 }
-
-export { firstTeam, showStading };

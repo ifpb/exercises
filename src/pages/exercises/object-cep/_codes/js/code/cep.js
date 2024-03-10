@@ -1,5 +1,3 @@
-function getInfo(cep) {
+export function getInfo(cep) {
   // TODO
 }
-
-export { getInfo };

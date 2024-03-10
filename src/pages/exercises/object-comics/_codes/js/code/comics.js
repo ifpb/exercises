@@ -1,13 +1,11 @@
-function namesByComics(characters, comics) {
+export function namesByComics(characters, comics) {
   // TODO
 }
 
-function topWeightNames(characters, comics) {
+export function topWeightNames(characters, comics) {
   // TODO
 }
 
-function weight(characters, comics) {
+export function weight(characters, comics) {
   // TODO
 }
-
-export { namesByComics, topWeightNames, weight };

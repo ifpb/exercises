@@ -1,4 +1,4 @@
-class Exam {
+export class Exam {
   constructor(answer, weight) {
     this.weight = weight;
     this.answer = answer;
@@ -54,5 +54,3 @@ class Exam {
     return grades.filter((grade) => grade > limit);
   }
 }
-
-export { Exam };

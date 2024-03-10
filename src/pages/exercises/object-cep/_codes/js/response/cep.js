@@ -1,7 +1,5 @@
-function getInfo(cep) {
+export function getInfo(cep) {
   return Object.keys(cep)
-    .map(key => `${key}: ${cep[key]}`)
+    .map((key) => `${key}: ${cep[key]}`)
     .join(',\n');
 }
-
-export { getInfo };

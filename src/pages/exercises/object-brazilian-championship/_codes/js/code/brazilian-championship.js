@@ -1,9 +1,7 @@
-function firstTeam() {
+export function firstTeam() {
   // TODO
 }
 
-function showStading() {
+export function showStading() {
   // TODO
 }
-
-export { firstTeam, showStading };

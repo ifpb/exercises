@@ -1,5 +1,4 @@
-import { ExamCheck } from './exam-check.js';
-import { ExamStats } from './exam-stats.js';
+import { Exam } from './exam-stats.js';
 
 describe('Exam Tool', () => {
   test('calculating grade by weighted average', () => {
@@ -21,21 +20,21 @@ describe('Exam Tool', () => {
   });
 
   test.skip('calculating exam values', () => {
-    let examStats = new ExamStats([
+    let exam = new Exam([
       { student: 'Fulano', grade: 10 },
       { student: 'Sicrano', grade: 5 },
       { student: 'Beltrano', grade: 7 },
     ]);
 
-    expect(examStats.avg()).toBe(7.333333333333333);
+    expect(exam.avg()).toBe(7.333333333333333);
 
-    expect(examStats.min()).toEqual([5]);
-    expect(examStats.min(2)).toEqual([5, 7]);
+    expect(exam.min()).toEqual([5]);
+    expect(exam.min(2)).toEqual([5, 7]);
 
-    expect(examStats.max()).toEqual([10]);
+    expect(exam.max()).toEqual([10]);
 
-    expect(examStats.lt(6)).toEqual([5]);
+    expect(exam.lt(6)).toEqual([5]);
 
-    expect(examStats.gt(6)).toEqual([7, 10]);
+    expect(exam.gt(6)).toEqual([7, 10]);
   });
 });

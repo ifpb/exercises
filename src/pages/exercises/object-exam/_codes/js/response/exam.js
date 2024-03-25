@@ -6,8 +6,10 @@ export class Exam {
   }
 
   add(exam) {
-    exam.grade = Object.keys(exam.answer).reduce((total, q) => {
-      return total + (exam.answer[q] === this.answer[q] ? this.weight[q] : 0);
+    exam.grade = Object.keys(exam.values).reduce((total, q) => {
+      return (
+        total + (exam.values[q] === this.answer.values[q] ? this.weight[q] : 0)
+      );
     }, 0);
 
     this.exams.push(exam);

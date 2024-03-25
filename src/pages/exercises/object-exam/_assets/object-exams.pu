@@ -3,12 +3,12 @@ skinparam classAttributeIconSize 0
 skinparam monochrome true
 hide circle
 
-class Exams {
+class Exam {
   -weight: Weight
   -answer: Answer
-  -exams: Exam
+  -exams: Array<Answer>
   +__construct(answer: Answer, weight: Weight)
-  +add(exam: Exam): void
+  +add(exam: Answer): void
   +avg(): float
   +min([count: float]): Array<float>
   +max([count: float]): Array<float>

@@ -8,7 +8,10 @@ describe('Exam Tool', () => {
   beforeEach(() => {
     const weight = { q1: 2, q2: 2, q3: 2, q4: 2, q5: 2 };
 
-    const answer = { q1: 'a', q2: 'b', q3: 'a', q4: 'c', q5: 'd' };
+    const answer = {
+      person: 'Professor',
+      values: { q1: 'a', q2: 'b', q3: 'a', q4: 'c', q5: 'd' },
+    };
 
     exam = new Exam(answer, weight);
   });
@@ -16,14 +19,14 @@ describe('Exam Tool', () => {
   it('should calculate average', () => {
     exam.add({
       student: 'Alice',
-      answer: { q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b' },
+      values: { q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b' },
     });
 
     assert.equal(exam.avg(), 4);
 
     exam.add({
       student: 'Bob',
-      answer: { q1: 'c', q2: 'b', q3: 'a', q4: 'c', q5: 'd' },
+      values: { q1: 'c', q2: 'b', q3: 'a', q4: 'c', q5: 'd' },
     });
 
     assert.equal(exam.avg(), 6);
@@ -32,14 +35,14 @@ describe('Exam Tool', () => {
   it('should calculate minimum value', () => {
     exam.add({
       student: 'Alice',
-      answer: { q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b' },
+      values: { q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b' },
     });
 
     assert.deepEqual(exam.min(), [4]);
 
     exam.add({
       student: 'Bob',
-      answer: { q1: 'c', q2: 'b', q3: 'a', q4: 'c', q5: 'd' },
+      values: { q1: 'c', q2: 'b', q3: 'a', q4: 'c', q5: 'd' },
     });
 
     assert.deepEqual(exam.min(), [4]);
@@ -48,14 +51,14 @@ describe('Exam Tool', () => {
   it('should calculate minimum value', () => {
     exam.add({
       student: 'Alice',
-      answer: { q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b' },
+      values: { q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b' },
     });
 
     assert.deepEqual(exam.min(), [4]);
 
     exam.add({
       student: 'Bob',
-      answer: { q1: 'c', q2: 'b', q3: 'a', q4: 'c', q5: 'd' },
+      values: { q1: 'c', q2: 'b', q3: 'a', q4: 'c', q5: 'd' },
     });
 
     assert.deepEqual(exam.min(), [4]);
@@ -64,14 +67,14 @@ describe('Exam Tool', () => {
   it('should calculate maximum value', () => {
     exam.add({
       student: 'Alice',
-      answer: { q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b' },
+      values: { q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b' },
     });
 
     assert.deepEqual(exam.max(), [4]);
 
     exam.add({
       student: 'Bob',
-      answer: { q1: 'c', q2: 'b', q3: 'a', q4: 'c', q5: 'd' },
+      values: { q1: 'c', q2: 'b', q3: 'a', q4: 'c', q5: 'd' },
     });
 
     assert.deepEqual(exam.max(), [8]);
@@ -80,14 +83,14 @@ describe('Exam Tool', () => {
   it('should calculate the values is less than a value', () => {
     exam.add({
       student: 'Alice',
-      answer: { q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b' },
+      values: { q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b' },
     });
 
     assert.deepEqual(exam.lt(7), [4]);
 
     exam.add({
       student: 'Bob',
-      answer: { q1: 'c', q2: 'b', q3: 'a', q4: 'c', q5: 'd' },
+      values: { q1: 'c', q2: 'b', q3: 'a', q4: 'c', q5: 'd' },
     });
 
     assert.deepEqual(exam.lt(7), [4]);
@@ -96,14 +99,14 @@ describe('Exam Tool', () => {
   it('should calculate the values is greater than a value', () => {
     exam.add({
       student: 'Alice',
-      answer: { q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b' },
+      values: { q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b' },
     });
 
     assert.deepEqual(exam.gt(7), []);
 
     exam.add({
       student: 'Bob',
-      answer: { q1: 'c', q2: 'b', q3: 'a', q4: 'c', q5: 'd' },
+      values: { q1: 'c', q2: 'b', q3: 'a', q4: 'c', q5: 'd' },
     });
 
     assert.deepEqual(exam.gt(7), [8]);

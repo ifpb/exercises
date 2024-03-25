@@ -1,3 +1,3 @@
-export class ExamStats {
+export class Exam {
   // TODO
 }
